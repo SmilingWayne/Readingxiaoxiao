@@ -876,6 +876,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/LatexNotes/</loc>
+         <lastmod>2023-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/MagicSquare/</loc>
          <lastmod>2023-01-22</lastmod>
          <changefreq>daily</changefreq>
@@ -917,6 +922,11 @@
     </url>
     <url>
          <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/LinearAlgebra/Chapter1/</loc>
+         <lastmod>2023-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/LinearAlgebra/Chapter2/</loc>
          <lastmod>2023-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
