@@ -4246,6 +4246,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 矩阵的运算
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4643,6 +4650,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 矩阵的运算
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4675,13 +4689,13 @@
     叫做<span class="arithmatex">\(m\)</span>行<span class="arithmatex">\(n\)</span>列矩阵，其中的每个数叫做矩阵的元素，元素都是实数的矩阵叫做<strong>实矩阵</strong>，元素都是复数的矩阵叫做<strong>复矩阵</strong>。当<span class="arithmatex">\(m = n\)</span>的时候，称为<span class="arithmatex">\(n\)</span>阶方阵。</p>
 </li>
 <li>
-<p>2.1.2 向量的概念：（n维向量）n 个数字<span class="arithmatex">\(a_1, a_2....a_n\)</span>组成的有序数组<span class="arithmatex">\((a_1, a_2,...,a_n)\)</span>或者<span class="arithmatex">\(\begin{pmatrix} a_1 \\ a_2 \end{pmatrix}\)</span>，<span class="arithmatex">\(a_i\)</span>称为向量的第<span class="arithmatex">\(i\)</span>个分量或者坐标，分量都是实数的向量称为实分量，分量都是复数的向量称为复分量。</p>
+<p>2.1.2 向量的概念：（n维向量）<span class="arithmatex">\(n\)</span> 个数字<span class="arithmatex">\(a_1, a_2....a_n\)</span>组成的有序数组<span class="arithmatex">\((a_1, a_2,...,a_n)\)</span>或者<span class="arithmatex">\(\begin{pmatrix} a_1 \\ a_2 \end{pmatrix}\)</span>，<span class="arithmatex">\(a_i\)</span>称为向量的第<span class="arithmatex">\(i\)</span>个分量或者坐标，分量都是实数的向量称为实分量，分量都是复数的向量称为复分量。</p>
 </li>
 <li>
-<p>2.1.2 所有元素都是0的矩阵称为<strong>零矩阵</strong>，<span class="arithmatex">\(m\)</span>行<span class="arithmatex">\(n\)</span>列的零矩阵记为<span class="arithmatex">\(O_{m \times n }\)</span>；所有分量都是零的向量称为<strong>零向量</strong>。</p>
+<p>2.1.3 所有元素都是0的矩阵称为<strong>零矩阵</strong>，<span class="arithmatex">\(m\)</span>行<span class="arithmatex">\(n\)</span>列的零矩阵记为<span class="arithmatex">\(O_{m \times n }\)</span>；所有分量都是零的向量称为<strong>零向量</strong>。</p>
 </li>
 <li>
-<p>2.1.2 对角矩阵：A为n阶方阵，如果当<span class="arithmatex">\(i \neq j\)</span>时，<span class="arithmatex">\(a_{ij} = 0\)</span>，那么A被称为<strong>对角矩阵</strong>。<span class="arithmatex">\(A = \begin{pmatrix}
+<p>2.1.4 对角矩阵：<span class="arithmatex">\(A\)</span>为<span class="arithmatex">\(n\)</span>阶方阵，如果当<span class="arithmatex">\(i \neq j\)</span>时，<span class="arithmatex">\(a_{ij} = 0\)</span>，那么A被称为<strong>对角矩阵</strong>。<span class="arithmatex">\(A = \begin{pmatrix}
      a_{11} &amp; 0 &amp; \cdots &amp; a_{1n} \\ 
       0 &amp; a_{22} &amp; \cdots &amp; 0 \\ 
       \vdots &amp; \vdots &amp;  &amp; \vdots \\ 
@@ -4689,14 +4703,97 @@
     \end{pmatrix}\)</span>, 同时<span class="arithmatex">\(diag(a_{11}, a_{22}... a_{nn})\)</span>也可以用来表示对角矩阵。</p>
 </li>
 <li>
-<p>2.1.2 如果对角矩阵A中<span class="arithmatex">\(a_{11} = a_{22} = \cdots = a_{nn} = k\)</span>，那么称A 为<strong>数量矩阵</strong>，当k = 1时，称A为<strong>单位矩阵</strong>。</p>
+<p>2.1.5 如果对角矩阵A中<span class="arithmatex">\(a_{11} = a_{22} = \cdots = a_{nn} = k\)</span>，那么称A 为<strong>数量矩阵</strong>，当k = 1时，称A为<strong>单位矩阵</strong>。</p>
 </li>
 <li>
-<p>2.1.2 上三角形矩阵：</p>
+<p>2.1.6 上三角形矩阵：</p>
 </li>
-<li>2.1.2 下三角形矩阵：</li>
-<li>2.1.2 对称矩阵：设 A 为n阶方阵，如果矩阵的元素满足<span class="arithmatex">\(a_{ij} = a_{ji}, (i,j = 1,2,3,4...n)\)</span>，则称A为对称矩阵，如果矩阵的元素满足<span class="arithmatex">\(a_{ij} = -a_{ji}, (i,j = 1,2,3,4...n)\)</span>，那么称A为反对称矩阵。</li>
+<li>2.1.7 下三角形矩阵：</li>
+<li>2.1.8 对称矩阵：设 <span class="arithmatex">\(A\)</span> 为<span class="arithmatex">\(n\)</span>阶方阵，如果矩阵的元素满足<span class="arithmatex">\(a_{ij} = a_{ji}, (i,j = 1,2,3,4...n)\)</span>，则称A为对称矩阵，如果矩阵的元素满足<span class="arithmatex">\(a_{ij} = -a_{ji}, (i,j = 1,2,3,4...n)\)</span>，那么称A为反对称矩阵。</li>
+<li>2.1.9 如果矩阵<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>的行数和列数都相等，并且对应的元素也都相等，那么这两个矩阵相等。<span class="arithmatex">\(A = B\)</span>；如果向量<span class="arithmatex">\(\alpha\)</span> 和<span class="arithmatex">\(\beta\)</span> 的分量个数相同，且对应的分量都相等，那么这两个向量相等:<span class="arithmatex">\(\alpha = \beta\)</span></li>
+<li>2.1.10 转置矩阵：把<span class="arithmatex">\(m \times n\)</span>的矩阵的行与列互换后得到一个<span class="arithmatex">\(n \times m\)</span>的矩阵，称为A的<strong>转置矩阵</strong>。记为<span class="arithmatex">\(A^{T}\)</span></li>
+<li>2.1.11  <strong>方阵</strong>的行列式：<span class="arithmatex">\(\left | \begin{matrix}
+a_{11} &amp; a_{12} &amp; \cdots  &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \cdots  &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \vdots  &amp; \vdots \\
+a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
+\end{matrix} \right  |\)</span> 称为<strong>方阵</strong><span class="arithmatex">\(A_{n \times n}\)</span>的行列式，记作<span class="arithmatex">\(| A |\)</span>，如果<span class="arithmatex">\(| A | \neq 0\)</span>， 则称矩阵 A是非异矩阵，如果<span class="arithmatex">\(| A | = 0\)</span>，则称矩阵A是奇异矩阵，或退化矩阵。</li>
 </ul>
+<h3 id="22">2.2 矩阵的运算<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>2.2.1 加法运算：只有两个矩阵是同型矩阵，才能进行加法运算。（行列数分别相等）</li>
+<li>
+<p>2.2.2 加法运算满足的运算规律：</p>
+<ol>
+<li>交换律：<span class="arithmatex">\(A+B= B+ A\)</span></li>
+<li>结合律:<span class="arithmatex">\((A+B) + C = A + (B + C)\)</span></li>
+<li>零矩阵：对于任意矩阵，<span class="arithmatex">\(A + O= A=O+A\)</span>（O与A同型）</li>
+<li>负矩阵：对任意矩阵<span class="arithmatex">\(A=(a_{ij})\)</span>，可定义负矩阵<span class="arithmatex">\(- A= (-a_{ij})\)</span>，称为<span class="arithmatex">\(A\)</span>的负矩阵，有<span class="arithmatex">\(A+(-A) = O\)</span></li>
+<li>由此可以定义矩阵的减法：<span class="arithmatex">\(A- B= A+ (-B)\)</span></li>
+</ol>
+</li>
+<li>
+<p>2.2.3 矩阵的数乘运算：<span class="arithmatex">\(kA = (ka_{ij})_{m \times n}\)</span>。即数k和矩阵A的乘积是k乘以矩阵A的每个元素所得的矩阵。</p>
+</li>
+<li>2.2.4 矩阵的加法和数乘运算统称矩阵的<strong>线性运算</strong>，他们满足如下规律：<ol>
+<li>结合率：<span class="arithmatex">\((kl)A = k(la)\)</span></li>
+<li>分配律：<span class="arithmatex">\(k(A + B) = kA + kB, (k + l)A = kA + lA\)</span>。其中<span class="arithmatex">\(k,l\)</span>均为实数，<span class="arithmatex">\(A，B\)</span>均为<span class="arithmatex">\(m \times n\)</span>矩阵</li>
+<li><span class="arithmatex">\(1 \cdot A = A ; 0 \cdot A = O\)</span></li>
+<li>-1与矩阵A的乘积结果是A的负矩阵- A</li>
+</ol>
+</li>
+<li>2.2.5 方阵的数乘和行列式：已知<span class="arithmatex">\(A\)</span>是<span class="arithmatex">\(n\)</span>阶方阵，<span class="arithmatex">\(k\)</span>为任意数，则有<span class="arithmatex">\(|kA| = k^n|A|\)</span></li>
+<li>
+<p>2.2.6 矩阵的乘法：</p>
+<ul>
+<li>矩阵和矩阵相乘，不存在交换律</li>
+<li>如果矩阵<span class="arithmatex">\(AB\)</span>满足<span class="arithmatex">\(AB= BA\)</span>，那么称<span class="arithmatex">\(A\)</span>，<span class="arithmatex">\(B\)</span>是可交换的。单位矩阵和数量矩阵与任何同阶矩阵都是可交换的。</li>
+<li>矩阵和矩阵相乘<strong>不存在消去律：</strong><blockquote>
+<p><span class="arithmatex">\(AB = O\)</span>，未必可推出<span class="arithmatex">\(A=0\)</span>或<span class="arithmatex">\(B=0\)</span>；<span class="arithmatex">\(AC=BC, C \neq O\)</span>,也未必能推出<span class="arithmatex">\(A= B\)</span>，</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>2.2.7 矩阵乘法的运算规律：</p>
+<ul>
+<li>结合率：<span class="arithmatex">\((AB)C = A(BC)\)</span></li>
+<li>数乘结合律：<span class="arithmatex">\(k(AB) = (kA)B = A(kB)\)</span>，<span class="arithmatex">\(k\)</span>为数量。</li>
+<li>分配律：<span class="arithmatex">\(A(B+C) = AB+AC;(B+C)A = BA+CA\)</span></li>
+</ul>
+</li>
+<li>
+<p>2.2.8 方阵的乘法、幂、矩阵多项式：</p>
+</li>
+<li>
+<p>2.2.9 $|AB| = |A||B| $</p>
+<blockquote>
+<p>推广：<span class="arithmatex">\(|A_1A_2A_3...A_n| = |A_1||A_2||A_3|...|A_n|\)</span></p>
+</blockquote>
+</li>
+<li>
+<p>2.2.10 转置矩阵的性质</p>
+<ol>
+<li>(A<sup T="T">{T})</sup> = A, |A^{T} | = |A|</li>
+<li></li>
+</ol>
+</li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2023 14:49:48</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2023 02:16:05</span>
+      
+    
+  </small>
+</div>
 
 
 

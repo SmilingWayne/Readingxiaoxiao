@@ -4742,63 +4742,76 @@
 
 <hr />
 <p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black"><strong>要求</strong></font></p>
-<p><font size=4 color = "grey">输入一个字符串表示的代数式，输出计算结果</font></p>
+<p>输入一个字符串表示的代数式，输出计算结果</p>
 <p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black"><strong>特性和功能</strong></font></p>
-<p>🟪 <font size=4 color = "grey">支持 <span class="arithmatex">\(+ - \times \div\)</span>， 支持乘方运算、三角函数、自然对数、指数函数计算</font></p>
-<p>🟩 <font size=4 color = "grey">保证运算符优先级、括号优先级，可以处理多余括号</font></p>
-<p>🟧 <font size=4 color = "grey">递归法支持嵌套运算</font></p>
-<p>🟦 <font size=4 color = "grey">支持正负数计算</font></p>
+<p>🟪 支持 <span class="arithmatex">\(+ - \times \div\)</span>， 支持乘方运算、三角函数、自然对数、指数函数计算</p>
+<p>🟩 保证运算符优先级、括号优先级，可以处理多余括号</p>
+<p>🟧 递归法支持嵌套运算</p>
+<p>🟦 支持正负数计算</p>
 <p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black"><strong>具体实现</strong></font></p>
-<p>🔴 <font size=4 color = "grey">递归处理函数嵌套</font></p>
-<p>🟡 <font size=4 color = "grey">堆(Stack)+优先性判断处理具体计算</font></p>
+<p>🔴 递归处理函数嵌套</p>
+<p>🟡 堆(Stack)+优先性判断处理具体计算</p>
 <p>❌ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" ><strong>尚未完成的部分</strong></font></p>
-<p>☑️  <font size=4 color = "grey">几个其他常用科学计算函数，例如开方、阶乘、任意底数的对数、反三角函数等</font></p>
-<p>☑️  <font size=4 color = "grey">异常情况检测（分母0、对数&lt;0等情况的检查、提示、字符串是否合法）、可视化</font></p>
-<h1>日历图可视化步骤</h1>
+<p>☑️  几个其他常用科学计算函数，例如开方、阶乘、任意底数的对数、反三角函数等</p>
+<p>☑️  异常情况检测（分母0、对数&lt;0等情况的检查、提示、字符串是否合法）、可视化</p>
+<h2>日历图可视化步骤</h2>
 
-<p>✳️ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>小记录</strong></font></p>
+<p>✳️ <span class="arithmatex">\(\quad\)</span><strong>小记录</strong></p>
 <p><font size = 4 color = 'grey' face = "HEI">这是半年前一次小的尝试，当时提取微信聊天记录做了一些分析，整理时候发现不少可以用的东西，用笔记记录一下。当然了为了减少个人信息泄露，数据已经做了随机处理。不过模板是可以直接套用的。</font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>数据预处理</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">整理出聊天记录，利用时间序列数据清洗方法，得到每一天聊天数量，存储为结构化数据。</font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>Python可视化</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">借助可交互可视化包<font  color = "Purple"><code>Pyecharts</code></font>绘制日历图</font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>Pyecharts特性</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">比较适合做注入网站动态可视化、用户大数据界面等，但是不大适合用作科研制图，操作不算困难，有中文文档📁。</font></p>
-<p><font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font></p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>数据预处理</strong></p>
+<p>整理出聊天记录，利用时间序列数据清洗方法，得到每一天聊天数量，存储为结构化数据。</p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>Python可视化</strong></p>
+<p>借助可交互可视化包<font  color = "Purple"><code>Pyecharts</code></font>绘制日历图</p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>Pyecharts特性</strong></p>
+<p>比较适合做注入网站动态可视化、用户大数据界面等，但是不大适合用作科研制图，操作不算困难，有中文文档📁。</p>
+<p>具体代码附在后一张图上。</p>
 <p><br></p>
 <h2>模板注释</h2>
 
-<p>✳️ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>小记录</strong></font></p>
+<p>✳️ <span class="arithmatex">\(\quad\)</span><strong>小记录</strong></p>
 <p><font size = 4 color = 'grey' face = "HEI">从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</font></p>
-<p>🟪 <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>算法</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</font></p>
-<p>🧡 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>线性回归Linear Regression</strong></font></p>
-<p>💜 &nbsp;  <font size=4 color = "grey" face = "HEI"><strong>支持向量机SVM</strong></font></p>
-<p>💚 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>朴素贝叶斯Naive Bayes</strong></font></p>
-<p>💛 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>K近邻算法KNN</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI"></font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>Matplotlib可视化</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>备注</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</font></p>
-<p><font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font></p>
+<p>🟪 <span class="arithmatex">\(\quad\)</span><strong>算法</strong></p>
+<p>本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</p>
+<p>🧡 &nbsp; <strong>线性回归Linear Regression</strong></p>
+<p>💜 &nbsp;  <strong>支持向量机SVM</strong></p>
+<p>💚 &nbsp; <strong>朴素贝叶斯Naive Bayes</strong></p>
+<p>💛 &nbsp; <strong>K近邻算法KNN</strong></p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>Matplotlib可视化</strong></p>
+<p>代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>备注</strong></p>
+<p>代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</p>
+<p>具体代码附在后一张图上。</p>
 <p><br></p>
 <h2>模板注释</h2>
 
-<p>✳️ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>小记录</strong></font></p>
-<p><font size = 4 color = 'grey' face = "HEI">从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</font></p>
-<p>🟪 <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>算法</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</font></p>
-<p>🧡 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>线性回归Linear Regression</strong></font></p>
-<p>💜 &nbsp;  <font size=4 color = "grey" face = "HEI"><strong>支持向量机SVM</strong></font></p>
-<p>💚 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>朴素贝叶斯Naive Bayes</strong></font></p>
-<p>💛 &nbsp; <font size=4 color = "grey" face = "HEI"><strong>K近邻算法KNN</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI"></font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>Matplotlib可视化</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</font></p>
-<p>✅ <span class="arithmatex">\(\quad\)</span><font size=4 color = "Black" face = "Kai"><strong>备注</strong></font></p>
-<p><font size=4 color = "grey" face = "HEI">代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</font></p>
-<p><font size=4 color = "grey" face = "HEI">具体代码附在后一张图上。</font></p>
+<p>✳️ <span class="arithmatex">\(\quad\)</span><strong>小记录</strong></p>
+<p>从Github上找的一个合集，自己做了一点总结。主要针对分类问题而言的，稍微有条理一些。</p>
+<p>🟪 <span class="arithmatex">\(\quad\)</span><strong>算法</strong></p>
+<p>本笔记不会详细展开每一个算法本身，都是一些很著名的、需要仔细琢磨的算法。相关介绍都已经很多了。</p>
+<p>🧡 &nbsp; <strong>线性回归Linear Regression</strong></p>
+<p>💜 &nbsp;  <strong>支持向量机SVM</strong></p>
+<p>💚 &nbsp; <strong>朴素贝叶斯Naive Bayes</strong></p>
+<p>💛 &nbsp; <strong>K近邻算法KNN</strong></p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>Matplotlib可视化</strong></p>
+<p>代码里只写了画分类结果图，实际还有ROC曲线之类的，在前段时间LSTM的那个NLP笔记里记录了，可以移步查看。</p>
+<p>✅ <span class="arithmatex">\(\quad\)</span><strong>备注</strong></p>
+<p>代码仅仅展示了进行机器学习任务的一个基本流程和代码，具体的算法、数据、优化、调参等过程都是具体而有挑战的，本笔记仅供参考。</p>
+<p>具体代码附在后一张图上。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2023 14:49:48</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2023 23:43:15</span>
+      
+    
+  </small>
+</div>
 
 
 
