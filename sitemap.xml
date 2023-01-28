@@ -806,7 +806,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Poems/ClassicChinese/</loc>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Poems/ClassicChinese_ci/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Poems/ClassicChinese_qu/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Poems/ClassicChinese_shi/</loc>
          <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -906,11 +916,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/OperationsResearch1/</loc>
-         <lastmod>2023-01-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/Undergraduate_essay/</loc>
          <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
@@ -927,6 +932,11 @@
     </url>
     <url>
          <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/LinearAlgebra/Chapter2/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/Study/OR/</loc>
          <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1027,6 +1037,11 @@
     </url>
     <url>
          <loc>https://smilingwayne.github.io/Readingxiaoxiao/ToDo/ToRead/</loc>
+         <lastmod>2023-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://smilingwayne.github.io/Readingxiaoxiao/yan/</loc>
          <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
