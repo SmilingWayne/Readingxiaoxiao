@@ -19,7 +19,7 @@
         <link rel="next" href="../../Undergraduate_essay/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.7">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.8">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0d440cfe.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
@@ -4199,6 +4199,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -4449,6 +4451,74 @@
               
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_9" id="__nav_8_9_label" tabindex="0">
+          Python包推荐
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_9">
+          <span class="md-nav__icon md-icon"></span>
+          Python包推荐
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PythonPackages/PIPREQS/" class="md-nav__link">
+        pipreqs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PythonPackages/Matplotlib/" class="md-nav__link">
+        matplotlib技巧
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -4458,7 +4528,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10" checked>
       
       
         
@@ -4490,13 +4560,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_8_9" id="__nav_8_9_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_8_10" id="__nav_8_10_label" tabindex="0">
           供应链管理
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_9_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_8_9">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_10_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_8_10">
           <span class="md-nav__icon md-icon"></span>
           供应链管理
         </label>
@@ -4833,7 +4903,8 @@
 
 
 <h1 id="_1">确定最优周期服务水平<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
-<p>产品的可获得性水平可以通过周期服务水平(CSL，Cycle Service Level)或者完成率来衡量。已知某产品的需求分布以及需求大于、小于该值的概率，已知供过于求的损失和供不应求的利润损失，要求确定使得销售利润最大化的订货量和周期服务水平。这个模型就是经典的“报童模型”。</p>
+<p>产品的可获得性水平可以通过周期服务水平(CSL，Cycle Service Level)或者完成率来衡量。</p>
+<p>已知某产品的需求分布以及需求大于、小于该值的概率，已知供过于求的损失和供不应求的利润损失，要求确定使得销售利润最大化的订货量和周期服务水平。这个模型就是经典的“报童模型”。</p>
 <blockquote>
 <p>复习：CSL的定义：所有客户的需求都得到满足的补货周期所占的比例；补货周期，就是连续两次补货交付的时间间隔。
 供应链可以通过高水平的产品可获得性水平来提高响应能力并且吸引顾客，从而增加供应链的收入。但是较高的可获得性水平会要求保有大量的库存，这会导致供应链成本上升。所以供应链必须在产品的可获得性水平和库存成本之间取得平衡。</p>
@@ -4850,41 +4921,60 @@
 <h2 id="_3">推导<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>只有需求量大于<span class="arithmatex">\(O^{*}\)</span>，额外的一单位商品才能售出。这种情况概率为<span class="arithmatex">\(1 - CSL^{*}\)</span>。所以多订购一单位产品的预期收益<span class="arithmatex">\((1 - CSL^{*})(p - c)\)</span> ；多订一单位的预期成本<span class="arithmatex">\(CSL^{*}(c-s)\)</span>。 因此订货量从<span class="arithmatex">\(O^{*}\)</span>增加到<span class="arithmatex">\(O^{*} + 1\)</span>的预期边际贡献为<span class="arithmatex">\((1 - CSL^{*})(p - c) - CSL^{*}(c-s)\)</span></li>
-<li>由于最优周期服务水平下预期边际贡献一定等于0，可得<span class="arithmatex">\(CSL^{*} = P(需求量 \leq O^{*}) = \frac{p - c}{p - s} = \frac{C_u}{C_o + C_u}\)</span></li>
+<li>由于最优周期服务水平下预期边际贡献一定等于0，可得</li>
+<li>
+<div class="arithmatex">\[CSL^{*} = P(需求量 \leq O^{*}) = \dfrac{p - c}{p - s} = \dfrac{C_u}{C_o + C_u}  \tag{1}\]</div>
+</li>
 <li>这里的<span class="arithmatex">\(CSL^{*}\)</span> 称作临界分位点(Critical Fractile)。由此产生的最优订货量可以使得企业的利润实现最大化，如果销售季节的需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span>，标准差<span class="arithmatex">\(\sigma\)</span>，那么最优订货量：</li>
 </ul>
-<div class="arithmatex">\[ O^{*} = F^{-1}(CSL^{*}, \mu, \sigma) = NORMINV(CSL^{*}, \mu, \sigma)\]</div>
+<div class="arithmatex">\[ O^{*} = F^{-1}(CSL^{*}, \mu, \sigma) = NORMINV(CSL^{*}, \mu, \sigma) \tag{2}\]</div>
 <ul>
 <li>此时预期利润</li>
-<li>
-<p><span class="arithmatex">\((p-s)\mu F_S(\frac{O - \mu}{\sigma}) - (p-s)\sigma f_s(\frac{O - \mu}{\sigma}) - O(c-s)F(O,\mu, \sigma) + O(p-c)[1 - F(O, \mu, \sigma)]\)</span></p>
-</li>
-<li>
-<p>在Excel中表示即为：</p>
-</li>
 </ul>
-<div class="arithmatex">\[Profit = (p-s)\mu NORMDIST(\frac{O - \mu}{\sigma}, 0, 0, 1) - \]</div>
-<div class="arithmatex">\[ (p-s)\sigma NORMDIST(\frac{O - \mu}{\sigma}, 0, 1, 0) - \]</div>
-<div class="arithmatex">\[ O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)]\]</div>
+<div class="arithmatex">\[(p-s)\mu F_S(\dfrac{O - \mu}{\sigma}) - \]</div>
+<div class="arithmatex">\[(p-s)\sigma f_s(\dfrac{O - \mu}{\sigma}) - O(c-s)F(O,\mu, \sigma) +O(p-c)[1 - F(O, \mu, \sigma)] \tag{3}\]</div>
 <ul>
-<li>当订购O产品时，</li>
+<li>在Excel中表示即为：</li>
 </ul>
+<div class="arithmatex">\[Profit = (p-s)\mu NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 0, 1) - \]</div>
+<div class="arithmatex">\[(p-s)\sigma NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 1, 0) -\]</div>
+<div class="arithmatex">\[O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)]\]</div>
+<ul>
+<li>当订购O产品时，企业的库存是过多还是过少取决于需求，如果需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span>， 标准差<span class="arithmatex">\(\sigma\)</span>，那么销售季节结束时预期库存积压为：</li>
+</ul>
+<div class="arithmatex">\[(o - \mu)F_s(\dfrac{O  -\mu}{\sigma} )+ \sigma f_s\dfrac{O - \mu}{\sigma} \tag{4}\]</div>
+<ul>
+<li>
+<p>Excel表示为：
+<span class="arithmatex">\(<span class="arithmatex">\((O - \mu)NORMDIST \left[ (O-\mu)/\sigma,0,1,1\right] + \\ \sigma NORMDIST \left[(O-\mu)/\sigma,0,1,0\right]\)</span>\)</span></p>
+</li>
+<li>
+<p>销售季节结束时预期库存不足量：</p>
+</li>
+</ul>
+<div class="arithmatex">\[(\mu-O)\left[ 1 - F_s\dfrac{O - \mu}{\sigma} \right] + \sigma f_s(\dfrac{O - \mu}{\sigma}) \tag{5}\]</div>
+<ul>
+<li>Excel 表示：</li>
+</ul>
+<div class="arithmatex">\[(\mu - O)\{ 1 - NORMDIST \left[(O-\mu)/\sigma, 0,1,1 \right]\} \\ + \sigma NORMDIST \left[(O-\mu)/\sigma, 0,1,0 \right]\]</div>
 <h2 id="_4">案例<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
-<p>S Store正在考虑冬季销售多少套滑雪板。根据推测，需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span> = 350，标准差$\sigma $ = 100。每个滑雪板的成本 c =100美元，零售价 p = 250 美元，销售季节结束时，所有未售出的滑雪板将以85美元的价格处理掉。假设在销售季节每个滑雪板的库存持有成本为5美元，商店经理想要最大化预期利润，应该订购多少滑雪板？</p>
+<p>S Store正在考虑冬季销售多少套滑雪板。根据推测，需求服从正态分布，均值<span class="arithmatex">\(\mu\)</span> = 350，标准差<span class="arithmatex">\(\sigma\)</span> = 100。每个滑雪板的成本 c =100美元，零售价 p = 250 美元，销售季节结束时，所有未售出的滑雪板将以85美元的价格处理掉。假设在销售季节每个滑雪板的库存持有成本为5美元，商店经理想要最大化预期利润，应该订购多少滑雪板？</p>
 </li>
 <li>
 <p>上述标准差、均值不变的情况下，如果商店经理决定为销售季节采购450个滑雪板，那么该决策下的预期库存积压和预期库存不足的数量是多少？</p>
 </li>
 </ul>
+<p>1⃣️ 利用公式计算出<span class="arithmatex">\(C_u, C_o\)</span>和残值；借助公式(2)计算<span class="arithmatex">\(CSL^*\)</span>,公式(1)计算<span class="arithmatex">\(O^*\)</span>，而预期利润借助公式(3)得出。</p>
+<p>2⃣️ 代入公式(4)和(5)即可。</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 20, 2023 00:47:55</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 30, 2023 01:52:13</span>
       
         <br>
         Created:
