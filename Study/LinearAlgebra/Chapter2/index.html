@@ -4359,6 +4359,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    2.7 向量组的线性相关和线性无关
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4634,6 +4641,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_10" id="__nav_8_10_label" tabindex="0">
@@ -4823,7 +4832,21 @@
   
     <li class="md-nav__item">
       <a href="../../Supplychain/SupplyChain14/" class="md-nav__link">
-        最优可获得性水平的确定
+        报童模型I：最优可获得性水平的确定
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Supplychain/SupplyChain15/" class="md-nav__link">
+        报童模型II：沃尔玛案例分析
       </a>
     </li>
   
@@ -4921,6 +4944,13 @@
         <li class="md-nav__item">
   <a href="#26" class="md-nav__link">
     2.6 可逆矩阵和伴随矩阵
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    2.7 向量组的线性相关和线性无关
   </a>
   
 </li>
@@ -5133,7 +5163,51 @@ a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
      E_r &amp; O  \\ 
      O &amp; O_{(m-r) \times (n-r)}\\ 
     \end{pmatrix}\)</span></li>
-<li></li>
+<li>推论2.6.5 任意<span class="arithmatex">\(n\)</span>阶可逆矩阵<span class="arithmatex">\(A\)</span>均可以表示成有限个<span class="arithmatex">\(n\)</span>阶初等矩阵的乘积，进一步，任何一个可逆矩阵均可致经过初等变化变成单位阵，也可以只经过列的初等变换化为单位阵；<blockquote>
+<p>行/列的初等变换求解逆矩阵。</p>
+</blockquote>
+</li>
+<li>定理2.6.6 设<span class="arithmatex">\(A\)</span>是 <span class="arithmatex">\(m \times n\)</span>阶矩阵，<span class="arithmatex">\(P，Q\)</span>分别是<span class="arithmatex">\(m\)</span>阶、<span class="arithmatex">\(n\)</span>阶可逆矩阵，那么<span class="arithmatex">\(r(A) = r(PA) = r(AQ) = r(PAQ)\)</span></li>
+</ul>
+<h2 id="27">2.7 向量组的线性相关和线性无关<a class="headerlink" href="#27" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>Def. 2.7.1 （向量的线性组合、线性表示） 给定<span class="arithmatex">\(m\)</span>维向量组<span class="arithmatex">\(A\)</span>: <span class="arithmatex">\(\alpha_1, \alpha_2,..., \alpha_m\)</span>和同维向量 <span class="arithmatex">\(\beta\)</span>，如果存在一组数<span class="arithmatex">\(k_1,k_2,...,k_m\)</span>, 使得 <span class="arithmatex">\(\beta = k_1 \alpha_1 + k_2 \alpha_2 + ... + k_m \alpha_m\)</span> ，那么称向量 <span class="arithmatex">\(\beta\)</span> 是向量组 <span class="arithmatex">\(A\)</span> 的一个线性组合，或者说向量 <span class="arithmatex">\(\beta\)</span> 可以由向量组<span class="arithmatex">\(A\)</span>线性表示。向量 <span class="arithmatex">\(\beta\)</span> 可以由向量组A线性表示，也就是方程组 <span class="arithmatex">\(x_1 \alpha_1 + x_2 \alpha_2 + ...  +x_m \alpha_m = \beta\)</span> 有解。</p>
+</li>
+<li>
+<p>Def. 2.7.2 等价向量组：设有两个向量组<span class="arithmatex">\(A\)</span>：<span class="arithmatex">\(\alpha_1, \alpha_2, ..., \alpha_m\)</span>以及 <span class="arithmatex">\(B: \beta_1,\beta_2,...,\beta_l\)</span>, 若<span class="arithmatex">\(A\)</span>组中的==每一个向量==都可以由向量组<span class="arithmatex">\(B\)</span>线性表示，那么向量组<span class="arithmatex">\(A\)</span>可以由向量组<span class="arithmatex">\(B\)</span>线性表示，如果<span class="arithmatex">\(A、B\)</span>可以相互线性表示，那么<strong>称这两个向量组等价</strong>。</p>
+</li>
+<li>Def. 2.7.3 （线性相关和线性无关） 给一个向量组<span class="arithmatex">\(A\)</span>： <span class="arithmatex">\(\alpha_1, \alpha_2,..., \alpha_m\)</span>，如果==存在不全为0==的数 <span class="arithmatex">\(x_1, x_2, ...,x_m\)</span>使得 <span class="arithmatex">\(k_1 \alpha_1 + k_2 \alpha_2 + ... + k_m \alpha_m = \theta\)</span>，（<span class="arithmatex">\(\theta\)</span> 是指所有分量都是0的向量，零向量）， 那么就说==向量组<span class="arithmatex">\(A\)</span>是线性相关的==。<ul>
+<li>基本结论：1. 一个向量线性相关的充要条件是<span class="arithmatex">\(\alpha = \theta\)</span>；</li>
+<li>
+<ol>
+<li>包含零向量的向量组必定是线性相关的；</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>如果一个向量组的部分向量组线性相关，那么该向量组也线性相关；</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>如果一个向量组线性无关，那么其中任何一个部分向量组耶线性无关；</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>定理2.7.1 向量组<span class="arithmatex">\(A\)</span>: <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_m\)</span> (<span class="arithmatex">\(M \geq 2\)</span>)线性相关的充要条件是，向量组<span class="arithmatex">\(A\)</span>中至少有一个向量可以由其余 <span class="arithmatex">\(m - 1\)</span>个向量线性表示；</p>
+<ul>
+<li>逆否命题：向量组线性无关的充要条件是其中任何一个向量都不能由其他向量线性表示；</li>
+</ul>
+</li>
+<li>
+<p>定理2.7.2 设向量组<span class="arithmatex">\(A\)</span>: <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_r\)</span> 线性无关，而向量组<span class="arithmatex">\(A: \alpha_1, \alpha_2, ... , \alpha_r, \beta\)</span> 线性相关，那么向量 <span class="arithmatex">\(\beta\)</span> 一定可以由向量组<span class="arithmatex">\(A\)</span>线性表示，并且表示式是唯一的。</p>
+</li>
+<li>定理2.7.3 （利用矩阵的秩来判定向量组线性相关和线性无关） <span class="arithmatex">\(n\)</span>维列向量组<span class="arithmatex">\(A\)</span>: <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_r\)</span> 线性相关的充要条件是<span class="arithmatex">\(r(A) &lt; r\)</span>， 其中矩阵<span class="arithmatex">\(A = (\alpha_1 hspace{3pt} \alpha_2 ... \alpha_r)\)</span>。换言之，该向量组<span class="arithmatex">\(A\)</span> : <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_r\)</span> 线性无关的充要条件是<span class="arithmatex">\(r(A) = r\)</span>;</li>
+<li>推论 2.7.4 向量的个数<span class="arithmatex">\(m\)</span>大于其维数<span class="arithmatex">\(n\)</span>，那么向量组线性相关；</li>
+<li>推论 2.7.5 <span class="arithmatex">\(n\)</span>个<span class="arithmatex">\(n\)</span>维向量线性无关的充要条件是行列式不为0；</li>
 </ul>
 
   <hr>
@@ -5141,7 +5215,7 @@ a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 29, 2023 00:53:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 31, 2023 01:24:36</span>
       
         <br>
         Created:
