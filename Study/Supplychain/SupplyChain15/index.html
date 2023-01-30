@@ -4804,6 +4804,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    连续补货产品的期望周期服务水平
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4826,13 +4833,29 @@
 <h1 id="ii">报童模型 II<a class="headerlink" href="#ii" title="Permanent link">⚓︎</a></h1>
 <h2 id="_1">考虑数量折扣的报童模型<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>在供应链采购实际中，常常存在如下情景：对于服装等季节性产品，制造商在订货量超过某个数量后提供价格折扣，在产品生命周期的最后阶段也可能面临这样的情况。产品的未来需求不确定，采购员只有一次订购机会，在确定订货规模的时候，采购员必须考虑数量折扣。</p>
+<p>我们考虑如下模型：</p>
+<p>某零件零售商在制造商停产某零件前还有一次订货机会，这种零件的单位零售价是p，零售商的成本（如果没有折扣）是c，残值是s。如果零售商订购数量不少于K，那么制造商将提供折扣价c_d。零售商可以通过如下步骤确定最终订货量。</p>
+<div class="arithmatex">\[CSL^{*} = P(需求量 \leq O^{*}) = \dfrac{p - c}{p - s} = \dfrac{C_u}{C_o + C_u}  \tag{1}\]</div>
+<div class="arithmatex">\[ O^{*} = F^{-1}(CSL^{*}, \mu, \sigma) = NORMINV(CSL^{*}, \mu, \sigma) \tag{2}\]</div>
+<div class="arithmatex">\[Profit = (p-s)\mu NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 0, 1) - \]</div>
+<div class="arithmatex">\[(p-s)\sigma NORMDIST(\dfrac{O - \mu}{\sigma}, 0, 1, 0) -\]</div>
+<div class="arithmatex">\[O(c-s)NORMDIST(O,\mu, \sigma, 1) + O(p-c)[1 - NORMDIST(O, \mu, \sigma, 1)] \tag{3}\]</div>
+<ul>
+<li>1⃣️ 由<span class="arithmatex">\(C_o = c -s\)</span> 和<span class="arithmatex">\(C_u = p -c\)</span>，借助式(1)和(2) 计算没有折扣的情况下最优周期服务水平 <span class="arithmatex">\(CSL^{*}\)</span>和订货量<span class="arithmatex">\(O^{*}\)</span>。利用(3)计算订货量为<span class="arithmatex">\(O^{*}\)</span>时的预期利润；</li>
+<li>2⃣️ 由<span class="arithmatex">\(C_o = c_d -s\)</span> 和<span class="arithmatex">\(C_u = p -c_d\)</span> ，借助式(1)和(2) 计算有折扣的情况下最优周期服务水平 <span class="arithmatex">\(CSL^{*}_{d}\)</span>和订货量<span class="arithmatex">\(O^{*}_{d}\)</span>。如果<span class="arithmatex">\(O^{*}_{d} \geq  K\)</span>，就利用(3)计算订货量为<span class="arithmatex">\(O^{*}_d\)</span>的预期利润，如果<span class="arithmatex">\(O^{*}_{d} &lt;  K\)</span>，就利用(3)计算订货量为 K的预期利润。</li>
+<li>3⃣️ 如果第一步计算的利润较高，就订购<span class="arithmatex">\(O^{*}\)</span>单位，如果步骤二利润高，则在<span class="arithmatex">\(O^{*}_{d} \geq  K\)</span>时候订购<span class="arithmatex">\(O^{*}_d\)</span>单位，在<span class="arithmatex">\(O^{*}_{d} &lt; K\)</span>时订购<span class="arithmatex">\(K\)</span>单位。</li>
+</ul>
+<p><strong>案例：</strong>
+SparesRUs 需要决定一款零件的订购量。已知需求服从服从正态分布，均值150，标准差40，零售价200，未售出的零件残值为0.制造商给出如下策略：如果订货低于200，则每个装置售价50，如果订购至少200件，则售价45. 问应该订购几个零件？</p>
+<hr />
+<h2 id="_2">连续补货产品的期望周期服务水平<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 30, 2023 01:52:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 30, 2023 16:05:17</span>
       
         <br>
         Created:
