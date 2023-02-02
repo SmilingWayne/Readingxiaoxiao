@@ -16,10 +16,10 @@
         <link rel="prev" href="../Chapter1/">
       
       
-        <link rel="next" href="../../OR/">
+        <link rel="next" href="../Chapter3/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -4248,6 +4248,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
@@ -4362,12 +4366,53 @@
     2.7 向量组的线性相关和线性无关
   </a>
   
+    <nav class="md-nav" aria-label="2.7 向量组的线性相关和线性无关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#273" class="md-nav__link">
+    2.7.3 极大无关组和向量的秩
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter3/" class="md-nav__link">
+        chapter3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter4/" class="md-nav__link">
+        chapter4
+      </a>
     </li>
   
 
@@ -4397,6 +4442,8 @@
         
           
             
+          
+        
           
         
           
@@ -4463,6 +4510,20 @@
     <li class="md-nav__item">
       <a href="../../OR/Chapter3/" class="md-nav__link">
         Chapter3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OR/Chapter4/" class="md-nav__link">
+        Chapter4
       </a>
     </li>
   
@@ -4997,6 +5058,19 @@
     2.7 向量组的线性相关和线性无关
   </a>
   
+    <nav class="md-nav" aria-label="2.7 向量组的线性相关和线性无关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#273" class="md-nav__link">
+    2.7.3 极大无关组和向量的秩
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -5252,6 +5326,42 @@ a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
 <li>定理2.7.3 （利用矩阵的秩来判定向量组线性相关和线性无关） <span class="arithmatex">\(n\)</span>维列向量组<span class="arithmatex">\(A\)</span>: <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_r\)</span> 线性相关的充要条件是<span class="arithmatex">\(r(A) &lt; r\)</span>， 其中矩阵<span class="arithmatex">\(A = (\alpha_1 hspace{3pt} \alpha_2 ... \alpha_r)\)</span>。换言之，该向量组<span class="arithmatex">\(A\)</span> : <span class="arithmatex">\(\alpha_1, \alpha_2, ... \alpha_r\)</span> 线性无关的充要条件是<span class="arithmatex">\(r(A) = r\)</span>;</li>
 <li>推论 2.7.4 向量的个数<span class="arithmatex">\(m\)</span>大于其维数<span class="arithmatex">\(n\)</span>，那么向量组线性相关；</li>
 <li>推论 2.7.5 <span class="arithmatex">\(n\)</span>个<span class="arithmatex">\(n\)</span>维向量线性无关的充要条件是行列式不为0；</li>
+<li>推论 2.7.6 设A = (a_{ij})_{ m \times n}的秩r(A) = r \leq m，而且A的某列（行）所组成的矩阵含有不等于零的r阶子式，那么这r个列（行）向量线性无关。</li>
+</ul>
+<h3 id="273">2.7.3 极大无关组和向量的秩<a class="headerlink" href="#273" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>
+<p>Def. 2.7.4 极大无关组 设<span class="arithmatex">\(\alpha_1, \alpha_2, ..., \alpha_r\)</span>是某一个组的部分组，满足1⃣️ <span class="arithmatex">\(\alpha_1, \alpha_2,...,\alpha_r\)</span> 线性无关；2⃣️ 在向量组中任取向量 <span class="arithmatex">\(\alpha_1\)</span>，向量组<span class="arithmatex">\(\alpha_1，\alpha_2,..,\alpha_r,\alpha\)</span> 都线性无关，那么称向量组<span class="arithmatex">\(\alpha_1，\alpha_2,..,\alpha_r,\alpha\)</span>，简称极大无关组。</p>
+<blockquote>
+<p>由定义可知，仅含有零向量的向量组没有极大线性无关组，而一个线性无关的向量组的极大无关组就是本身；</p>
+</blockquote>
+</li>
+<li>
+<p>Def. 2.7.7 设<span class="arithmatex">\(\alpha_{i1}, \alpha_{i2},...,\alpha_{ir}\)</span>是向量组 <span class="arithmatex">\(\alpha_1, \alpha_2,...,\alpha_m\)</span>的一个极大线性无关组，那么向量组 <span class="arithmatex">\(\alpha_1, \alpha_2,...,\alpha_m\)</span>中任一向量均可由 <span class="arithmatex">\(\alpha_{i1},\alpha_{i2},...,\alpha_{ir}\)</span>线性表示，而且表示法唯一。</p>
+</li>
+<li>推论2.7.8 向量组与它的任意一个极大线性无关组等价；</li>
+<li>推论2.7.9 一个向量组的各个极大无关组之间是等价的；</li>
+<li>
+<p>推论2.7.10 两个向量组等价的充要条件是一组的一个极大无关组和另一组的一个极大无关组等价；</p>
+</li>
+<li>
+<p>定理2.7.11 一个向量组的各个极大无关组所含向量的个数相同。</p>
+</li>
+<li>
+<p>Def. 2.7.5 向量的秩 向量组<span class="arithmatex">\(A:\alpha_1,\alpha_2,...,\alpha_m\)</span>的一个极大无关组所含向量的个数<strong>定义为该向量组的秩</strong>，记为<span class="arithmatex">\(r \{\alpha_1, \alpha_2,...,\alpha_m \}\)</span>.规定仅含零向量的向量组的秩为0.</p>
+</li>
+<li>
+<p>定理2.7.12 设<span class="arithmatex">\(A\)</span>:<span class="arithmatex">\(\alpha_1,\alpha_2,...,\alpha_m\)</span>；<span class="arithmatex">\(B\)</span>: <span class="arithmatex">\(\beta_1, \beta_2,...,\beta_n\)</span> 是两个同维数的向量组，若向量组A可由向量组B线性表示，那么必有$r { \alpha_1, \alpha_2,...,\alpha_m } \leq r { \beta_1, \beta_2, ..., \beta_n } $，进一步有，等价的向量组必有相同的秩；</p>
+</li>
+<li>
+<p>定理2.7.13 任一矩阵的秩和列秩、行秩均相等;</p>
+</li>
+<li>定理2.7.14 <ol>
+<li><span class="arithmatex">\(r(A + B) \leq r(A) + r(B)\)</span></li>
+<li><span class="arithmatex">\(r(AB) \leq min \left\{ r(A), r(B) \right\}\)</span>;</li>
+<li>如果<span class="arithmatex">\(A\)</span>,<span class="arithmatex">\(B\)</span>均为<span class="arithmatex">\(n\)</span>阶方阵，那么<span class="arithmatex">\(r(AB) \geq r(A) + r(B) - n\)</span></li>
+</ol>
+</li>
 </ul>
 
   <hr>
@@ -5259,7 +5369,7 @@ a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 31, 2023 01:24:36</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 2, 2023 23:43:15</span>
       
         <br>
         Created:
@@ -5345,7 +5455,7 @@ a_{n1} &amp; a_{n2} &amp; \cdots  &amp; a_{nn} \\
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6df46069.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       

@@ -19,7 +19,7 @@
         <link rel="next" href="../Chapter2/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -4246,6 +4246,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
@@ -4288,6 +4292,34 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinearAlgebra/Chapter3/" class="md-nav__link">
+        chapter3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinearAlgebra/Chapter4/" class="md-nav__link">
+        chapter4
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -4314,6 +4346,8 @@
         
           
             
+          
+        
           
         
           
@@ -4384,10 +4418,23 @@
     模型和解
   </a>
   
+    <nav class="md-nav" aria-label="模型和解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    图解法：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     单纯形法
   </a>
   
@@ -4424,6 +4471,20 @@
     <li class="md-nav__item">
       <a href="../Chapter3/" class="md-nav__link">
         Chapter3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter4/" class="md-nav__link">
+        Chapter4
       </a>
     </li>
   
@@ -4914,10 +4975,23 @@
     模型和解
   </a>
   
+    <nav class="md-nav" aria-label="模型和解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    图解法：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     单纯形法
   </a>
   
@@ -4985,23 +5059,27 @@
 <li>基本可行解(Basic Feasible Solution)：满足非负约束条件（1-10）的基本解；</li>
 <li>最优基本可行解(Basic Feasible Solution)：使目标函数(1-8)达到最大的基本可行解</li>
 <li>最优基（Optimal Basis)：最优基本可行解对应的基；</li>
-<li>凸集(Convex Set):设<span class="arithmatex">\(x_1,x_2 \in x\)</span> 是集合S内的任意两点，如果对于任意的<span class="arithmatex">\(x = \alpha x_1 + (1-\alpha)x_2, 0 \leq \alpha \leq 1\)</span>有<span class="arithmatex">\(x \in S\)</span>，那么集合S就是凸集；</li>
-<li>凸集的顶点（极点）：</li>
+<li>凸集(Convex Set):设<span class="arithmatex">\(x_1,x_2 \in x\)</span> 是集合S内的任意两点，如果对于任意的<span class="arithmatex">\(x = \alpha x_1 + (1-\alpha)x_2,  0 \leq \alpha \leq 1\)</span>有<span class="arithmatex">\(x \in S\)</span>，那么集合S就是凸集；（给定集合C，C中任意两点的连线仍在C中，那么C就是凸集；</li>
+<li>凸集的顶点（极点）：如果凸集C中不存在任何两个不同的点X_1,X_2，使得X在线段X_1X_2，就说X是凸集C的顶点。 </li>
 <li>两个凸集的交集仍然是凸集</li>
-<li>图解法：<ol>
+</ul>
+<h3 id="_2">图解法：<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
+<ol>
 <li>确定可行域</li>
-<li>画出目标函数等值域</li>
-<li>确定最优解 </li>
-</ol>
+<li>画出目标函数等值域，确定可行域</li>
+<li>
+<p>确定最优解 </p>
 </li>
-<li>线性规划解的<strong>三个基本定理：</strong><ul>
+<li>
+<p>线性规划解的<strong>三个基本定理：</strong></p>
+<ul>
 <li>若线性规划问题存在可行解，那么可行解是凸集；</li>
 <li>线性规划问题的基本可行解和可行域的顶点一一对应；</li>
 <li>如果线性规划问题有最优解，那么一定存在一个基本可行解是最优解。</li>
 </ul>
 </li>
-</ul>
-<h2 id="_2">单纯形法<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+</ol>
+<h2 id="_3">单纯形法<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <hr />
 <ul>
 <li>
@@ -5009,7 +5087,7 @@
 <ul>
 <li>迭代原理：先找到基本可行解，判断是否为最优解，如果不是，就转换到相邻的基本可行解，并且使得目标函数值不断增大，直到找到最优解；</li>
 <li>基的转换是在相邻基之间进行的，两个基本可行解之间有且仅有一基变量发生了变化，</li>
-<li>以最大化问题为例子，入基变量就是找到使得目标函数减小得最快的非基变量，也就是检验数最大的；出基变量就是最先因为资源受限降为0的基变量；<ul>
+<li>以最大化问题为例子，入基变量就是找到使得目标函数减小得最快（单位变动能创造最大收益的）的非基变量，也就是检验数最大的；出基变量就是原本基本可行解中最先因为资源受限降为0的基变量；<ul>
 <li>检验数：<span class="arithmatex">\(\sigma_{j} = (c^{T}_N - c^{T}_B B^{-1}N)_j\)</span>，如果线性规划问题要求极小值，那么当所有检验数<span class="arithmatex">\(\sigma_{j} \geq 0\)</span> 时候达到最优解。反之亦然。</li>
 </ul>
 </li>
@@ -5031,7 +5109,7 @@
 <ul>
 <li><strong>人工变量法</strong>：如果不能在系数矩阵中观察到单位矩阵，可以通过添加虚构的人工变量来构造单位矩阵。（人工变量的取值一定要是0，所以如果检验数<span class="arithmatex">\(\sigma_j \leq 0\)</span>，基变量中依然有人工变量并且不为0，那么原问题无可行解<ul>
 <li>大M法：在目标函数中的人工变量乘M（极大数）【不适用计算机运算】</li>
-<li>两阶段法：Step.1 目标函数为最小化“所有人工变量和”的线性规划问题，找到一个基本可行解（或者判断是否无可行解）；Step.2 去除人工变量，重新引入原问题的目标函数，利用第一阶段的解作为初始基本可行解</li>
+<li>两阶段法：Step.1 目标函数为最小化“所有人工变量和”(<span class="arithmatex">\(min -x_6-x_7\)</span>)的线性规划问题，找到一个基本可行解（或者判断是否无可行解）；Step.2 去除人工变量，重新引入原问题的目标函数，利用第一阶段的解作为初始基本可行解</li>
 </ul>
 </li>
 <li><strong>无可行解</strong>：在最优解中，人工变量必须为0，<u>判断一个线性规划问题无可行解的准则：在得到“最优基本可行解”时（以求解极大值问题为例，就是非基变量检验数都 <span class="arithmatex">\(\sigma_j \leq 0\)</span>)，如果基变量中依然含有非0的人工变量（两阶段中第一阶段目标函数不是0）。</u></li>
@@ -5039,6 +5117,11 @@
 <li><strong>无穷多最优解</strong>：如果所有检验数均满足条件，同时存在非基变量的检验数为0且<span class="arithmatex">\(a_{is} &gt;0\)</span>，那么此时的线性规划问题无穷多最优解；</li>
 <li><strong>退化和循环</strong>：基本可行解的基变量部分<span class="arithmatex">\(x_B = B^{-1}b\)</span>至少有一个分量等于0，此时称为基本可行解的退化，按照最小比值确定换出值时，会出现两者及以上相同比值；退化解出现是因为模型存在多余的约束条件，使得多个基本可行解对应同一个顶点。<ul>
 <li>Bland法则：若多个检验数大于0，就选择下标最小的变量进基；若<span class="arithmatex">\(\theta\)</span>出现两个或者两个以上的相同的最小比值，就选择下标最小的出基；</li>
+</ul>
+</li>
+<li><strong>修正单纯形法</strong>：<ul>
+<li>锁定主元，将其除以本身，系数列向量更新为<span class="arithmatex">\((0,0,...1,0,0..0)^{T}\)</span></li>
+<li>把这种转化展开到整个方程中，对迭代前后在基里的，系数列向量没有改变，出基变量改变影响不大。 </li>
 </ul>
 </li>
 </ul>
@@ -5054,13 +5137,17 @@
 </ul>
 </li>
 </ul>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>“线性”的含义：严格的比例、可叠加、可分性、确定性（所以整数规划是独立出来的）</p>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 28, 2023 01:29:38</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 2, 2023 23:43:15</span>
       
         <br>
         Created:
@@ -5146,7 +5233,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6df46069.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
