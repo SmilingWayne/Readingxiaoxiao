@@ -16,10 +16,10 @@
         <link rel="prev" href="../Chapter3/">
       
       
-        <link rel="next" href="../../Markdown/">
+        <link rel="next" href="../Chapter5/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
     
     
       
@@ -4356,6 +4356,8 @@
         
           
         
+          
+        
       
       
         
@@ -4487,10 +4489,78 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    4.5 指派问题
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 指派问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451" class="md-nav__link">
+    4.5.1 指派问题模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452" class="md-nav__link">
+    4.5.2 匈牙利法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453" class="md-nav__link">
+    4.5.3 非标准形式的指派问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    4.6 整数规划案例
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 整数规划案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461" class="md-nav__link">
+    4.6.1 配送系统设计
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter5/" class="md-nav__link">
+        Chapter5
+      </a>
     </li>
   
 
@@ -5005,6 +5075,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    4.5 指派问题
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 指派问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451" class="md-nav__link">
+    4.5.1 指派问题模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452" class="md-nav__link">
+    4.5.2 匈牙利法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453" class="md-nav__link">
+    4.5.3 非标准形式的指派问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    4.6 整数规划案例
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 整数规划案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461" class="md-nav__link">
+    4.6.1 配送系统设计
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5087,13 +5211,52 @@
 </ul>
 </li>
 </ul>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>待补充</p>
+</div>
+<h2 id="45">4.5 指派问题<a class="headerlink" href="#45" title="Permanent link">⚓︎</a></h2>
+<p>在实际当中会遇到这样的问题：有n项不同的工作要完成，恰好有n人（或者n台设备）可以分别完成其中一个工作，但是每个人完成各个项目的效率不一样，应该指派哪一个人去完成哪一个任务？这样的问题就是指派问题。</p>
+<h3 id="451">4.5.1 指派问题模型<a class="headerlink" href="#451" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>设<span class="arithmatex">\(c_{ij} &gt; 0\)</span>，表示第i个人完成第j项任务的效率（时间成本等），定义决策变量如下：</li>
+</ul>
+<div class="arithmatex">\[x_{ij} = \hspace{4pt} \left\{ \begin{aligned} 1, 如果指派第i人做第j项工作\\ 0, 若不指派第i人做第j个工作  \\  i, j = 1,2,...,n  \end{aligned}  \right. $$
+$$min \hspace{4pt} z = \sum \limits^{n}_{i = 1} \sum \limits^{n}_{j = 1} c_{ij}x_{ij} \\
+s.t \hspace{4pt} \left\{ \begin{aligned} \sum \limits^{n}_{i=1} x_{ij} = 1 , i = 1,2,..,n \\ \sum \limits^{n}_{j=1} x_{ij} = 1, j = 1,2,..,n   \\  x_{ij} = 0 \hspace{4pt} or \hspace{4pt} 1  \end{aligned}  \right. \]</div>
+<p>数据主要集中在效益矩阵C中。</p>
+<ul>
+<li>性质：如果矩阵C的一行或者一列的各元素加上同一个实数得到矩阵B = (b_{ij})_{m \times n}，那么以B为系数矩阵的指派问题与原问题有相同的解。</li>
+</ul>
+<h3 id="452">4.5.2 匈牙利法<a class="headerlink" href="#452" title="Permanent link">⚓︎</a></h3>
+<ol>
+<li>变换系数矩阵c_{ij}为b_{ij}，使得在b_{ij}的各行各列中都出现0元素，也就是：<ol>
+<li>从c_{ij}的每行元素都减去该行的最小元素；</li>
+<li>从所得的新系数矩阵的每列元素中减去该列的最小元素</li>
+</ol>
+</li>
+<li>进行试指派，以寻求最优解。</li>
+<li>做最少的直线覆盖所有的0元素；</li>
+<li>变换矩阵b_{ij}以增加0元素；
+【详细补充】</li>
+</ol>
+<h3 id="453">4.5.3 非标准形式的指派问题<a class="headerlink" href="#453" title="Permanent link">⚓︎</a></h3>
+<p>一般处理方法是先将其转化成标准形式的指派问题，然后用匈牙利法求解。</p>
+<ol>
+<li>最大化指派问题——设最大化指派问题的系数矩阵C = (c_{ij})，其中最大元素为m。令矩阵B = (b_{ij}) = (m - c_{ij})，则以B为系数矩阵的最小化指派问题和以C为系数矩阵的最大化指派问题有相同的最优解（也就是同时取反，那么最大就是最小值）</li>
+<li>人数和事数不相等的指派问题：若人少事多，那么增加一些虚拟的“人”，其费用系数取0，若人多事少，那么添加一些虚拟的“事”，费用系数取0；</li>
+<li>一个人可以做几件事的指派问题，若一个人可以做几件事，就将该人化作几个“人”来接受指派，这几个人做同一件事的系数都一样；</li>
+<li>某事一定不能由某人做的指派问题——若某事一定不能由某人做，那么可以将对应的系数矩阵取足够大的整数M；</li>
+</ol>
+<h2 id="46">4.6 整数规划案例<a class="headerlink" href="#46" title="Permanent link">⚓︎</a></h2>
+<h3 id="461">4.6.1 配送系统设计<a class="headerlink" href="#461" title="Permanent link">⚓︎</a></h3>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 2, 2023 23:43:15</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 4, 2023 22:44:46</span>
       
         <br>
         Created:
@@ -5140,6 +5303,8 @@
   
     
     
+    
+    
       
       
     
@@ -5149,6 +5314,8 @@
   
     
     
+    
+    
       
       
     
@@ -5156,6 +5323,8 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
+    
+    
     
     
       
