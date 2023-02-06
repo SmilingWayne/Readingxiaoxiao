@@ -4990,6 +4990,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  
                   
 
   
@@ -4999,34 +5000,30 @@
 
 <p><font color = violet size = 5>静态方法</font></p>
 <hr />
-<p><font color = black size = 4>静态方法假定对于需求水平，需求趋势和季节性因素的估计不随着观察到的新需求而发生变动。如果我们假定需求的系统成分是混合型的，也就是: </font></p>
+<p>静态方法假定对于需求水平，需求趋势和季节性因素的估计不随着观察到的新需求而发生变动。如果我们假定需求的系统成分是混合型的，也就是: </p>
 <p><font color = grey size = 4>需求的系统成分 = (需求水平 + 需求趋势) <span class="arithmatex">\(\times\)</span> 季节性因素 </font></p>
-<p><font color = black size = 4>给定定义如下: 🤔</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(L\)</span>: <span class="arithmatex">\(t = 0\)</span>时期剔除季节因素后的需求估计</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(T\)</span>: 需求趋势估计(每个时期的上升或下降)</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(S_t\)</span>: 时期<span class="arithmatex">\(t\)</span>的季节性因素估计</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(D_t\)</span>: 时期<span class="arithmatex">\(t\)</span>观察到的实际需求</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(F_t\)</span>: 时期<span class="arithmatex">\(t\)</span>预测的需求</font></p>
-<p><font color = black size = 4>我们在<span class="arithmatex">\(t <span class="arithmatex">\(时期对\)</span>t + l\)</span>时期的需求预测可以用下面的公式表示 </font></p>
-<p>$ F_{t + l} = \left[ L + (t + l)T \right] S_{t + l} $</p>
+<p>给定定义如下: 🤔</font></p>
+<p><span class="arithmatex">\(L\)</span>: <span class="arithmatex">\(t = 0\)</span>时期剔除季节因素后的需求估计</p>
+<p><span class="arithmatex">\(T\)</span>: 需求趋势估计(每个时期的上升或下降)</p>
+<p><span class="arithmatex">\(S_t\)</span>: 时期<span class="arithmatex">\(t\)</span>的季节性因素估计</p>
+<p><span class="arithmatex">\(D_t\)</span>: 时期<span class="arithmatex">\(t\)</span>观察到的实际需求</p>
+<p><span class="arithmatex">\(F_t\)</span>: 时期<span class="arithmatex">\(t\)</span>预测的需求</p>
+<p>我们在<span class="arithmatex">\(t <span class="arithmatex">\(时期对\)</span>t + l\)</span>时期的需求预测可以用下面的公式表示 font&gt;</p>
+<p><span class="arithmatex">\(F_{t + l} = \left[ L + (t + l)T \right] S_{t + l}\)</span></p>
 <p><br></p>
 <p><font color = Dark size = 5>估计需求水平和需求趋势</font></p>
 <hr />
-<p><font color = black size = 4>我们记<span class="arithmatex">\(p\)</span> 表示每个季节周期持续的期数，例如，如果按照一年每季度周期观察需求，则周期<span class="arithmatex">\(p = 4\)</span></font></p>
-<p><font color = black size = 4>通过分类讨论<span class="arithmatex">\(p\)</span>的情况，可以给出静态条件下，剔除季节因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>的公式如下:</font></p>
+<p>我们记<span class="arithmatex">\(p\)</span> 表示每个季节周期持续的期数，例如，如果按照一年每季度周期观察需求，则周期<span class="arithmatex">\(p = 4\)</span></p>
+<p>通过分类讨论<span class="arithmatex">\(p\)</span>的情况，可以给出静态条件下，剔除季节因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>的公式如下:</p>
 <p><span class="arithmatex">\(p\)</span> 为偶数</p>
 <p><span class="arithmatex">\(\overline{D_t} = \left[ D_{t - p/2} + D_{t + p/2} + \sum^{t - 1+ (p/2)}_{i = t + 1 - p-2}{2D_i} \right] / 2p\)</span></p>
 <p><span class="arithmatex">\(p\)</span> 为奇数</p>
-<p>$\overline{D_t} = \sum^{t + (p-1)/2}_{i= t - (p-1)/2}{D_i} / p $</p>
-<p><font color = black size = 4>基于长期内需求变动，我们认为去除季节性因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>和时期<span class="arithmatex">\(t\)</span>之间存在线性关系</font></p>
+<p><span class="arithmatex">\(\overline{D_t} = \sum^{t + (p-1)/2}_{i= t - (p-1)/2}{D_i} / p\)</span></p>
+<p>基于长期内需求变动，我们认为去除季节性因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>和时期<span class="arithmatex">\(t\)</span>之间存在线性关系</p>
 <p><span class="arithmatex">\(\overline{D_t} = L + Tt\)</span></p>
-<p><font color = black size = 4>这里<span class="arithmatex">\(T\)</span>代表剔除季节性因素需求的增长率（增长趋势），<span class="arithmatex">\(L\)</span> 代表需求水平或者基期剔除季节性因素的需求。我们可以用线性回归来估计剔除季节性因素需求的<span class="arithmatex">\(L , T\)</span>。</font></p>
-<p><font color = black size = 4>此时实际需求<span class="arithmatex">\(D_t\)</span>和剔除季节性因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>之间的比例就是季节性因素的值。</font></p>
+<p>这里<span class="arithmatex">\(T\)</span>代表剔除季节性因素需求的增长率（增长趋势），<span class="arithmatex">\(L\)</span> 代表需求水平或者基期剔除季节性因素的需求。我们可以用线性回归来估计剔除季节性因素需求的<span class="arithmatex">\(L , T\)</span>。</p>
+<p>此时实际需求<span class="arithmatex">\(D_t\)</span>和剔除季节性因素的需求<span class="arithmatex">\(\overline{D_t}\)</span>之间的比例就是季节性因素的值。</p>
 <p><br>
-<br>
-<br>
-<br>
-<br>
 <br></p>
 <table>
 <thead>
@@ -5060,7 +5057,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 20, 2023 02:16:31</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 02:34:22</span>
       
         <br>
         Created:
@@ -5075,6 +5072,15 @@
 
 
                 
+
+  
+    <div class="md-source-date">
+      <small>
+          Authors: <span class='git-page-authors git-authors'><a href='mailto:593302270@qq.com'>xiaoxiao</a></span>
+      </small>
+    </div>
+  
+
               </article>
             </div>
           

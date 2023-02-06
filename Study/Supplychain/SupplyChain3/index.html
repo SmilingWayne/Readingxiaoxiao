@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -4702,9 +4707,73 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    自适应时间序列预测的四大步骤
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    移动平均法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    简单指数平滑法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holt" class="md-nav__link">
+    趋势修正后的指数平滑法(Holt模型)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#winter" class="md-nav__link">
+    趋势修正和季节修正后的指数平滑法(Winter模型)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4980,6 +5049,56 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    自适应时间序列预测的四大步骤
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    移动平均法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    简单指数平滑法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holt" class="md-nav__link">
+    趋势修正后的指数平滑法(Holt模型)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#winter" class="md-nav__link">
+    趋势修正和季节修正后的指数平滑法(Winter模型)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4990,6 +5109,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  
                   
 
   
@@ -4997,76 +5117,76 @@
 
 
 
+  <h1>时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6)</h1>
+
 <h2 color = darkpink>自适应时间序列预测</h2>
 
 <hr />
-<p><font color = black size = 4>在自适应时间序列预测方法下， 需求水平、需求趋势和季节因素在每一次观察到实际需求之后都要进行更新。</font></p>
-<p><font color = black size = 4>我们定义下面的概念：</font></p>
-<p><font color = black size = 4>$L_t $ 时期<span class="arithmatex">\(t\)</span>期末的预计需求水平</font></p>
-<p><font color = black size = 4>$T_t $ 时期<span class="arithmatex">\(t\)</span>期末的预计需求趋势</font></p>
-<p><font color = black size = 4>$S_t $ 时期<span class="arithmatex">\(t\)</span>的预计季节性因素</font></p>
-<p><font color = black size = 4>$F_t $ 时期<span class="arithmatex">\(t\)</span>的预期需求（在<span class="arithmatex">\(t - 1\)</span>时刻或者之前作出的）</font></p>
-<p><font color = black size = 4>$D_t $ 时期<span class="arithmatex">\(t\)</span>观察到的实际需求</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(E_t = F_t - D_t\)</span> 预测误差</font></p>
-<p><font color = black size = 4>使用自适应方法，在时刻<span class="arithmatex">\(t\)</span>对时期<span class="arithmatex">\(t - 1\)</span>利用<span class="arithmatex">\(t\)</span>的预计需求水平和需求趋势<span class="arithmatex">\(L_t, T_t\)</span> 进行预测，公式为<br><br><span class="arithmatex">\(F_{t + 1} = (L_t + lT_t)S_{t+1}\)</span></font>
-<br>
-<br>
-<br>
+<h2 id="_1">定义<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
+<p>在自适应时间序列预测方法下， 需求水平、需求趋势和季节因素在每一次观察到实际需求之后都要进行更新。</p>
+<p>我们定义下面的概念：</p>
+<p><span class="arithmatex">\(L_t\)</span> 时期<span class="arithmatex">\(t\)</span>期末的预计需求水平</p>
+<p><span class="arithmatex">\(T_t\)</span> 时期<span class="arithmatex">\(t\)</span>期末的预计需求趋势</p>
+<p><span class="arithmatex">\(S_t\)</span> 时期<span class="arithmatex">\(t\)</span>的预计季节性因素</p>
+<p><span class="arithmatex">\(F_t\)</span> 时期<span class="arithmatex">\(t\)</span>的预期需求（在<span class="arithmatex">\(t - 1\)</span>时刻或者之前作出的）</p>
+<p><span class="arithmatex">\(D_t\)</span> 时期<span class="arithmatex">\(t\)</span>观察到的实际需求</p>
+<p><span class="arithmatex">\(E_t = F_t - D_t\)</span> 预测误差</p>
+<p>使用自适应方法，在时刻<span class="arithmatex">\(t\)</span>对时期<span class="arithmatex">\(t - 1\)</span>利用<span class="arithmatex">\(t\)</span>的预计需求水平和需求趋势<span class="arithmatex">\(L_t, T_t\)</span> 进行预测，公式为<br><br><span class="arithmatex">\(F_{t + 1} = (L_t + lT_t)S_{t+1}\)</span>
 <br></p>
 <hr />
-<p><font color = darkpink size = 4 bold FACE = "KAI">自适应时间序列预测的四大步骤</font></p>
+<h2 id="_2">自适应时间序列预测的四大步骤<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <ol>
 <li>
-<p><font color = Navy size = 4><strong>初始化</strong>:根据给定数据计算<span class="arithmatex">\(L_0, T_0\)</span>, 和季节性因素<span class="arithmatex">\(S_1,S_2...S_p\)</span>的初始值。</font></p>
+<p><strong>初始化</strong>:根据给定数据计算<span class="arithmatex">\(L_0, T_0\)</span>, 和季节性因素<span class="arithmatex">\(S_1,S_2...S_p\)</span>的初始值。</p>
 </li>
 <li>
-<p><font color = Navy size = 4><strong>预测</strong>:给定时期<span class="arithmatex">\(t\)</span>的估计值，估计时期<span class="arithmatex">\(t + l\)</span>的需求。这里首先要用0时刻的需求水平等来预测时期1的需求</font></p>
+<p><strong>预测</strong>:给定时期<span class="arithmatex">\(t\)</span>的估计值，估计时期<span class="arithmatex">\(t + l\)</span>的需求。这里首先要用0时刻的需求水平等来预测时期1的需求</p>
 </li>
 <li>
-<p><font color = Navy size = 4><strong>估计误差</strong>:记录到时期<span class="arithmatex">\(t + 1\)</span>的实际需求<span class="arithmatex">\(D_{t + 1}\)</span>，然后计算时期<span class="arithmatex">\(t + 1\)</span>的预测误差<span class="arithmatex">\(E_{t + 1}\)</span>，也就是预测需求和实际需求之间的差距。即为<span class="arithmatex">\(E_{t + 1} = F_{t +1} - D_{t + 1}\)</span></font></p>
+<p><strong>估计误差</strong>:记录到时期<span class="arithmatex">\(t + 1\)</span>的实际需求<span class="arithmatex">\(D_{t + 1}\)</span>，然后计算时期<span class="arithmatex">\(t + 1\)</span>的预测误差<span class="arithmatex">\(E_{t + 1}\)</span>，也就是预测需求和实际需求之间的差距。即为<span class="arithmatex">\(E_{t + 1} = F_{t +1} - D_{t + 1}\)</span></p>
 </li>
-<li><font color = Navy size = 4><strong>修正误差</strong>:借助3的预测误差，修正需求水平<span class="arithmatex">\(L_{t + 1}\)</span>、需求趋势等的估计值。如果实际需求低于预测，那么最好将估计调低，否则需要相应地调高。</font></li>
+<li><strong>修正误差</strong>:借助3的预测误差，修正需求水平<span class="arithmatex">\(L_{t + 1}\)</span>、需求趋势等的估计值。如果实际需求低于预测，那么最好将估计调低，否则需要相应地调高。</li>
 </ol>
 <hr />
-<p><font color = black size = 4><strong>移动平均法</strong></font></p>
-<p><font color = black size = 4>当需求中没有观察到需求趋势或季节性因素的时候，采用移动平均法。</font></p>
-<p><font color = black size = 4>移动平均法把最近<span class="arithmatex">\(N\)</span>期的需求均值作为时期<span class="arithmatex">\(t\)</span>的需求估计水平，这就是<span class="arithmatex">\(N\)</span>的移动平均。方法如下:</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(L_t = (D_t + D_{t - 1} + ... + D_{t - N + 1} ) / N\)</span></font></p>
-<p><font color = black size = 4>此时我们对未来所有时期的预测都是一样的，都是基于当前对需求水平的预测。所以有:</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(F_{t + 1} = L_t, F_{t + n} = L_t\)</span></font></p>
-<p><font color = black size = 4>观察到时期<span class="arithmatex">\(t + l\)</span>的需求后，我们对估计值进行如下调整：</font></p>
-<p><font color = black size = 4>$L_{t + 1} = (D_{t + 1} + D_{t} + ... + D_{t - N + 2} ) /N $ </font></p>
-<p><font color = black size = 4>为了计算新的移动平均值，我们只需要加入最新观察值并剔除最早的观察之，修正的移动平均值用于下一阶段的预测。</font></p>
+<h2 id="_3"><strong>移动平均法</strong><a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<p>当需求中没有观察到需求趋势或季节性因素的时候，采用移动平均法。</p>
+<p>移动平均法把最近<span class="arithmatex">\(N\)</span>期的需求均值作为时期<span class="arithmatex">\(t\)</span>的需求估计水平，这就是<span class="arithmatex">\(N\)</span>的移动平均。方法如下:</p>
+<p><span class="arithmatex">\(L_t = (D_t + D_{t - 1} + ... + D_{t - N + 1} ) / N\)</span></p>
+<p>此时我们对未来所有时期的预测都是一样的，都是基于当前对需求水平的预测。所以有:</p>
+<p><span class="arithmatex">\(F_{t + 1} = L_t, F_{t + n} = L_t\)</span></p>
+<p>观察到时期<span class="arithmatex">\(t + l\)</span>的需求后，我们对估计值进行如下调整：</p>
+<p><span class="arithmatex">\(L_{t + 1} = (D_{t + 1} + D_{t} + ... + D_{t - N + 2} ) /N\)</span> </p>
+<p>为了计算新的移动平均值，我们只需要加入最新观察值并剔除最早的观察之，修正的移动平均值用于下一阶段的预测。</p>
 <p><br></p>
 <hr />
-<p><font color = black size = 4><strong>简单指数平滑法</strong></font></p>
-<p><font color = black size = 4>适用于需求没有可观察的需求趋势或者季节性因素的情况。需求水平的初始估计被当作历史数据的均值，给定时期1到时期<span class="arithmatex">\(n\)</span>的需求数据，我们有 <br>$L_0 = \frac{1}{n} \sum^{n}_{t = 1}{D_t} $</font></p>
-<p><font color = black size = 4>观察到时期<span class="arithmatex">\(t + 1 <span class="arithmatex">\(的需求\)</span>D_{t+ 1}\)</span>后， 我们对需求水平的估计值进行如下修正：<span class="arithmatex">\(L_{t+ 1} = \alpha D_{t + 1} + (1-\alpha)L_t\)</span>, 其中<span class="arithmatex">\(\alpha\)</span> 是需求水平的<strong>平滑指数</strong>，需求水平的修正值是观察到的时期<span class="arithmatex">\(t + 1\)</span>的需求(<span class="arithmatex">\(D_{t +1}\)</span>)和<span class="arithmatex">\(t\)</span>时期的需求水平<span class="arithmatex">\(L_t\)</span>的原有估计值的加权平均。因此我们可以将某个时期的需求水平表示为当前需求和上一期需求水平的函数</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(L_{t + l} = \sum^{t - l}_{n = 0}{\alpha(1-\alpha)^n D_{t + l - n} } + (1 - \alpha)^t D_l\)</span></font></p>
+<h2 id="_4"><strong>简单指数平滑法</strong><a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
+<p>适用于需求没有可观察的需求趋势或者季节性因素的情况。需求水平的初始估计被当作历史数据的均值，给定时期1到时期<span class="arithmatex">\(n\)</span>的需求数据，我们有 <br>$L_0 = \frac{1}{n} \sum^{n}_{t = 1}{D_t} $</p>
+<p>观察到时期<span class="arithmatex">\(t + 1 <span class="arithmatex">\(的需求\)</span>D_{t+ 1}\)</span>后， 我们对需求水平的估计值进行如下修正：<span class="arithmatex">\(L_{t+ 1} = \alpha D_{t + 1} + (1-\alpha)L_t\)</span>, 其中<span class="arithmatex">\(\alpha\)</span> 是需求水平的<strong>平滑指数</strong>，需求水平的修正值是观察到的时期<span class="arithmatex">\(t + 1\)</span>的需求(<span class="arithmatex">\(D_{t +1}\)</span>)和<span class="arithmatex">\(t\)</span>时期的需求水平<span class="arithmatex">\(L_t\)</span>的原有估计值的加权平均。因此我们可以将某个时期的需求水平表示为当前需求和上一期需求水平的函数</p>
+<p><span class="arithmatex">\(L_{t + l} = \sum^{t - l}_{n = 0}{\alpha(1-\alpha)^n D_{t + l - n} } + (1 - \alpha)^t D_l\)</span></p>
 <hr />
-<p><font color = black size = 4><strong>趋势修正后的指数平滑法(Holt模型)</strong></font></p>
-<p><font color = black size = 4>如果在上面讨论的方法基础上，再考虑系统成分中包括需求水平和需求趋势，但是不包括季节性因素。</font></p>
-<p><font color = black size = 4>通过在需求<span class="arithmatex">\(D_t\)</span>和时期<span class="arithmatex">\(t\)</span>之间进行线性回归，可以得到需求水平和需求趋势的估计值 :<span class="arithmatex">\(D_t = at + b\)</span> </font></p>
-<p><font color = black size = 4>在时期<span class="arithmatex">\(t\)</span>，给定需求水平<span class="arithmatex">\(L_t\)</span>和需求趋势<span class="arithmatex">\(T_t\)</span>的估计值，未来时期的预测表示为: <span class="arithmatex">\(F_{t + 1} = F_t + T_t\)</span></font></p>
-<p><font color = black size = 4>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_t + l\)</span>后，我们对需求水平和需求趋势的估计值如下修正：</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(L_{t + 1} = \alpha D_{t + 1} + (1-\alpha)(L_t + T_t)\)</span></font></p>
-<p><font color = black size = 4><span class="arithmatex">\(T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\)</span></font></p>
-<p><font color = black size = 4>其中<span class="arithmatex">\(\alpha\)</span>是需求水平的平滑指数，<span class="arithmatex">\(\beta\)</span>是需求趋势的平滑指数，两个参数取值都在0和1之间。在上面两个更新中，需求水平或需求趋势的修正的估计值都是观察之和原来的估计的加权平均。</font></p>
+<h2 id="holt"><strong>趋势修正后的指数平滑法(Holt模型)</strong><a class="headerlink" href="#holt" title="Permanent link">⚓︎</a></h2>
+<p>如果在上面讨论的方法基础上，再考虑系统成分中包括需求水平和需求趋势，但是不包括季节性因素。</p>
+<p>通过在需求<span class="arithmatex">\(D_t\)</span>和时期<span class="arithmatex">\(t\)</span>之间进行线性回归，可以得到需求水平和需求趋势的估计值 :<span class="arithmatex">\(D_t = at + b\)</span> </p>
+<p>在时期<span class="arithmatex">\(t\)</span>，给定需求水平<span class="arithmatex">\(L_t\)</span>和需求趋势<span class="arithmatex">\(T_t\)</span>的估计值，未来时期的预测表示为: <span class="arithmatex">\(F_{t + 1} = F_t + T_t\)</span></p>
+<p>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_t + l\)</span>后，我们对需求水平和需求趋势的估计值如下修正：</p>
+<p><span class="arithmatex">\(L_{t + 1} = \alpha D_{t + 1} + (1-\alpha)(L_t + T_t)\)</span></p>
+<p><span class="arithmatex">\(T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\)</span></p>
+<p>其中<span class="arithmatex">\(\alpha\)</span>是需求水平的平滑指数，<span class="arithmatex">\(\beta\)</span>是需求趋势的平滑指数，两个参数取值都在0和1之间。在上面两个更新中，需求水平或需求趋势的修正的估计值都是观察之和原来的估计的加权平均。</p>
 <p><br></p>
 <hr />
-<p><font color = black size = 4><strong>趋势修正和季节修正后的指数平滑法(Winter模型)</strong></font></p>
-<p><font color = black size = 4>如果在上面讨论的方法基础上，考虑系统成分中包括需求水平和需求趋势和季节性因素。</font></p>
-<p><font color = black size = 4>通过前一篇笔记发的静态时间序列预测方法，我们估计出需求水平<span class="arithmatex">\(L_0\)</span>，需求趋势<span class="arithmatex">\(T_0\)</span>和季节性因素(S_0, S_1, ... S_p)的初始值。</font></p>
-<p><font color = black size = 4>在<span class="arithmatex">\(t\)</span>时刻，给定需求水平<span class="arithmatex">\(L_t\)</span>，季节性因素<span class="arithmatex">\(S_t, S_{t + 1}... S_{t + p - 1}\)</span>，未来时期的预测可以表示为<br><span class="arithmatex">\(F+{t + 1} = (L_t + T_t) S_{t + 1}, F_{t + 1} = (L_t + lT_t)S_{t + 1}\)</span></font></p>
-<p><font color = black size = 4>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_t + l\)</span>后，进行如下修正：</font></p>
-<p><font color = black size = 4><span class="arithmatex">\(L_{t + 1} = \alpha D_{t + 1}/S_{t + 1} + (1-\alpha)(L_t + T_t)\)</span></font></p>
-<p><font color = black size = 4><span class="arithmatex">\(T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\)</span></font></p>
-<p><font color = black size = 4><span class="arithmatex">\(S_{t+p+1} = \gamma(D_{t+1} / L_{t+1}) + (1-\gamma)S_{t+1}\)</span></font></p>
-<p><font color = black size = 4>其中<span class="arithmatex">\(\alpha\)</span>是需求水平的平滑指数，<span class="arithmatex">\(\beta\)</span>是需求趋势的平滑指数，<span class="arithmatex">\(\gamma\)</span>是季节性因素的平滑指数。三个参数取值都在0和1之间。</font></p>
+<h2 id="winter"><strong>趋势修正和季节修正后的指数平滑法(Winter模型)</strong><a class="headerlink" href="#winter" title="Permanent link">⚓︎</a></h2>
+<p>如果在上面讨论的方法基础上，考虑系统成分中包括需求水平和需求趋势和季节性因素。</p>
+<p>通过前一篇笔记发的静态时间序列预测方法，我们估计出需求水平<span class="arithmatex">\(L_0\)</span>，需求趋势<span class="arithmatex">\(T_0\)</span>和季节性因素(S_0, S_1, ... S_p)的初始值。</p>
+<p>在<span class="arithmatex">\(t\)</span>时刻，给定需求水平<span class="arithmatex">\(L_t\)</span>，季节性因素<span class="arithmatex">\(S_t, S_{t + 1}... S_{t + p - 1}\)</span>，未来时期的预测可以表示为<br><span class="arithmatex">\(F+{t + 1} = (L_t + T_t) S_{t + 1}, F_{t + 1} = (L_t + lT_t)S_{t + 1}\)</span></p>
+<p>观察到时期<span class="arithmatex">\(t + 1\)</span>的需求<span class="arithmatex">\(D_t + l\)</span>后，进行如下修正：</p>
+<p><span class="arithmatex">\(L_{t + 1} = \alpha D_{t + 1}/S_{t + 1} + (1-\alpha)(L_t + T_t)\)</span></p>
+<p><span class="arithmatex">\(T_{t + 1} = \beta(L_{t + 1} - L_t) + (1-\beta)T_t\)</span></p>
+<p><span class="arithmatex">\(S_{t+p+1} = \gamma(D_{t+1} / L_{t+1}) + (1-\gamma)S_{t+1}\)</span></p>
+<p>其中<span class="arithmatex">\(\alpha\)</span>是需求水平的平滑指数，<span class="arithmatex">\(\beta\)</span>是需求趋势的平滑指数，<span class="arithmatex">\(\gamma\)</span>是季节性因素的平滑指数。三个参数取值都在0和1之间。</p>
 <p><br>
 <br></p>
-<p><font color = black size = 5><strong>时间序列模型</strong></font></p>
-<p><font color = black size = 4>前一篇笔记介绍了用于预测商品需求数量的四种模型，具体内容这里不重复，可以看第10篇笔记。</font></p>
+<p><strong>时间序列模型</strong></p>
+<p>前一篇笔记介绍了用于预测商品需求数量的四种模型，具体内容这里不重复，可以看第10篇笔记。</font></p>
 <table>
 <thead>
 <tr>
@@ -5093,40 +5213,32 @@
 </tr>
 </tbody>
 </table>
-<p><font color = black size = 5><strong>预测误差分析</strong></font></p>
-<p><font color = black size = 4>我们定义时期<span class="arithmatex">\(t\)</span>的预测误差<span class="arithmatex">\(E_t\)</span>为<span class="arithmatex">\(E_t = F_t - D_t\)</span>.也就是预测值和实际值的差。</font></p>
-<p><font color = black size = 4>用来度量时期<span class="arithmatex">\(t\)</span>的预测误差的一种方法是<strong>平均误差(MSE)</strong>，计算公式为<span class="arithmatex">\(MSE_t = \frac{1}{n}\sum^{n}_{t = 1}{E^{2}_t}\)</span>.也可以把<span class="arithmatex">\(n\)</span>替换成<span class="arithmatex">\(n - 1\)</span>。</font></p>
-<p><font color = black size = 4>由于MSE会放大那些比较大的误差（因为开方了），所以另一种评价方式是使用绝对误差<span class="arithmatex">\(A_t = | E_t |\)</span>，也就是误差的绝对值。</font></p>
-<p><font color = black size = 4>相对应的，平均绝对误差<span class="arithmatex">\(MAD_t = \frac{1}{n}\sum^{n}_{t = 1}{A_t}\)</span></font></p>
-<p><font color = black size = 4>假设随机成分服从正态分布，那么MAD可以用来估计随机成分的标准差。此时随机成分的标准差是$\sigma = 1.25 MAD $</font></p>
-<p><font color = black size = 4>还有一些其他误差评价方法比如乖离率(bias)偏差等等。这里不赘述。</font></p>
+<p><strong>预测误差分析</strong></p>
+<p>我们定义时期<span class="arithmatex">\(t\)</span>的预测误差<span class="arithmatex">\(E_t\)</span>为<span class="arithmatex">\(E_t = F_t - D_t\)</span>.也就是预测值和实际值的差。</p>
+<p>用来度量时期<span class="arithmatex">\(t\)</span>的预测误差的一种方法是<strong>平均误差(MSE)</strong>，计算公式为<span class="arithmatex">\(MSE_t = \frac{1}{n}\sum^{n}_{t = 1}{E^{2}_t}\)</span>.也可以把<span class="arithmatex">\(n\)</span>替换成<span class="arithmatex">\(n - 1\)</span>。</p>
+<p>由于MSE会放大那些比较大的误差（因为开方了），所以另一种评价方式是使用绝对误差<span class="arithmatex">\(A_t = | E_t |\)</span>，也就是误差的绝对值。</p>
+<p>相对应的，平均绝对误差<span class="arithmatex">\(MAD_t = \frac{1}{n}\sum^{n}_{t = 1}{A_t}\)</span></p>
+<p>假设随机成分服从正态分布，那么MAD可以用来估计随机成分的标准差。此时随机成分的标准差是<span class="arithmatex">\(\sigma = 1.25 MAD\)</span></p>
+<p>还有一些其他误差评价方法比如乖离率(bias)偏差等等。这里不赘述。</p>
 <hr />
-<p><font color = black size = 5><strong>案例分析（建议结合后面的图来看）</strong></font></p>
-<p><font color = black size = 4>根据上面的总结我们很容易看出，Winter模型能考虑季节因素也考虑需求变化，但是我们先把四种方法逐一尝试，看一下结果⚠️ 案例来源：《供应链管理：战略、计划与运作》</font></p>
-<p><font color = black size = 5><strong>移动平均法</strong></font></p>
-<p><font color = black size = 4>第一张图展示了移动平均法的效果。K列的TS处于<span class="arithmatex">\(\pm6\)</span>的范围内。说明预测结果不包含显著的偏离率。然而它MAD较大，有9000+，从图中可见，<span class="arithmatex">\(L_12 = 24500\)</span>，所以后续四个时期的估计值都是24500.此时的预测误差的标准差有12148.误差较大。</font></p>
-<p><font color = black size = 5><strong>简单指数平滑</strong></font></p>
-<p><font color = black size = 4>第二张图展示了简单指数平滑法(<span class="arithmatex">\(\alpha = 0.1\)</span>)。这里的参数可以具体调整。初始需求水平是需求均值22083。更新结果如图所示。同样具有较小的TS，但是MAD同样较大，超过了10000.按照这样计算，预测误差估计会达到12761.误差较大</font></p>
-<p><font color = black size = 5><strong>Holt模型</strong></font></p>
-<p><font color = black size = 4>首先对现有数据回归，得到<span class="arithmatex">\(L_0, T_0\)</span>的结果，我们设定<span class="arithmatex">\(\alpha  = 0.1, \beta = 0.2\)</span>，对现有的12个季度的每一个数据进行预测，更新需求水平，并动态地调整需求趋势。结果如图三所示。此时同样有较小的偏离率，MAD也有所下降，到8836左右，这意味着较小的标准差估计值（11045）并且获得了最新参数<span class="arithmatex">\(L_{12} = 30443, T_{12} = 1541\)</span>， 基于这两个参数可以获得未来的预测<br><span class="arithmatex">\(F_{13} = L_{12} + T_{12}, <span class="arithmatex">\(&lt;br&gt;\)</span>F_{14} = L_{12} + 2T_{12}\)</span></font></p>
-<p><font color = black size = 5><strong>Winter模型</strong></font></p>
-<p><font color = black size = 4>首先估计初始需求水平和初始需求趋势以及季节性因素，建立线性回归。然后利用Winter模型（<span class="arithmatex">\(\alpha  = 0.1, \beta = 0.2, \gamma = 0.1\)</span>，对现有的12个季度的每一个数据进行预测。在本例中，MAD降到1469，远低于其他方法。基于此可以获得未来的预测<br><span class="arithmatex">\(F_{13} = (L_{12} + T_{12})S_{13}, <span class="arithmatex">\(&lt;br&gt;\)</span>F_{14} = (L_{12} + 2T_{12})S_{14}\)</span>...</font></p>
-<p><font color = black size = 4>综上所述，团队采用Winter模型，预测结果为：第二季度11940，第三季度17579，第四季度30930，第二年第一季度44928。预测标准差是1836</font></p>
-<p><br>
-<br><br></p>
-<p><br>
-<br>
-<br>
-<br>
-<br>
-<br></p>
+<p><strong>案例分析（建议结合后面的图来看）</strong></p>
+<p>根据上面的总结我们很容易看出，Winter模型能考虑季节因素也考虑需求变化，但是我们先把四种方法逐一尝试，看一下结果⚠️ 案例来源：《供应链管理：战略、计划与运作》</p>
+<p><strong>移动平均法</strong></p>
+<p>第一张图展示了移动平均法的效果。K列的TS处于<span class="arithmatex">\(\pm6\)</span>的范围内。说明预测结果不包含显著的偏离率。然而它MAD较大，有9000+，从图中可见，<span class="arithmatex">\(L_12 = 24500\)</span>，所以后续四个时期的估计值都是24500.此时的预测误差的标准差有12148.误差较大。</p>
+<p><strong>简单指数平滑</strong></p>
+<p>第二张图展示了简单指数平滑法(<span class="arithmatex">\(\alpha = 0.1\)</span>)。这里的参数可以具体调整。初始需求水平是需求均值22083。更新结果如图所示。同样具有较小的TS，但是MAD同样较大，超过了10000.按照这样计算，预测误差估计会达到12761.误差较大</p>
+<p><strong>Holt模型</strong></p>
+<p>首先对现有数据回归，得到<span class="arithmatex">\(L_0, T_0\)</span>的结果，我们设定<span class="arithmatex">\(\alpha  = 0.1, \beta = 0.2\)</span>，对现有的12个季度的每一个数据进行预测，更新需求水平，并动态地调整需求趋势。结果如图三所示。此时同样有较小的偏离率，MAD也有所下降，到8836左右，这意味着较小的标准差估计值（11045）并且获得了最新参数<span class="arithmatex">\(L_{12} = 30443, T_{12} = 1541\)</span>， 基于这两个参数可以获得未来的预测<br><span class="arithmatex">\(F_{13} = L_{12} + T_{12} \\ F_{14} = L_{12} + 2T_{12}\)</span></p>
+<p><strong>Winter模型</strong></p>
+<p>首先估计初始需求水平和初始需求趋势以及季节性因素，建立线性回归。然后利用Winter模型（<span class="arithmatex">\(\alpha  = 0.1, \beta = 0.2, \gamma = 0.1\)</span>，对现有的12个季度的每一个数据进行预测。在本例中，MAD降到1469，远低于其他方法。基于此可以获得未来的预测<br><span class="arithmatex">\(F_{13} = (L_{12} + T_{12})S_{13}, <span class="arithmatex">\(&lt;br&gt;\)</span>F_{14} = (L_{12} + 2T_{12})S_{14}\)</span>...</p>
+<p>综上所述，团队采用Winter模型，预测结果为：第二季度11940，第三季度17579，第四季度30930，第二年第一季度44928。预测标准差是1836</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2023 23:43:15</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 02:34:22</span>
       
         <br>
         Created:
@@ -5141,6 +5253,15 @@
 
 
                 
+
+  
+    <div class="md-source-date">
+      <small>
+          Authors: <span class='git-page-authors git-authors'><a href='mailto:593302270@qq.com'>xiaoxiao</a></span>
+      </small>
+    </div>
+  
+
               </article>
             </div>
           

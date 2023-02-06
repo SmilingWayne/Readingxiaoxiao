@@ -19,7 +19,7 @@
     
     
       
-        <title>Chapter6 - 笑笑的站</title>
+        <title>动态规划 - 笑笑的站</title>
       
     
     
@@ -70,6 +70,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chapter6
+              动态规划
             
           </span>
         </div>
@@ -4961,6 +4966,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    6.1 多阶段决策问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    动态规划的基本概念和基本方程
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -4972,6 +5001,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  
                   
 
   
@@ -4979,14 +5009,40 @@
 
 
 
-
+<h1 id="_1">动态规划<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<h2 id="61">6.1 多阶段决策问题<a class="headerlink" href="#61" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>各阶段的方案选择称为<strong>决策</strong>；</li>
+<li>各个阶段的决策确定后，就构成一个决策序列，也就是<strong>策略</strong>；</li>
+<li>由于可选决策的不唯一性，这些相互联系的决策构成的策略就不止一个，这些策略构成一个集合，称<strong>策略集合</strong>；</li>
+<li>
+<p>在策略集合中选一个策略使得在预定的约束下达到最好的效果，这样的策略就是<strong>最优策略</strong>。</p>
+</li>
+<li>
+<p>例题：</p>
+<ul>
+<li>速运公司配送路线选择</li>
+<li>资源分配问题</li>
+<li>物流配送装箱问题</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">动态规划的基本概念和基本方程<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>把一个决策问题分为若干相互联系的阶段，称为”阶段变量“</li>
+<li>从第k个阶段到最后一个阶段的过程被称为k的后部子过程；</li>
+<li>状态：表示每个阶段开始时系统面临的自然状况和客观条件，是由系统本身决定的，反映系统的具体特征，描述过程的具体演变；</li>
+<li>状态变量：</li>
+<li>状态集合：</li>
+<li>作为动态规划的状态变量具有如下重要性质：既能描述过程演变特征，还能满足<strong>无后效性</strong>，马尔可夫性。</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 6, 2023 17:11:03</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 02:34:22</span>
       
         <br>
         Created:
@@ -5001,6 +5057,15 @@
 
 
                 
+
+  
+    <div class="md-source-date">
+      <small>
+          Authors: <span class='git-page-authors git-authors'><a href='mailto:593302270@qq.com'>xiaoxiao</a></span>
+      </small>
+    </div>
+  
+
               </article>
             </div>
           
