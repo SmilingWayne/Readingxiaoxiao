@@ -1298,6 +1298,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
@@ -1362,6 +1364,20 @@
     <li class="md-nav__item">
       <a href="../../../Philosophy/World_of_aristotle/" class="md-nav__link">
         亚里士多德的世界(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Philosophy/How_to_read/" class="md-nav__link">
+        如何阅读一本书
       </a>
     </li>
   
@@ -2385,6 +2401,8 @@
         
           
         
+          
+        
       
       
         
@@ -2429,6 +2447,20 @@
     <li class="md-nav__item">
       <a href="../../../Literature/Essay/Second_hand_time/" class="md-nav__link">
         二手时间
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Literature/Essay/Chongshen/" class="md-nav__link">
+        冲绳札记
       </a>
     </li>
   
@@ -2937,6 +2969,8 @@
         
           
         
+          
+        
       
       
         
@@ -3051,6 +3085,20 @@
     <li class="md-nav__item">
       <a href="../../../Literature/Novel/Rashomon/" class="md-nav__link">
         罗生门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Literature/Novel/Sympathatic/" class="md-nav__link">
+        同情者
       </a>
     </li>
   
@@ -4900,6 +4948,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
@@ -5118,6 +5168,20 @@
     <li class="md-nav__item">
       <a href="../../Supplychain/SupplyChain16/" class="md-nav__link">
         Excel进行供应链绩效模拟(Chapter_13.Appendix)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Supplychain/SupplyChain17/" class="md-nav__link">
+        提高供应链盈利能力的杠杆(Chapter_13.3)
       </a>
     </li>
   
@@ -5533,34 +5597,36 @@
 </blockquote>
 <ul>
 <li>
-<p>首先满足最优性，然后逐渐逼近可行性。最优性： 检验数\sigma_j ；可行性：右端项 \b_i；</p>
+<p>首先满足最优性，然后逐渐逼近可行性。最优性： 检验数<span class="arithmatex">\(\sigma_j\)</span> ；可行性：右端项 <span class="arithmatex">\(b_i\)</span>；</p>
 </li>
 <li>
-<p>1⃣️ 列出初始单纯形表，要求c_j - z_j 检验数小满足非正约束，也就是对偶问题为可行解，对b_i的值不做要求，但是</p>
+<p>1⃣️ 列出初始单纯形表，要求<span class="arithmatex">\(c_j - z_j\)</span> 检验数小满足非正约束，也就是对偶问题为可行解，对<span class="arithmatex">\(b_i\)</span>的值不做要求，但是</p>
 </li>
 <li>
-<p>2⃣️ 最优性判断(B^{-1}b)_{i} &lt; 0；</p>
+<p>2⃣️ 最优性判断<span class="arithmatex">\((B^{-1}b)_{i} &lt; 0\)</span>；</p>
 </li>
 <li>
-<p>确定出基变量：没有找到可行解，总存在 b_i &lt; 0，选择b_i中最小的，对应的变量x_r 就是出基变量；</p>
+<p>确定出基变量：没有找到可行解，总存在 <span class="arithmatex">\(b_i &lt; 0\)</span>，选择<span class="arithmatex">\(b_i\)</span>中最小的，对应的变量<span class="arithmatex">\(x_r\)</span> 就是出基变量；</p>
 </li>
-<li>确定入基变量，上一步确定了出基变量，为了确保下一表中出基变量r行基变量为正值，需要找对应<span class="arithmatex">\(a_{rj} &lt; 0 ( j = m + 1,...,n)\)</span>的非基变量</li>
+<li>确定入基变量，上一步确定了出基变量，为了确保下一表中出基变量<span class="arithmatex">\(r\)</span>行基变量为正值，需要找对应<span class="arithmatex">\(a_{rj} &lt; 0 ( j = m + 1,...,n)\)</span>的<strong>非基变量</strong></li>
 </ul>
-<div class="arithmatex">\[\theta = min { \dfrac{c_j - z_j}{a_{rj}} | a_{rj} &lt; 0} = \dfrac{c_s - z_s}{a_{rs} }\]</div>
-<ul>
-<li>如果所有的<span class="arithmatex">\(a_{rj} \geq 0\)</span>，那么线性规划问题没有可行解（因为b要从负数变成正，变号）；否则将选中变量当作入基变量</li>
-</ul>
+<div class="arithmatex">\[\theta = min \{ \dfrac{c_j - z_j}{a_{rj}} | a_{rj} &lt; 0 \} = \dfrac{c_s - z_s}{a_{rs} }\]</div>
+<blockquote>
+<p>注意，对偶单纯形是先确定出基变量，再入基，而单纯形法正相反！</p>
+<p>这里通过 <span class="arithmatex">\(\theta\)</span> 来保证每一次迭代后的<span class="arithmatex">\(b_i\)</span> 都是大于等于0的，就像是单纯形法中，利用<span class="arithmatex">\(\theta\)</span> 来保证每一次迭代后的检验数都是小于等于0的一样。</p>
+</blockquote>
 <div class="admonition tips">
 <p class="admonition-title">Tips</p>
-<p>也就是无论怎么让基变量增大，都无法让<span class="arithmatex">\(x_r\)</span>转换成非负，此时一定找不到可行解
+<p>也就是无论怎么让基变量增大，都无法让<span class="arithmatex">\(x_r\)</span>转换成非负，此时原问题一定找不到可行解，对偶问题目标函数值无界；
 <span class="arithmatex">\(\theta\)</span>，通过这个<span class="arithmatex">\(\theta\)</span>，保证每次迭代后都是<span class="arithmatex">\(\leq 0\)</span>的。</p>
 </div>
 <ul>
 <li>
 <p>由弱对偶性，对偶问题有可行解，那么原问题可能有可行解也可能无解；</p>
 <ul>
-<li>对新的基检查是否所有<span class="arithmatex">\(\b_i \geq 0\)</span></li>
+<li>对新的基检查是否所有<span class="arithmatex">\(b_i \geq 0\)</span></li>
 <li>如果是，那么原问题有可行解，CX = Y^{T}b，原问题和对偶问题均取到最优解；</li>
+<li>如果不是，先检查一下<span class="arithmatex">\(b_r\)</span>对应的所有的<span class="arithmatex">\(a_{rj}\)</span>，如果满足对任意<span class="arithmatex">\(a_{rj}\)</span> 都有 <span class="arithmatex">\(a_{rj} \geq 0\)</span>，那么线性规划问题没有可行解（因为b要从负数变成正，变号）；否则将选中变量当作入基变量，继续迭代；</li>
 </ul>
 </li>
 <li>
@@ -5573,7 +5639,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 4, 2023 22:44:46</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 10, 2023 00:00:43</span>
       
         <br>
         Created:
