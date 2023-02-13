@@ -19,7 +19,7 @@
         <link rel="next" href="../Chapter7/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
@@ -4743,6 +4743,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    连续背包
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5480,6 +5487,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    连续背包
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5624,6 +5638,9 @@
 <h2 id="64">6.4 离散确定性动态规划<a class="headerlink" href="#64" title="Permanent link">⚓︎</a></h2>
 <h2 id="65">6.5 应用举例<a class="headerlink" href="#65" title="Permanent link">⚓︎</a></h2>
 <h3 id="651">6.5.1 可回收资源的再分配问题<a class="headerlink" href="#651" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li>可回收资源的多期分配：</li>
+</ul>
 <h3 id="652-">6.5.2 生产-存储问题<a class="headerlink" href="#652-" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>已知工厂未来几个月的需求，工厂每个月开工有固定成本，生产单位有一个产品成本；每个月的单位库存成本也已知，库存有上限，计划开始和结束时都有库存为0，制定生产计划使得总费用最小。</li>
@@ -5634,12 +5651,20 @@
 <li>每年的决策有两个：更新 / 不更新，状态就是机器“当前”的使用年限。</li>
 </ul>
 <h3 id="654">6.5.4 复合系统可靠性问题<a class="headerlink" href="#654" title="Permanent link">⚓︎</a></h3>
+<p>某个机器工作系统由n个不同的元件串联成，只要一个失灵，所有的都失灵：为了提高可靠性，每个部件上都有备用件，可以提高对应元件的可靠性，但是会导致成本上升。需要在成本上限的约束下，找到选用各种零件的最优个数，使得可靠性最高。</p>
+<p>实例：3个零件，可靠性分别为：0.9，0.8，0.5， 单位成本分别为：30，15，20，成本约束是105，求可靠性最优的方案。</p>
+<details class="notes 解答">
+<summary>Notes</summary>
+<p>有多少个元件就有多少个决策阶段，所以k = 3个决策阶段，决策变量x_k 表示第k个元件的数量，f_k(s_k)表示k原件到n元件组成系统的最大可靠性。第一个阶段，决定装置1，：<span class="arithmatex">\(f_1(105) = \mathop{\max} \{ 0.9 * f(75), 0.99 * f(45) , 0.999 * f(15) \}\)</span>, 同理再计算f(75 )等等等，递推到找到最优结果。
+<font color = red>这里的指标函数是连乘性的</font></p>
+</details>
 <h3 id="655">6.5.5 生产排序问题<a class="headerlink" href="#655" title="Permanent link">⚓︎</a></h3>
 <h3 id="656">6.5.6 背包问题🎒 🌟🌟<a class="headerlink" href="#656" title="Permanent link">⚓︎</a></h3>
 <h4 id="0-1">0-1背包<a class="headerlink" href="#0-1" title="Permanent link">⚓︎</a></h4>
 <ul>
 <li>固定的一个包，有n个物品，对应有重量和价值，问怎么装让总价值最大？</li>
 </ul>
+<h4 id="_3">连续背包<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h4>
 <h3 id="657">6.5.7 订购和销售问题<a class="headerlink" href="#657" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>既要决定生产多少，还要决定销售多少。</li>
@@ -5656,7 +5681,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 10, 2023 00:00:43</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 13, 2023 22:09:16</span>
       
         <br>
         Created:
@@ -5759,7 +5784,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6df46069.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
