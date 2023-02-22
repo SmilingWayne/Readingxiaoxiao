@@ -1,0 +1,7172 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="SmilingWayne">
+      
+      
+        <link rel="canonical" href="https://smilingwayne.github.io/Readingxiaoxiao/Study/AMASS/">
+      
+      
+        <link rel="prev" href="../English/">
+      
+      
+        <link rel="next" href="../Undergraduate_essay/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>制造与服务系统分析 - 笑笑的站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#amss-00" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="笑笑的站" class="md-header__button md-logo" aria-label="笑笑的站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            笑笑的站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              制造与服务系统分析
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SmilingWayne/Readingxiaoxiao" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmilingWayne/Readingxiaoxiao
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      ˗ˋˏᰔᩚˎˊ˗
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Philosophy/" class="md-tabs__link">
+        哲学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Literature/" class="md-tabs__link">
+        文学
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../History/" class="md-tabs__link">
+        历史
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Arts/" class="md-tabs__link">
+        艺术
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../yan/" class="md-tabs__link">
+        考研
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ToDo/ToRead/" class="md-tabs__link">
+        想/在做的事
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        学习
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="笑笑的站" class="md-nav__button md-logo" aria-label="笑笑的站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    笑笑的站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SmilingWayne/Readingxiaoxiao" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmilingWayne/Readingxiaoxiao
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        ˗ˋˏᰔᩚˎˊ˗
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Philosophy/">哲学</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          哲学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          马克思主义哲学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          马克思主义哲学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Mao/" class="md-nav__link">
+        🥰 毛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/basic/" class="md-nav__link">
+        基础知识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Marxism_religion/" class="md-nav__link">
+        马克思主义宗教观研究
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Color_revolution/" class="md-nav__link">
+        苏联解体与颜色革命
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Farseer/" class="md-nav__link">
+        先知三部曲
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          宗教哲学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          宗教哲学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Christian/" class="md-nav__link">
+        基督教
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/World_religion/" class="md-nav__link">
+        世界宗教
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Jews/" class="md-nav__link">
+        犹太人与犹太教(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Book_of_resemblance/" class="md-nav__link">
+        相似之书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Religion_culture/" class="md-nav__link">
+        我理解的伊斯兰教
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          文明
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          文明
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Collision_civilization/" class="md-nav__link">
+        文明的冲突与世界秩序的重建
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Postcolonialism/" class="md-nav__link">
+        后殖民主义与世界格局(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Peace_war_in_nation_state/" class="md-nav__link">
+        民族国家间的和平与战争
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Boundary_politics/" class="md-nav__link">
+        政治的历史与边界
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Thoughts_in_our_time/" class="md-nav__link">
+        我们时代的社会思考与阅读主张
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          政治哲学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          政治哲学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Government/" class="md-nav__link">
+        论政府
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Politics/" class="md-nav__link">
+        政治学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Theology_politics/" class="md-nav__link">
+        政治神学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Anti_intellectual_usa/" class="md-nav__link">
+        美国生活中的反智主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Legacy_berlin/" class="md-nav__link">
+        以赛亚伯林的遗产
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Muslim_radicalism/" class="md-nav__link">
+        穆斯林与激进主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Gihad_civilization/" class="md-nav__link">
+        圣战与文明
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Verse_violence/" class="md-nav__link">
+        良知对抗暴力
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Leisure_class/" class="md-nav__link">
+        有闲阶级论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Diplomacy_us/" class="md-nav__link">
+        世界大国外交(US)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          女性主义哲学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          女性主义哲学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Sexuality_freud/" class="md-nav__link">
+        👩🏻‍⚖️性学三论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Sexuality_existence/" class="md-nav__link">
+        👩‍🎓性存在
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Sacred_joy/" class="md-nav__link">
+        👩🏻‍💻神圣的欢爱
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Indefense_of_feminism/" class="md-nav__link">
+        🙅‍♀️为女权辩护
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Politics_feminism/" class="md-nav__link">
+        政治学与女性主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Feminism_brief_history/" class="md-nav__link">
+        女权主义简史(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          美学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          美学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Voyage_of_beauty/" class="md-nav__link">
+        美的历程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Root_of_romanticism/" class="md-nav__link">
+        浪漫主义的根源
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+          人类学/社会学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          人类学/社会学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Society_of_fatigue/" class="md-nav__link">
+        倦怠社会
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Rural_china/" class="md-nav__link">
+        乡土中国
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Facult/" class="md-nav__link">
+        福柯(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Voyagers_western_pacific_ocean/" class="md-nav__link">
+        西太平洋上的航海者
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+          其他
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          其他
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Phi_and_sea/" class="md-nav__link">
+        哲思与海——一部诗意的哲学随笔
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Facult/" class="md-nav__link">
+        福柯(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/Pragmatism/" class="md-nav__link">
+        实用主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/World_of_aristotle/" class="md-nav__link">
+        亚里士多德的世界(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Philosophy/How_to_read/" class="md-nav__link">
+        如何阅读一本书
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Literature/">文学</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          文学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Poems/">诗歌</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          诗歌
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          外国诗
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          外国诗
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Middle_east/" class="md-nav__link">
+        散落碎片
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Anger_and_mystery/" class="md-nav__link">
+        愤怒与神秘
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Fleurs_du_mal/" class="md-nav__link">
+        恶之花
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Yesenin/" class="md-nav__link">
+        是你在歌唱？是我在遐想
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Mayakovsky/" class="md-nav__link">
+        穿裤子的云
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Luzitania/" class="md-nav__link">
+        卢济塔尼亚人之歌
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Poems_de_life_hope/" class="md-nav__link">
+        生命与希望之歌
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Illiad/" class="md-nav__link">
+        伊利亚特
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/German_winter_fairytale/" class="md-nav__link">
+        德国，一个冬天的童话
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Canterbery/" class="md-nav__link">
+        坎特伯雷故事集
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Emily/" class="md-nav__link">
+        我用古典的方式爱过你
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Collections_of_doubt/" class="md-nav__link">
+        疑问集
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+          中国诗
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          中国诗
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Xinqiji_ci/" class="md-nav__link">
+        辛弃疾词
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Muxin/" class="md-nav__link">
+        木心诗选
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/Moonlight_left_hand/" class="md-nav__link">
+        月光停在左手上
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/ClassicChinese_shi/" class="md-nav__link">
+        中国古典-诗
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/ClassicChinese_ci/" class="md-nav__link">
+        中国古典-词
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Poems/ClassicChinese_qu/" class="md-nav__link">
+        中国古典-曲
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Plays/">戏剧</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          戏剧
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+          戏剧
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          戏剧
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Faust/" class="md-nav__link">
+        💖浮士德
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Hiroshima/" class="md-nav__link">
+        广岛之恋
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Loves_labors_lost/" class="md-nav__link">
+        🇬🇧爱的徒劳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Othello/" class="md-nav__link">
+        🇬🇧奥赛罗
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Macbeth/" class="md-nav__link">
+        🇬🇧麦克白
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Hamlet/" class="md-nav__link">
+        💝哈姆雷特
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/HenryIV/" class="md-nav__link">
+        🇬🇧亨利四世
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Richard_II/" class="md-nav__link">
+        🇬🇧理查二世
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Storms/" class="md-nav__link">
+        🇬🇧暴风雨
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Seagull/" class="md-nav__link">
+        海鸥
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Media/" class="md-nav__link">
+        美狄亚
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Mu_dan_ting/" class="md-nav__link">
+        牡丹亭
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Tao_hua_shan/" class="md-nav__link">
+        桃花扇
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Swords_hamlet/" class="md-nav__link">
+        铸剑·哈姆雷特
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Romeo_juliet/" class="md-nav__link">
+        🇬🇧罗密欧与朱丽叶
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Long_daylight/" class="md-nav__link">
+        长明
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+          影视
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          影视
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Seppuku/" class="md-nav__link">
+        🇯🇵切腹
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Munich/" class="md-nav__link">
+        🇺🇸慕尼黑
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Gravity/" class="md-nav__link">
+        🇺🇸地心引力
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Exhausted/" class="md-nav__link">
+        🇫🇷精疲力尽
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Cleo/" class="md-nav__link">
+        🇫🇷五至七时的克莱奥
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/La_chinioise/" class="md-nav__link">
+        🇨🇳中国姑娘
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plays/Werk_ohne_autor/" class="md-nav__link">
+        无主之作
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Literature/Essay/">随笔</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          随笔
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Less_than_one/" class="md-nav__link">
+        小于一
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Second_hand_time/" class="md-nav__link">
+        二手时间
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Chongshen/" class="md-nav__link">
+        冲绳札记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Remember_memory/" class="md-nav__link">
+        记忆记忆
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Memory_fire/" class="md-nav__link">
+        火的记忆
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Life_food/" class="md-nav__link">
+        人间食粮
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Cowshed_memo/" class="md-nav__link">
+        牛棚杂忆
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Bath_house/" class="md-nav__link">
+        澡堂与片场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Memory_thoughts/" class="md-nav__link">
+        往事与随想
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Literature_knowledge/" class="md-nav__link">
+        中国文学常识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Impressionalism_pieces/" class="md-nav__link">
+        象征主义碎片
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Borges/" class="md-nav__link">
+        博尔赫斯谈话录
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Stay/" class="md-nav__link">
+        别走，万一好笑呢
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Reading_shelter/" class="md-nav__link">
+        阅读是一座随身携带的避难所
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Essay/Zen_motor_maintanence/" class="md-nav__link">
+        禅与摩托车维修艺术
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Literature/Literacy/">文论</a>
+          
+            <label for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          文论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Xuan_xue/" class="md-nav__link">
+        魏晋玄学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Western_classic/" class="md-nav__link">
+        西方正典
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Paris_review/" class="md-nav__link">
+        🇫🇷巴黎评论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Writers_notes/" class="md-nav__link">
+        🇫🇷作家笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Dynasty/" class="md-nav__link">
+        天朝遥远
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/French_literature/" class="md-nav__link">
+        🇫🇷法语文学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Literature_memo/" class="md-nav__link">
+        文学回忆录
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Womens_index_finger/" class="md-nav__link">
+        女人的食指
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Silent_most/" class="md-nav__link">
+        沉默的大多数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Formation_critical_thinking/" class="md-nav__link">
+        批判性思维的形成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Naive_novlist/" class="md-nav__link">
+        天真的和感伤的小说家
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Romanticism/" class="md-nav__link">
+        浪漫主义(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Literacy/Latin_america_literature/" class="md-nav__link">
+        拉丁美洲文学(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Literature/Novel/">小说</a>
+          
+            <label for="__nav_3_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          小说
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Frog/" class="md-nav__link">
+        蛙
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Veil/" class="md-nav__link">
+        面纱
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Plague/" class="md-nav__link">
+        鼠疫
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Zhao_wen_dao/" class="md-nav__link">
+        朝闻道
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Wild_palm/" class="md-nav__link">
+        野棕榈
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Stories_of_two_cities/" class="md-nav__link">
+        双城记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Rashomon/" class="md-nav__link">
+        罗生门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Sympathatic/" class="md-nav__link">
+        同情者
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Fahrenheit_451/" class="md-nav__link">
+        华氏451
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/1984/" class="md-nav__link">
+        《1984》
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Samarkhan/" class="md-nav__link">
+        撒马尔罕
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Forever_fatigue/" class="md-nav__link">
+        生死疲劳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Slaughterhouse_five/" class="md-nav__link">
+        五号屠场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Common_world/" class="md-nav__link">
+        平凡的世界
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Silent_patient/" class="md-nav__link">
+        沉默的病人
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Three_riflers/" class="md-nav__link">
+        三个火枪手
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Snow_falls/" class="md-nav__link">
+        雪落香杉树
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Labyrinth_pan/" class="md-nav__link">
+        潘神的迷宫
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Davinci_code/" class="md-nav__link">
+        达芬奇密码
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Gulliver/" class="md-nav__link">
+        格列佛游记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Ensaio_sobre_a_cegueira/" class="md-nav__link">
+        失明症漫记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Pandemic_era/" class="md-nav__link">
+        瘟疫年纪事
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Xu_san_guan/" class="md-nav__link">
+        许三观卖血记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Kara_Mazov_brothers/" class="md-nav__link">
+        卡拉马佐夫兄弟
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Oriental_express/" class="md-nav__link">
+        东方快车谋杀案
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Tragedy_niro/" class="md-nav__link">
+        尼罗河上的惨案
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Gatsby/" class="md-nav__link">
+        了不起的盖茨比
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Red_roses_white_roses/" class="md-nav__link">
+        红玫瑰与白玫瑰
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Literature/Novel/Charline_84/" class="md-nav__link">
+        查令十字街84号
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../History/">历史</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          历史
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Indonesia/" class="md-nav__link">
+        🇮🇩印尼ETC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Greece/" class="md-nav__link">
+        🇬🇷希腊笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Africa/" class="md-nav__link">
+        🇲🇱非洲笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Mid_asia/" class="md-nav__link">
+        🇰🇿中亚笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Soviet_union/" class="md-nav__link">
+        🇷🇺苏联笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Field_of_memory/" class="md-nav__link">
+        🇫🇷记忆之场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Marie_antoinette/" class="md-nav__link">
+        🇫🇷断头王后
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Europe/" class="md-nav__link">
+        欧罗巴笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/France/" class="md-nav__link">
+        🇫🇷法兰西笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Arabians/" class="md-nav__link">
+        🇸🇦阿拉伯笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Ridiculous_medics/" class="md-nav__link">
+        荒诞医学史
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Roman_empire_brief_history/" class="md-nav__link">
+        罗马帝国简史
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Destroy_western_india/" class="md-nav__link">
+        西印度毁灭述略
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Arabian_islamic_history/" class="md-nav__link">
+        阿拉伯伊斯兰文化史
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Bourgeoisie/" class="md-nav__link">
+        🇫🇷法国资产阶级史(上)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/King_leopolds_ghost/" class="md-nav__link">
+        🇧🇪利奥波德国王的鬼魂
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Century_of_intellects_in_France/" class="md-nav__link">
+        🇫🇷法国知识分子的世纪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Latin_american_blood/" class="md-nav__link">
+        🇺🇾拉丁美洲被切开的血管
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Rise_and_fall/" class="md-nav__link">
+        🇷🇺一个大国的崛起与崩溃
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Modern_japan/" class="md-nav__link">
+        🇯🇵现代日本(牛津通识读本)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../History/Eastern_wind/" class="md-nav__link">
+        🇫🇷东风——法国知识分子与60年代的遗产
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Arts/">艺术</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          艺术
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          艺术与设计史
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          艺术与设计史
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Art_and_design/Notes1/" class="md-nav__link">
+        笔记1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Pre_Raphael/" class="md-nav__link">
+        🇫🇷拉斐尔前派的梦
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Butterfly_at_night/" class="md-nav__link">
+        🇫🇷黑夜的蝴蝶
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Left_bank/" class="md-nav__link">
+        🇫🇷左岸,从人民阵线到冷战作家
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Art_history_unfashioned/" class="md-nav__link">
+        非主流艺术史
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Parisian_myth/" class="md-nav__link">
+        🇫🇷巴黎神话——从启蒙运动到超现实主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Delacroix/" class="md-nav__link">
+        🇫🇷艺术引导人生——德拉克洛瓦私人日记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Made_in_French/" class="md-nav__link">
+        🇫🇷法国制造——法国文化关键词
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Dada_surrealism/" class="md-nav__link">
+        达达和超现实主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Beethoven/" class="md-nav__link">
+        贝多芬的骰子
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Arts_of_love/" class="md-nav__link">
+        爱的艺术
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Stories_of_art/" class="md-nav__link">
+        艺术的故事
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Art_renaissance/" class="md-nav__link">
+        文艺复兴时期的艺术
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Modernism/" class="md-nav__link">
+        现代主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arts/Pieces/" class="md-nav__link">
+        碎片艺术
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../yan/">考研</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          考研
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yan/yanPlans/" class="md-nav__link">
+        我的规划
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yan/yanBooks/" class="md-nav__link">
+        我的用书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yan/yanTalks/" class="md-nav__link">
+        闲聊
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          想/在做的事
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          想/在做的事
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ToDo/ToRead/" class="md-nav__link">
+        书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ToDo/ToCode/" class="md-nav__link">
+        术
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ToDo/ToDo/" class="md-nav__link">
+        事
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">学习</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LatexNotes/" class="md-nav__link">
+        LaTeX-Cheatsheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+          微积分
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          微积分
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculus/Math2/" class="md-nav__link">
+        Chapter1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+          线性代数
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          线性代数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LinearAlgebra/Chapter1/" class="md-nav__link">
+        chapter1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LinearAlgebra/Chapter2/" class="md-nav__link">
+        chapter2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LinearAlgebra/Chapter3/" class="md-nav__link">
+        chapter3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LinearAlgebra/Chapter4/" class="md-nav__link">
+        chapter4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LinearAlgebra/Chapter5/" class="md-nav__link">
+        chapter5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../OR/">运筹学</a>
+          
+            <label for="__nav_8_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_5">
+          <span class="md-nav__icon md-icon"></span>
+          运筹学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter1/" class="md-nav__link">
+        线性规划、单纯形法（群魔乱舞版）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter2/" class="md-nav__link">
+        对偶理论及对偶单纯形法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter3/" class="md-nav__link">
+        线性规划的运输问题拓展
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter4/" class="md-nav__link">
+        整数规划、求解算法和运用
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter5/" class="md-nav__link">
+        非线性规划、凸规划理论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter6/" class="md-nav__link">
+        动态规划及几个典型题
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter7/" class="md-nav__link">
+        图论算法及其求解
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter9/" class="md-nav__link">
+        排队论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter10/" class="md-nav__link">
+        仓储论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OR/Chapter11/" class="md-nav__link">
+        博弈论
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+          概率论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_6">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Basics/" class="md-nav__link">
+        基础知识与贝叶斯理论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Random_Variables/" class="md-nav__link">
+        随机变量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Number_characters/" class="md-nav__link">
+        随机变量的数字特征
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Big_number/" class="md-nav__link">
+        大数定律和中心极限定理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Parameter_estimation/" class="md-nav__link">
+        参数估计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Statistics/Multi_dimensional_r_v/" class="md-nav__link">
+        多维随机变量
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Markdown/" class="md-nav__link">
+        小红书｜macOS字体推荐
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MagicSquare/" class="md-nav__link">
+        小红书｜幻方算法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_9" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_9" id="__nav_8_9_label" tabindex="0">
+          小红书｜Python藏宝箱
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_9">
+          <span class="md-nav__icon md-icon"></span>
+          小红书｜Python藏宝箱
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PIPREQS/" class="md-nav__link">
+        pipreqs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces6/" class="md-nav__link">
+        微信读书可视化
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/Matplotlib/" class="md-nav__link">
+        matplotlib技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces1/" class="md-nav__link">
+        Itertools-小抄
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces2/" class="md-nav__link">
+        NamedTuple-小抄
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces3/" class="md-nav__link">
+        对...的理解
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces4/" class="md-nav__link">
+        带*的变量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PythonPackages/PythonPieces5/" class="md-nav__link">
+        集合操作
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_10" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_10" id="__nav_8_10_label" tabindex="0">
+          小红书｜供应链管理
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_10">
+          <span class="md-nav__icon md-icon"></span>
+          小红书｜供应链管理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/Supplychain1/" class="md-nav__link">
+        三种工厂选址模型(Chapter_5.4)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain13/" class="md-nav__link">
+        时间序列预测：静态方法(Chapter_7.5.1)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain3/" class="md-nav__link">
+        时间序列预测模型与框架：ARMA/Winter(Chapter_7.5/7.6)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain4/" class="md-nav__link">
+        经济订货批量模型(EOQ)(Chapter_11.3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain9/" class="md-nav__link">
+        EOQ模型的订货量确定与周期盘点(Chapter_11.3.2)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain7/" class="md-nav__link">
+        供应链综合计划策略I(Chapter_8.4)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain11/" class="md-nav__link">
+        供应链综合计划策略II：案例分析(Chapter_8.5)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain5/" class="md-nav__link">
+        规模经济管理：数量折扣I(Chapter_11.4)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain8/" class="md-nav__link">
+        规模经济管理：数量折扣II(Chapter_11.4)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain6/" class="md-nav__link">
+        运营管理：排队论
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain10/" class="md-nav__link">
+        安全库存：基于给定策略(Chapter_12.2)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain12/" class="md-nav__link">
+        安全库存：聚集/供给不确定/零件的情况(Chapter_12.3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain14/" class="md-nav__link">
+        报童模型I：最优可获得性水平的确定(Chapter_13.2)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain15/" class="md-nav__link">
+        报童模型II：沃尔玛案例分析(Chapter_13.2)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain16/" class="md-nav__link">
+        Excel进行供应链绩效模拟(Chapter_13.Appendix)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain17/" class="md-nav__link">
+        提高供应链盈利能力的杠杆(Chapter_13.3)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain18/" class="md-nav__link">
+        供应链中的运输(Chapter_14_1)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supplychain/SupplyChain2/" class="md-nav__link">
+        案例
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Swift/CS193p1/" class="md-nav__link">
+        Swift
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MarkdownSyntax1/" class="md-nav__link">
+        Markdown语法1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../English/" class="md-nav__link">
+        英语小总结
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          制造与服务系统分析
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        制造与服务系统分析
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amss-00" class="md-nav__link">
+    AMSS 00
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-01" class="md-nav__link">
+    AMSS 01
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-02" class="md-nav__link">
+    AMSS 02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-03" class="md-nav__link">
+    AMSS 03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-04" class="md-nav__link">
+    AMSS 04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-05" class="md-nav__link">
+    AMSS 05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-06" class="md-nav__link">
+    AMSS 06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-07" class="md-nav__link">
+    AMSS 07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-08" class="md-nav__link">
+    AMSS 08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    -
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-09-waiting-line-analysis" class="md-nav__link">
+    AMSS 09 Waiting Line Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-10-planning-and-control-strategies" class="md-nav__link">
+    AMSS 10. Planning and Control Strategies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-12-operations-scheduling" class="md-nav__link">
+    AMSS 12. Operations Scheduling
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Undergraduate_essay/" class="md-nav__link">
+        论文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_16" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_16" id="__nav_8_16_label" tabindex="0">
+          我的碎碎念
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_16">
+          <span class="md-nav__icon md-icon"></span>
+          我的碎碎念
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Articles_recomend/" class="md-nav__link">
+        荐文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Books_recomend/" class="md-nav__link">
+        荐书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Classical_music/" class="md-nav__link">
+        古典音乐
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Feminism_talks/" class="md-nav__link">
+        女性主义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Him/" class="md-nav__link">
+        长者
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/pieces/" class="md-nav__link">
+        没有整理的
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Russia/" class="md-nav__link">
+        战争
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Talks/Knowledge_share/" class="md-nav__link">
+        知识分享
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../My2022/" class="md-nav__link">
+        我的2022
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amss-00" class="md-nav__link">
+    AMSS 00
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-01" class="md-nav__link">
+    AMSS 01
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-02" class="md-nav__link">
+    AMSS 02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-03" class="md-nav__link">
+    AMSS 03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-04" class="md-nav__link">
+    AMSS 04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-05" class="md-nav__link">
+    AMSS 05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-06" class="md-nav__link">
+    AMSS 06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-07" class="md-nav__link">
+    AMSS 07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-08" class="md-nav__link">
+    AMSS 08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    -
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-09-waiting-line-analysis" class="md-nav__link">
+    AMSS 09 Waiting Line Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-10-planning-and-control-strategies" class="md-nav__link">
+    AMSS 10. Planning and Control Strategies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amss-12-operations-scheduling" class="md-nav__link">
+    AMSS 12. Operations Scheduling
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+  
+  
+  <div class = "word-count">
+    字数：<span id = "hanzi"></span> ｜ 阅读时间：<span id = "exprdt"></span>
+    <p></p>
+    
+  </div>
+  
+  
+                  
+
+  
+  
+
+
+  <h1>制造与服务系统分析</h1>
+
+<h2 id="amss-00">AMSS 00<a class="headerlink" href="#amss-00" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>系统是指若干部分相互联系、相互作用形成的具有某些功能的整体。A system is a whole that cannot be taken apart without loss of its essential characteristics, and hence it must be studied as a whole.</p>
+</li>
+<li>
+<p>Analysis of Manufacturing and Service Systems<span style = "color:red">(AMSS,制造与服务系统分析)</span>, or called operating system analysis, studies the operating system of manufacturing and service firms by system analysis methodology(是<strong>运用系统分析方法</strong>研究制造与服务系统), with objective to improve the existing operating system or to design a best operating system.</p>
+</li>
+<li><strong>运营管理与运营系统分析的方法</strong>：QMAI:</li>
+<li>Question： </li>
+<li>Model：</li>
+<li>Analysis：分析影响因素</li>
+<li>Insights：发现重要启示：设计方案/系统，改进反应问题相关的绩效指标。</li>
+</ul>
+<h2 id="amss-01">AMSS 01<a class="headerlink" href="#amss-01" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>运营的定义：</li>
+<li>运营是企业的核心业务职能之一，它的主要任务是通过运营系统向顾客创造、提供满足其需要的产品(有形产品、无形产品) 。</li>
+<li><strong>职能</strong>：marketing/ finance/ personnel resource mgmt/ information System/ Accounting/ 组织管理和战略</li>
+<li><strong>顾客</strong>：顾客是有需求的组织或者个人，是企业存在的价值所在，有多种类型</li>
+<li><strong>产品</strong>：Product是企业创造、生产并且提供给顾客的，企业通过产品吸引并留主顾客而生存与发展。有多种类型。<ul>
+<li><strong>搜寻品</strong> search product：A Search product (搜寻品) is the product for which a buyer can try out a small sample to get a fair measure of its value. 顾客可以尝试一小部分，试用；</li>
+<li><strong>经验品</strong> expericne product：A Search product (搜寻品) is the product for which a buyer can try out a small sample to get a fair measure of its value.</li>
+<li><strong>后验品</strong>:  Post-experience Product(后验品) is the product for which a buyer cannot ascertain the total value and total cost even after purchasing and using the good. 特征很难被消费者观察到，即使在消费后。比如药、教育资源等；</li>
+<li><strong>有形产品、无形产品</strong>：physical objects, such as building, vehicle, clothing; can only be experienced and perceived such as an insurance policy.软件、电影、音乐、电子读物、信息服务；</li>
+<li><strong>功能性的、创新性的</strong>（functinal、innovative）product. 【一个市场需求可预测，一个市场需求不可预测】</li>
+</ul>
+</li>
+<li><strong><u>运营系统Operation System</u></strong><ul>
+<li><strong>运营系统是指承担着向顾客提供满足其需要产品的、由相互联系的各个部分所构成的整体</strong></li>
+<li><strong>运营系统三要素</strong></li>
+<li>Input/ Output: <strong>流入流出(def: Any tangible/intangible item that flows in and out of the process. )</strong>：<ol>
+<li>flow units/ customers/ data/ materials/ cash etc, </li>
+<li>output: waste, 废料、碳排放等；</li>
+</ol>
+</li>
+<li><strong>Conversion/Transformation subsystem 转换子系统</strong>:<ol>
+<li><strong>supply chain</strong>:承担着各种输入转化为有用产出的工作或者任务网络/ supply process承担各种供应活动的各种组织设施、部门或者企业形成的网络; supply process又可以细分为：<ul>
+<li><u>activity</u>：最小单位Smallest process of interest</li>
+<li><u>buffers</u>： 不同activiy中间存储部分</li>
+<li><u>network</u>：activity顺序关系/先后关系/从属关系 </li>
+</ul>
+</li>
+<li><strong>resources</strong>（例如：labour, capital, HR, energy, water etc）</li>
+<li><strong>flow unit</strong>: 和流入流出相关的运营对象；</li>
+</ol>
+</li>
+<li><strong>Information and Mgmt Subsystem信息管理子系统</strong> </li>
+<li>flow unit:  is the unit flow through the system, and generally defines the process output of interest.</li>
+</ul>
+</li>
+<li>运营管理与运营系统分析</li>
+<li>运营的核心问题：企业产品供应和顾客的产品需求之间的矛盾【时间/空间/数量/质量需求etc】</li>
+<li><strong>运营管理意味着设计与改进运营系统，目的是能够有效地使得产品供应与满足目标顾客的产品需求。</strong></li>
+<li>
+<p>运营系统的分析过程：QMAI， 见<a href="#AMSS-00">第一章</a></p>
+</li>
+<li>
+<p>运营管理重要性：知乐坊餐厅、肯德基、荣华鸡的课堂案例。</p>
+</li>
+</ul>
+<h2 id="amss-02">AMSS 02<a class="headerlink" href="#amss-02" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>通过流程图描述运营：似乎需要看一下bread making 的那个案例：</p>
+</li>
+<li>
+<p>箭头</p>
+</li>
+<li>三角</li>
+<li>
+<p>矩形</p>
+</li>
+<li>
+<p>运营系统的分类：</p>
+</li>
+<li>
+<p>运营系统的分类方法：</p>
+<ul>
+<li>Process Architecture</li>
+<li>Product-Process Matrix</li>
+<li>Mgmt Policy</li>
+</ul>
+</li>
+<li>
+<p><strong>Process Architecture:</strong>  defined by the types of resources used to perform the activities and their physical layout in the processing network.</p>
+<ul>
+<li>Types of resources: General or specialized</li>
+<li>Physical layout</li>
+<li>variety/volume</li>
+<li>
+<p>Job shop vs Flow shop</p>
+</li>
+<li>
+<p><strong>Project type operating System:</strong> Project is a series of related activities usually directed toward some <strong>Unique</strong> output and <strong>requiring a significant period of time to perform</strong>. <code>unique output, very flexible resources</code>, e.g. 航天飞机制造</p>
+</li>
+<li>
+<p><strong>Job shop type OS:</strong> <code>high variety output, low volume output</code>, functional layout e.g. 自行车维修、医院急诊室、餐厅厨房...</p>
+</li>
+<li>
+<p><strong>Batch type OS</strong>: small batches output, flexible resources, e.g. 重型机械、音乐器材、运动服装、标准实验室检测等； </p>
+</li>
+<li>
+<p><strong>Disconneted Line Process</strong>:需要从一个workstation移动到另一个workstation处理或者组装。workstations。e.g. 集成电路制造、很难制造处理的产品、被时间和距离分割的</p>
+</li>
+<li>
+<p><strong>Connected Line Process:</strong>，经典的组装线。但是比disconnected，有更大规模，机械控制流 e.g. 电子产品制造、汽车制造、家电制造等</p>
+</li>
+<li>
+<p><strong>Continuous Process</strong>：<strong>极端 严格的流，massive scale， 资本密集，高度自动</strong>化，product以连续方式流动而不是离散个体，e.g. 炼油、牙膏制作、大规模酿酒</p>
+</li>
+</ul>
+<blockquote>
+<p>上述内容按照process spectrum的顺序介绍，从上到下，产品volume越来越大，但是variety越来越少。</p>
+</blockquote>
+<ol>
+<li><strong>special structure: serial structure/ assembly structure</strong> </li>
+</ol>
+</li>
+<li>
+<p><strong>Product-Process Matrix</strong></p>
+<ul>
+<li>借助笔记补充：横轴是产品种类，纵轴是流程柔性（process flexibility）坐标上方是期望成本，下是out of pocket cost。</li>
+<li>依次是continuous flow, line flows, batch, job shop.</li>
+</ul>
+</li>
+<li>
+<p>根据activities何时运行，划分为</p>
+<ol>
+<li><strong>Make to Stock:</strong> 在<strong>收到顾客订单之前就生产好product然后存放在库存中，</strong>在顾客购买后直接deliver给顾客</li>
+<li><strong>Make to Order</strong>：直到接收到顾客的订单后才开始处理产品的物料（materials）和组成（components）</li>
+<li><strong>Assemble to Order:</strong> MTO和MTS的变种，根据预测生产标准化可选的模块(modules)，然后在接受到顾客订单后组装特定的组成部分(combination)或者把一些模块打包(package)</li>
+</ol>
+</li>
+<li>
+<p>制造汉堡的几种方式：看一下图：汉堡王的/wendy的/Trading way</p>
+</li>
+<li>
+<p>运营系统的绩效指标</p>
+</li>
+<li>
+<p>performance measures</p>
+<ul>
+<li>Financial Measures</li>
+<li>External Measures (Product price, Delivery Time, Variety, Quality)</li>
+<li>Internal Measures(Cost, flow time, Flexibility, Flow time, Consistency, quality)</li>
+<li>Flow time 和相关指标：Activity Time:  is the time required to process a flow unit for the activity.</li>
+<li>Setup time：用来准备机器的时间</li>
+<li>Operations time：setup time 和runtime的总和</li>
+<li>三种绩效指标之间的关系：</li>
+<li>Cost-related Measures</li>
+<li>Flow time -related measures</li>
+<li>Flexibility: volume flexibility, volume flexibility</li>
+<li>Quality related measures: 良品率</li>
+</ul>
+</li>
+</ul>
+<h2 id="amss-03">AMSS 03<a class="headerlink" href="#amss-03" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>运营流指标（Flow Metrics)</p>
+</li>
+<li>
+<p>Flow rate(Throughput)(R): is <strong>the number of flow units that flow through a stable system per unit of time.</strong>在稳定的</p>
+<ul>
+<li>average flow rate 称为节拍时间<strong>takt time</strong> : is the reciprocal of throughput and denotes the maximal time that each system resource can devote to a flow unit to keep up with the demand.</li>
+</ul>
+</li>
+<li>
+<p>Flow time(T): <strong>total time spent by a flow unit within system boundaries</strong></p>
+</li>
+<li>
+<p>Inventory(I): <strong>total number of flow units spend in the operating system</strong></p>
+<ul>
+<li>库存包括了：正在被activities处理的units和处在buffers中的unit</li>
+</ul>
+</li>
+<li>
+<p>利特尔定律：I = R * T, <strong>Average Inventory = Throughput * Average Flow Time</strong></p>
+</li>
+<li>
+<p>A manager can select any two operational measures on which to focus, and the third is determined by the levels of the two choices</p>
+</li>
+<li>Inventory Turnover =   Throughput / Inventory = 1 / T</li>
+<li>注：需要注意利特尔定律三个measure的consistency</li>
+<li>
+<p>注：利特尔适用于稳定商业系统（stable business system）和稳定商业子系统中，例如每个jobshop 的子工作站</p>
+</li>
+<li>
+<p>利用little定律分析运营系统：【<strong>看一下书上案例</strong>】</p>
+</li>
+<li>
+<p>The T Insurance Company processes 10,000 claims per year. The average processing time is 3 weeks.  Assuming 50 weeks in a year, what is the average number of claims in system? </p>
+</li>
+<li>Car battery Example: </li>
+<li>Service Flow Example: 1000 loan applications: 30-day work month:200 approval, 30days T = I / R</li>
+</ul>
+<h2 id="amss-04">AMSS 04<a class="headerlink" href="#amss-04" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Flow time Analysis of OS</li>
+<li><strong>shorter flow time 的优点：</strong><ul>
+<li>更短的delivery response time, </li>
+<li>更少的库存和相应成本</li>
+<li>Early market introduction of new product, 更快地进入市场</li>
+<li>delay production closer to the time of sales，获取更加准确的市场信息，提高预测准确度，避免产品obsolescence，减少所需库存</li>
+<li>更快的反馈、纠错质量问题</li>
+</ul>
+</li>
+<li><strong>Flow time of an activity：</strong></li>
+<li>flow time = activity time + waiting time， 在buffer的时间：waiting time，在activity 中的时间：activity time</li>
+<li>critical path关键路径和关键环节critical activities</li>
+<li>critial paths：<strong>Longest paths in the process flow chart.</strong>  </li>
+<li>critical activities: 在critial path上的所有activities</li>
+<li>Theoretical flow time: is the minimum amount of time required for a flow unit to flow through the system from entry to exit, without any waiting or interruptions。 没有等待和中断情况下一个flow unit 走完全部运营系统的actvities所需的最小时间，也就是activities time的总和（不计入buffer中的waiting time）</li>
+<li><strong><u>Theoretical flow time = Value-adding flow time + Non-value-adding flow time</u></strong></li>
+<li>因此减少non-value-added-flow time是一个节省时间和成本的有效方法。</li>
+<li><strong>Flow-time efficiency:  </strong>theoretical flow time/average flow time</li>
+<li>大多数inefficiency 来自waiting</li>
+<li>Flow - time analysis result:</li>
+<li>Flow time of a system is the total flow time of every critical activity (in the critical path).</li>
+<li>Flow time of an activity = Activity time + Waiting time</li>
+<li>Activity time = Value-adding Activity time + Non-value-adding Activity time</li>
+<li>如何缩短flow time？</li>
+<li>缩短waiting time</li>
+<li>减少activity time<ol>
+<li>消除non-value-added activities</li>
+<li>减少返工</li>
+<li>提升运营速度</li>
+</ol>
+</li>
+<li>具体举措：重新设计运营系统：<ol>
+<li>并行parallel：</li>
+<li>改变activities处理顺序</li>
+</ol>
+</li>
+</ul>
+<h2 id="amss-05">AMSS 05<a class="headerlink" href="#amss-05" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>Throughput, or average flow rate, of a stable system is the average number of flow units that flow through the system per unit of time.</p>
+</li>
+<li>
+<p>节拍时间：（略）</p>
+</li>
+<li>
+<p>Throughput and Capacity</p>
+</li>
+<li>
+<p><strong><u><em>Capacity is the maximum sustainable throughput.</em></u></strong></p>
+</li>
+<li><img alt="Screen Shot 2021-12-26 at 7.45.06 PM" src="/Study/picx/AMASS-pics/Screen Shot 2021-12-26 at 7.45.06 PM.png" /></li>
+<li>
+<p>一种是input rate限制，一种是demand rate限制，一种是system capacity限制</p>
+</li>
+<li>
+<p>为何throughput analysis很重要？</p>
+</li>
+<li>
+<p>throughput代表着经济价值的创建，不充足的系统capacity可能导致堵塞congestion和过量的waiting time</p>
+</li>
+<li>
+<p>等待</p>
+</li>
+<li>
+<p>如何测量估计R和capacity？</p>
+</li>
+<li>
+<p>Observe the system over a given, extended period of time.</p>
+</li>
+<li>Measure the number of flow units that are processed by the system over the selected period of time.</li>
+<li>Compute the average number of flow units per unit of time.</li>
+<li>
+<p>The maxim limited flow rate can be estimated as capacity.</p>
+</li>
+<li>
+<p>Capacity of Operations System</p>
+</li>
+<li>
+<p>activities are performed by capital and labour resources. 依赖于每个actvities 里面被赋予的resources以及这些resoucres的利用率。【<strong>resource pool</strong>】</p>
+</li>
+<li>
+<p>Rescources and <strong>effective Capacity:</strong></p>
+</li>
+<li>
+<p>The capacity of an activity is Equivalent to the <strong>capacity of a resource pool</strong>, when there is exactly one unique resource pool dedicated to each activity.</p>
+</li>
+<li><strong>unit load</strong> of a resource unit:, is the average amount of <strong>time required by the resource unit to process one flow unit in activity j.</strong>也就是利用某种资源单位在一个activity中处理一个flow unit所需的平均时间；<strong>就是T</strong>，也可以划分为theoretical和effective两种情况</li>
+<li>load batch:the number of <strong>flow units</strong> can be processed simultaneously by resource <strong>pool i in activity j.</strong> 在一个activity中，一个资源池能被处理的flow units的数量</li>
+<li><strong>effective capacity of a resource unit:,</strong> is the average amount of time required by the resource unit to process one flow unit in activity j, 在j过程中，利用一种资源处理一个flow unit所需的平均时间</li>
+<li>
+<p>The effective capacity of a resource pool i to perform activity j is the sum of the effective capacities of all the resource units in that pool, cijnij/Tij where cij is the number of resource at resource pool i for activity j. 是 cijnij/Tij的求和的结果。</p>
+</li>
+<li>
+<p><strong>影响effective capacity 的其他因素：【有效产能】</strong></p>
+</li>
+<li>
+<p>effective capacity的主要假设：所有的资源在schedule time内被完全使用，不考虑资源闲置（resources idleness），这些闲置由</p>
+<ul>
+<li>饥饿：没有input</li>
+<li>阻塞：output buffer已满</li>
+</ul>
+<p>造成的。<strong>实际system capacity还需要考虑上面两点。</strong></p>
+</li>
+<li>
+<p>Theoretical capacity and capacity waste</p>
+</li>
+<li>
+<p><strong>The theoretical unit load of a resource unit is the minimal amount of time required to process a flow unit, if all capacity waste were eliminated.</strong>  需要处理一个flow unit所需的最少时间，如果不考虑capacity waste的话</p>
+</li>
+<li>Let CWF indicate the <strong>capacity waste factor,</strong> expressed as a percentage of the theoretical capacity. Then,
+    Theoretical Capacity = Effective Capacity/(1 - CWF)</li>
+<li>
+<p>Capacity waste 出现的原因：资源resources unavailability：</p>
+<ul>
+<li>资源中断breakdown</li>
+<li>预防性的维修maintenance</li>
+<li>机器启动、换班时间（product mix) </li>
+</ul>
+</li>
+<li>
+<p><strong><u>Theoretical capacity[TC]</u> and <u>effective capacity</u>[EC] and <u>System capacity</u>[SC]</strong></p>
+</li>
+<li>
+<p>TC: resource allocation + product Mix</p>
+</li>
+<li>EC = TC - resource unavailability(3点)</li>
+<li>SC = EC - rescource idleness（2点）</li>
+<li>
+<p><strong>通俗解释：TC就是真实情况下的Capacity，包括了闲置、unavailability的情况；EC减去了resource unavailability的情况（3种，换班启动时间/资源中断/维修），SC减去了idleness的情况（阻塞/饥饿）</strong></p>
+</li>
+<li>
+<p>管理 throughput 的方法：</p>
+</li>
+<li>
+<p>增加System capacity：通过synchronization减少饥饿；通过select buffer size减少阻塞；</p>
+</li>
+<li>增加EC：增加所有瓶颈资源：（policies/HR mgmt/ less setup/changeover times）</li>
+<li>
+<p>增加TC：<strong>降低瓶颈步骤的unit load、增加load batch、增加资源单位、增加schedule availability</strong></p>
+</li>
+<li>
+<p>product mix是什么？注意看一下？</p>
+</li>
+<li>
+<p><strong>Resources and resources pool:</strong></p>
+</li>
+<li>A resource pool is a collection of interchangeable resources that can perform an identical set of activities.</li>
+<li>将不同的分散的资源集合在一起形成一个完整的pool来执行activities，就是resource pooling</li>
+</ul>
+<h2 id="amss-06">AMSS 06<a class="headerlink" href="#amss-06" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Inventory I is the total number of flow units spend in the operating system， 包括了在流程中的units 和正在在buffer中等待的flow units</li>
+<li>Inventory can be: in MFG settings:<ul>
+<li>Raw materials</li>
+<li>work in process (WIP)</li>
+<li>finished goods(FG)</li>
+</ul>
+</li>
+<li>service settings:<ul>
+<li>病人</li>
+<li>应用</li>
+<li>订单等</li>
+</ul>
+</li>
+<li><strong>Average</strong> Inventory主要包括三部分：<ul>
+<li>Average input inventory <span class="arithmatex">\(Ii = Ti * R\)</span></li>
+<li><strong>Average</strong> in-processing inventory <span class="arithmatex">\(Ip = Tp * R\)</span></li>
+<li><strong>Average</strong> outputs inventory <span class="arithmatex">\(Io = To * R\)</span></li>
+<li><span class="arithmatex">\(total I = Ii + Ip + io = Ttotal * R\)</span></li>
+<li>其中Ti/Tp/To都表示<strong>average</strong> flow time in XXX inventory</li>
+</ul>
+</li>
+<li>运营系统中持有库存的原因：</li>
+<li><strong>解耦库存</strong>decouple inventory：前后的activities紧密联系在一起，导致运营系统的连锁反应；这样可以让前后activity保持相对独立；</li>
+<li><strong>批量库存</strong>（cycle/batch inventory）：规模经济效益使单位成本下降,在采购/运输/生产环节都存在。</li>
+<li><strong>安全库存（</strong>safety Inventory）防止缺货（stockout protection)【补充缺货原因：预测误差、供应商生产线出问题、预测的第一法则，也就是mismatch of demand and supply】</li>
+<li><strong>季节库存</strong>（seasonal inventory）目的：capacity smoothing防止需求的季节性波动（服装、空调等）<ul>
+<li><strong>两种生产策略</strong>：<strong>level-production</strong> 【平衡战略：尽量保持生产的平稳状态，需求增多 时候就调用库存，这依赖于需求预测，优点：可以降低转换成本/制造成本，但是对需求预测要求很高】和<strong>chase demand.</strong>【追赶战略：顾客需要多少，就做多少，quantity of flow unit 需要match demand，需要根据需求调整产量】 </li>
+</ul>
+</li>
+<li><strong>投机库存</strong>（speculative inventory）：低价买入原材料，高价售出，套期保值；由于市场价格的波动</li>
+<li>基础公式：</li>
+<li>Average Inventory =Throughput x Average Flow Time （little‘s law）</li>
+<li>Theoretical Inventory =Throughput x Theoretical Flow Time</li>
+<li>SKU：库存保管单位：stock keeping unit</li>
+<li>ABC分类法：分清主次，将管理对象分为ABC三类</li>
+</ul>
+<h2 id="amss-07">AMSS 07<a class="headerlink" href="#amss-07" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>Inventory holding cost</p>
+</li>
+<li>
+<p>physical holding cost: 保管在某地要花的钱：保险、营运、仓库租金、安保等；</p>
+</li>
+<li>
+<p>opportunity cost：机会成本</p>
+</li>
+<li>
+<p>H = c( r + h),其中c表示库存品的价值：h表示physical cost的比例,</p>
+</li>
+<li>
+<p>例题：Centura Health is a nine-hospital integrated delivery network based in the Denver area in the United States. <strong>Weekly demand for the IV Starter Kit is 600 units.</strong> <strong>The unit cost of an IV Starter Kit is $3.Physical holding cost of one unit of medical supply is about 5 percent per year</strong>. The hospital network’s annual cost of <strong>capital is 25 percent.</strong> Each hospital incurs <strong>a fixed order cost of $130 whenever it places an order</strong>, regardless of the order size. <strong>The supplier takes one week to deliver the order.</strong> Currently, each hospital places an <strong>order</strong> of 6,000 units of the IV Starter Kit .</p>
+<blockquote>
+<p>5% * 3 = 0.15</p>
+<p>25% * 3 = 0.75</p>
+<p>0.15 + 0.75 = 0.9【单个库存unit 的】</p>
+<p>600/week 的需求量，单个order 的进货量是6000，因此10周进一次货，实际上第9周就下订单；每个库存的停留时间：5week，5 * 600 = 3000 = I，因此cycle inventory = 3000</p>
+</blockquote>
+</li>
+<li>
+<p>经济批量模型的库存分析</p>
+</li>
+<li>
+<p>什么时候购入库存？购入多少库存？如何确定我有多少库存？</p>
+<ol>
+<li>continuous review/periodical review</li>
+<li>每次补货数量都是Q</li>
+</ol>
+</li>
+<li>
+<p><img alt="Screen Shot 2021-12-27 at 10.41.00 AM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2010.41.00%20AM.png" /></p>
+</li>
+<li>
+<p>Average Inventory <span class="arithmatex">\(= Q/2\)</span></p>
+</li>
+<li>
+<p>Cycle time between orders $= Q/R $</p>
+</li>
+<li>
+<p><span class="arithmatex">\(K * R/Q\)</span> 【平均订货成本average ordering cost】；H *（Q/2）【平均库存保管成本】；c X R 【平均原料采购成本】</p>
+</li>
+<li>
+<p><span class="arithmatex">\(TC = \dftac{KR}{Q}\)</span>(这里是1/T求购买频率) <span class="arithmatex">\(+ \dfrac{HQ}{2}+cR\)</span></p>
+</li>
+<li>
+<div class="arithmatex">\[Q_{opt} = \sqrt{\frac{2RK}{H}}
+    \\
+    TC_{opt} = \sqrt{2KRH} + cR\]</div>
+</li>
+<li>
+<p><img alt="Screen Shot 2021-12-27 at 10.53.44 AM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2010.53.44%20AM.png" /></p>
+</li>
+<li>
+<p>订货决策与Lead time 的效果</p>
+<ul>
+<li>
+<p>Lead Time（前导时间、前置时间） is the time lag between the <strong>available of replenishment</strong> and the time <strong>the order was to be placed,</strong> denoted as L. 决定订货到订货最终到达中间的时间间隔-&gt; 包括例如：订单到达到能够使用、订单准备、准备订货到最终产生订货的时间</p>
+</li>
+<li>
+<p>Clearly, we should order L units of time before the inventory drop to 0.</p>
+</li>
+<li>
+<p>因此在库存 = L* R的时候就应该reorder，这个时间节点就是reorder point（ROP），ROP = LR</p>
+</li>
+<li>
+<p>On-hand stock: OH(t) 也就是目前拥有的库存量，<strong>现货量</strong></p>
+</li>
+<li>
+<p>Backorders(t)：负库存，只有当库存线在time以下的时候才是非0的。</p>
+</li>
+<li>
+<p>Inventory level ：库存水平 = IL(t) = OH(t) - B(t)，库存水平 = 现货量 - 负库存量，库存水平可以是负的，表示暂时缺货</p>
+</li>
+<li>
+<p>On-order(t) = OO(t) 在途库存</p>
+</li>
+<li>
+<p>Inventory Position = IP(t) = IL(t) + OO(t) 库位量。也就是库存水平 + 在途库存</p>
+</li>
+<li>
+<div class="arithmatex">\[OH(t) * B(t) \equiv 0
+  \\
+  \\
+  IP(t) = OH(t) - B(t) + OO(t)\]</div>
+</li>
+<li>
+<p>小结：不允许缺货，意思是B(t) == 0</p>
+</li>
+<li>
+<p>A policy under which the <strong>inventory position is reviewed at fixed time</strong> intervals and an order placed at that time, if necessary, is called a periodic review policy按固定时间间隔补货的policy</p>
+</li>
+<li>
+<p>A specific instance of such a policy is called the order up to policy in which orders are placed at periodic intervals <strong>to bring inventory position to a fixed level, called the order up to level (OUL).</strong> 周期性地把库存提到一个固定的容量level上
+  <span class="arithmatex">\(<span class="arithmatex">\(OUL = R \times (T_r + L )
+  \\ 
+  I_{cycle} = \frac{Q}{2} = (R \times T_r)/2\)</span>\)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>I cycle表示平均循环库存</p>
+</li>
+<li>
+<p>pipeline Inventory ：R*L</p>
+</li>
+<li>
+<div class="arithmatex">\[Q_{opt} = \sqrt{\frac{2KR}{H} }\]</div>
+</li>
+</ul>
+<p>其中K是每个订单的固定成本，R是flow rate，H是每周期的保管成本</p>
+<ul>
+<li><strong>好的解决办法：降低固定成本开销或者缩减review period，使得预测更加准确？</strong></li>
+</ul>
+<h2 id="amss-08">AMSS 08<a class="headerlink" href="#amss-08" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p>需求的不准确性和预测</p>
+</li>
+<li>
+<p>未来是从过去到现在的连续。</p>
+</li>
+<li>
+<p>预测的三大特征：</p>
+</li>
+<li>
+<p>预测都是都是不准确的</p>
+</li>
+<li>群体预测比单体预测要准确</li>
+<li>
+<p>短期预测比长期预测要准确</p>
+</li>
+<li>
+<p><strong>安全库存和Service Level</strong></p>
+</li>
+<li>
+<p>不确定性和缺货：stockout</p>
+</li>
+<li>缺货的原因：顾客表现等<img alt="Screen Shot 2021-12-27 at 12.03.29 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2012.03.29%20PM.png" /></li>
+<li>
+<p>安全库存：是指超过平均需求之外额外设置的库存，或者说是超过预测需求为了方式需求不确定性进行缺货保护设置的库存。or <strong>safety stock(SS)</strong>, is the inventory held <strong>in excess of the average demand or in excess of forecast demand to hedge against uncertainty to protect against stock-out.</strong></p>
+</li>
+<li>
+<p><strong>Service Level Measures</strong></p>
+</li>
+<li>
+<p><strong><u><em>cycle-service-level</em></u></strong>： <strong>refers to either the probability that there will be no stockout within a time interval。</strong>在一个时间间隔中（周期中）不会缺货的概率。</p>
+</li>
+<li>
+<p><strong>Fill-rate:</strong> is the fraction of total demand satisfied from inventory on hand.</p>
+</li>
+<li>
+<p>库存控制系统（ICS）的相关问题</p>
+</li>
+<li>
+<p>如何检查库存状态？</p>
+<blockquote>
+<p>周期性 periodically vs 一直 all time</p>
+</blockquote>
+</li>
+<li>
+<p>补多少货？</p>
+<blockquote>
+<p>Batch Q VS Target level</p>
+</blockquote>
+</li>
+<li>
+<p>何时补货？</p>
+<blockquote>
+<p>ROP vs the time after inventory reviewed</p>
+</blockquote>
+</li>
+<li>
+<p>以连续review为例讲解</p>
+</li>
+<li>
+<p><strong>LTD = Leadtime demand, the total flow-unit requirement during replenishment lead time.</strong> 在lead time期间的总flow unit 的需求，还有average LTD</p>
+</li>
+<li>
+<div class="arithmatex">\[
+    \sigma_{LTD}
+    \]</div>
+<p>是Standard deviation of leadtime demand，标准差。</p>
+</li>
+<li>
+<p><img alt="Screen Shot 2021-12-27 at 12.19.00 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2012.19.00%20PM.png" /></p>
+</li>
+<li>
+<p><img alt="Screen Shot 2021-12-27 at 12.19.38 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%2012.19.38%20PM.png" /></p>
+</li>
+<li>
+<div class="arithmatex">\[I_{s} = ROP - LTD
+    \\
+    \\
+    ROP = I_{s} + LTD
+    \\
+    \\
+    I = I_{c} + I_{s} = Q/2 + I_{s}
+    \\
+    \\
+    mean\quad demand = RL\]</div>
+</li>
+<li>
+<p>安全库存的计算、ROP的计算，总库存的计算，leadtime期间的平均需求 = RL，etc  </p>
+</li>
+<li>
+<p>CSL== Prob(no stock out) = Prob(<strong>LTD ≤ ROP</strong>)</p>
+</li>
+<li>
+<p>CSL = Prob[(DLTD - mLTD)/sLTD ≤ (ROP- mLTD)/sLTD ] 
+     = Prob(Z ≤ z<em>)                [use tables to find z</em>]</p>
+<ul>
+<li>这里进行了一个标准正态分布的转化</li>
+</ul>
+</li>
+<li>
+<div class="arithmatex">\[z = \frac{I_{safety}}{\sigma_{LTD}}
+    \\
+    CSL = Prob[(D_{LTD} - \mu_{LTD}) / \sigma_{LTD} ≤ \
+    (ROP - \mu_{LTD})/\sigma_{LTD}]\]</div>
+</li>
+<li>
+<div class="arithmatex">\[ROP = LTD + I_{s}
+    \\
+    = \mu_{LTD} + z\times \sigma_{LTD}
+    \\
+    = RL + z \times \sigma_{LTD}\]</div>
+</li>
+<li>
+<p>所以需要尽量减少LTD的波动程度，提高预测准确性。从而实现减少库存的最终目的？</p>
+</li>
+<li>
+<p><strong>报童模型</strong> </p>
+</li>
+<li>
+<p>R：demand with distribution F，f, c = unit cost产品成本, p = retail price零售价格, v = unit salvage value设备残值</p>
+</li>
+<li>p &gt; c &gt; v, Q : 订单总量， 决策变量</li>
+<li>当季销售收入：p * min(Q, R)</li>
+<li>回收残值收入：v * max( Q - R, 0)</li>
+<li>购买成本：cQ</li>
+<li>最终收入：E[p * min(Q, R) +v * max( Q -R,0)] - cQ</li>
+<li>At any order quantity, Q, the expected marginal benefit from ordering an additional unit is (p-c) * Prob(R &gt; Q)期望边际；期望边际成本：(c - v) *Prob(R ≤ Q)</li>
+<li>尽管边际收益是随着数量增多不断递减，但是边际成本却会不断增加</li>
+<li><strong>F(Q*) = Cu/(Cu + Co), 其中Cu =  p - c[买少了，under-stocking], Co = c - v[买多了，over-stocking]</strong></li>
+<li>选在Cu/（Cu+Co）对应的Q*最好<img alt="Screen Shot 2021-12-27 at 1.06.52 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%201.06.52%20PM.png" /></li>
+<li>
+<p>其中z是安全库存因子，与service level相关，我们需要减少西格玛R从而减少Q*，上面的R表示的是需求的平均值，西格玛是需求的标准差</p>
+</li>
+<li>
+<p>Lead Time Demand Analysis 不确定性分析增加随机变量L（LTD）</p>
+</li>
+<li>
+<p>$$\sigma_{LTD} = \sqrt{L} \times \sigma_{R}
+    \
+    \
+    SS = ROP - LTD = z\sigma_{LTD} = z\sqrt{L} \times \sigma_{R}
+    \
+    \
+    \sigma_{LTD} = \sqrt{LS_{R}^2 + R<sup>2S_{L}</sup>2}
+    \
+    \
+    \frac{C_u}{C_u + C_o}</p>
+<p>\
+= (p-c)/(p-c + c - v)\
+=(p-c)/(p-v)
+\
+z = \Phi^{-1}[c]
+\
+=\Phi^{-1}[(p-c)/(p-v)]$$</p>
+</li>
+<li>
+<p>分析LTD的标准差，可以看出影响因素：</p>
+<ul>
+<li>z</li>
+<li>前导时间L</li>
+<li>前导时间的标准差<span class="arithmatex">\(<span class="arithmatex">\(\sigma_L\)</span>\)</span></li>
+<li>需求变化率的标准差</li>
+</ul>
+</li>
+<li>
+<p><strong>所以三个影响安全库存的关键</strong></p>
+<ul>
+<li><strong>给定的期望的服务水平</strong></li>
+<li><strong>需求的均值和不稳定程度</strong></li>
+<li><strong>前导时间的均值和不稳定程度</strong></li>
+</ul>
+<p>这几点可以简化为：</p>
+<ul>
+<li>减少前导时间的均值和标准差</li>
+<li>减少需求的波动程度</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk pooling strategies</strong></p>
+</li>
+<li>
+<p>整体预测比单体预测更加准确</p>
+<ul>
+<li>Demand variability is reduced if one aggregates demand across locations/products(varieties). </li>
+<li>More likely that high demand from one customer or for one kind of product will be offset by low demand from another or for another kind of product. </li>
+<li>Reduction in variability allows a decrease in safety stock and therefore reduces average inventory. </li>
+</ul>
+</li>
+<li>Aggregation：将多个类似产品或者不同地区的产品的需求整合起来看。</li>
+<li><strong>Physical centralization：地理上将不同地区整合到一个地方【根号n效应】：</strong><h2 id="-">- <img alt="Screen Shot 2021-12-27 at 1.34.57 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%201.34.57%20PM.png" /><a class="headerlink" href="#-" title="Permanent link">⚓︎</a></h2>
+</li>
+<li>Virtual centralization：为了满足不同地区间需求，将产品在不同地区间输送</li>
+<li>Specialization</li>
+<li>Component Commonality（MTS、ATO等策略）</li>
+<li>Product Substitution：产品替代：利用多余的类似产品的安全库存弥补某一个产品的安全库存；</li>
+<li>
+<p>Postponement：缩短预测的长度，实现更加精准的预测</p>
+</li>
+<li>
+<p>Periodic Review Policy Structure</p>
+</li>
+<li>
+<p>具体性质见上文OUL的部分</p>
+</li>
+<li>
+<div class="arithmatex">\[(T_r + L) \times R
+    \\
+    \\
+    \sigma_{RLTD} = \sqrt{T_r + L} \times \sigma_R
+    \\
+    \\
+    SS = z \times \sigma_{RLTD}
+    \\
+    OUL = R \times (T_r + L) + SS\]</div>
+</li>
+<li>
+<p><img alt="Screen Shot 2021-12-27 at 1.45.01 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%201.45.01%20PM.png" /></p>
+</li>
+<li>
+<p>Tr是订货周期，L是leadtime，Tr比leadtime 长一点。</p>
+</li>
+<li>
+<p>对于Periodic review来说，这种OUL的方法会增加库存， 应该减少review的周期。</p>
+</li>
+</ul>
+<h2 id="amss-09-waiting-line-analysis">AMSS 09 Waiting Line Analysis<a class="headerlink" href="#amss-09-waiting-line-analysis" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Service System    </li>
+<li>Input / output</li>
+<li>channel/multichannel:  one person barber shop vs. bank tellers' windows 一个人的理发店和银行窗口</li>
+<li>
+<p>Phase/multiphase : 洗车 vs 理发， 银行柜员窗口vs 医院就诊</p>
+</li>
+<li>
+<p>information and operating control policies:</p>
+</li>
+<li>
+<p>Information structure</p>
+</li>
+<li>
+<p><strong>operating control policies:</strong> 排序的规则</p>
+<ul>
+<li>FIFO</li>
+<li>LIFO</li>
+<li>Priority</li>
+</ul>
+</li>
+<li>
+<p>Service System相关参数</p>
+</li>
+<li>
+<p>Arrival Process：</p>
+<ul>
+<li>Arrival rate Ri： average in flow rate</li>
+<li>inter-arrival time = 1/Ri</li>
+</ul>
+</li>
+<li>
+<p>Service Process</p>
+<ul>
+<li>处理时间 <span class="arithmatex">\(T_p\)</span></li>
+<li>每个Server 的处理速率： <span class="arithmatex">\(= 1/Tp\)</span></li>
+<li>Server数量 <span class="arithmatex">\(c\)</span></li>
+<li>总处理速率（Capacity）<span class="arithmatex">\(Rp = c/Tp\)</span></li>
+<li>Buffer capacity: <span class="arithmatex">\(K\)</span> 最大队长</li>
+</ul>
+</li>
+<li>
+<p>可能存在的queue的现象：blocked，abandon</p>
+</li>
+<li>
+<p><strong>Inventory related measures</strong></p>
+<ul>
+<li>Queue length Ii在输入buffer中的平均库存单位</li>
+<li>正在处理中的顾客Ip = Ri * Tp</li>
+</ul>
+</li>
+<li>
+<p><strong>Flow-time related measures</strong></p>
+<ol>
+<li>waiting time Ti:在队列中等待的时间</li>
+<li>service time Tp</li>
+<li>total flow time = 1 + 2, T</li>
+<li>flow time efficiency e = Tp/T</li>
+</ol>
+</li>
+<li>
+<p><strong>Throughput related measures</strong></p>
+<ol>
+<li>Throughput: R = min(Ri, Rp)</li>
+<li><strong>capacity utilization: 在服务池中忙于处理顾客服务的server pool capacity占比，u = R/Rpc</strong></li>
+<li>Safety capacity: Rs = Rp - R 超出处理顾客需求的那部分可用的capacity</li>
+</ol>
+</li>
+<li>
+<p>为何会产生delay，为何队列会增长？</p>
+</li>
+<li>
+<p><strong>原因1</strong>: 只要到达速率（arrival rate) &gt; processing rate处理速率，且到达和处理时间都是连续的，那么队列就一定会增加</p>
+</li>
+<li><strong>原因2:</strong> 随机变动会导致队列增长，甚至于在一个order process rate 高于order arrival rate 的系统中；<ul>
+<li>一个不同步的系统（<strong>unchronized</strong> system) 可能会导致顾客delay和queues 增长</li>
+<li>如果到来和处理时间能被同步（correlated)，队列和等待时间能被减少</li>
+</ul>
+</li>
+<li>
+<p>稳定状态（stability condition) </p>
+<ul>
+<li>平均处理速度 &gt; 平均到达速度</li>
+<li>相等的，capacity利用率 u &lt; 1, 或者安全capacity  Rs &gt; 0</li>
+</ul>
+</li>
+<li>
+<p>随机性哪里来variability？</p>
+</li>
+<li>Input：不可预测性、product mix、random arrival, volume swings</li>
+<li>Tasks: quality, inherent variation</li>
+<li>Resources: setup time, changeover, breakdown, maintenance,</li>
+<li>route : variable routing, dedicated machines</li>
+<li>Queueing notation :</li>
+<li>A/B/X/Y/Z: A 代表arrival pattern顾客到来的模式；B代表服务模式：service pattern， X代表并行的server数量；Y代表队的容量；Z代表队列的排序规则；</li>
+<li>M/M/1：指数分布的arrivals , service</li>
+<li>柏松随机过程，指数分布的服务时间，c个服务器，buffer capacity K，无人放弃排队<ul>
+<li>队伍长度：<img src="docs/../picx/AMASS-pics/Screen Shot 2021-12-27 at 6.28.20 PM.png" alt="Screen Shot 2021-12-27 at 6.28.20 PM" style="zoom:25%;" /></li>
+</ul>
+</li>
+<li>G/G/C</li>
+<li>提高buffer capacity, blocking and abandonment:</li>
+<li>Rate at which customers enter R = Ri (1- Pb)(1- Pa)</li>
+<li>要排除被block的部分顾客和一部分不愿意继续等待的impatient 顾客（b: blocked, a: abandonment)</li>
+<li></li>
+<li>Performance Variability：</li>
+<li>Effect of Variability： Average versus Actual Flow time</li>
+<li>Time Guarantee ：Promise</li>
+<li><strong>Service Level ：P(Actual Time &lt; Time Guarantee)</strong></li>
+<li>Safety Time：Time Guarantee – Average Time</li>
+<li>
+<p>P(Actual Time ≤ t) = 1 – EXP(- t/T) </p>
+</li>
+<li>
+<p>排队心理学</p>
+</li>
+<li>satisfaction = perception - expectations</li>
+<li>影响实际排队时间感知的：<ul>
+<li>Comfortable waits are shorter then uncomfortable wait.</li>
+<li>Occupied Time Feels Shorter Than Unoccupied Time. </li>
+<li>Uncertain Waits Are Longer than Known, Finite Waits</li>
+<li>Unexplained Waits Are Longer than Explained Waits </li>
+<li>Unfair Waits Are Longer than Equitable Waits </li>
+<li>Solo Waits Feel Longer than Group Waits</li>
+</ul>
+</li>
+<li>影响顾客等待时间期望的：<ul>
+<li>The More Valuable the Service, the Longer the Customer Will Wait</li>
+</ul>
+</li>
+<li>如何减少等待？</li>
+<li>增加server</li>
+<li>pool arrival streams把到达的顾客流pool在一起</li>
+<li>提高capacity</li>
+<li>减少需求的variability</li>
+</ul>
+<h2 id="amss-10-planning-and-control-strategies">AMSS 10. Planning and Control Strategies<a class="headerlink" href="#amss-10-planning-and-control-strategies" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li><strong>planning and control: how and when it should be operated ? Which resources should be allocated to the activities that consititute it?: 这</strong>里属于信息管理子系统。</li>
+<li>planning &amp; control 决定了</li>
+<li>做什么工作</li>
+<li>什么时候开始做这个工作</li>
+<li>谁来做这个工作</li>
+<li>Overview of Operational Planning Activities</li>
+<li>Time-dimensions:<ul>
+<li>Long-range planning( &gt; 1year)</li>
+<li>Medium-range planning( 6 - 18 months)</li>
+<li>Short-range planning( 1day ~ &lt;6months)</li>
+</ul>
+</li>
+<li><img alt="Screen Shot 2021-12-27 at 7.05.32 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%207.05.32%20PM.png" /></li>
+<li>Aggregate  planning(AP综合预测)</li>
+<li>通过决定多公司需要留下多少雇员以及对于公司来说需要生产的产品的数量、种类</li>
+<li><strong>竞争策略</strong>：<ul>
+<li>chase strategy：对需求变化快速反应，但是长期来说很难执行</li>
+<li>level-production ：保持一个稳定的库存/人员安排的状态</li>
+<li>为企业设计生产计划，在计划期内最大化利润，满足capacity约束</li>
+</ul>
+</li>
+<li>重点：<ul>
+<li>Smoothing：从一个状态转化到另一个状态的成本和扰动；</li>
+<li>Bottleneck planning：瓶颈时间，因为capacity限制导致的问题</li>
+<li>planning horizon：滚动时域、地平线效应</li>
+<li>Treatment of demand 对需求的预测准确性、可预测性</li>
+<li>满足需求的举措：改不改变生产率：（seasonal Inventory）</li>
+<li>改变工人/工作时间/</li>
+</ul>
+</li>
+<li>AP导致的成本：（1）smooth cost （2）holding cost， shortage cost，（3）regular time cost；（4）overtime costs， idle time costs主要看：<strong>闲置、smooth过程中的开销、逾期开销、日常管理开销等。</strong></li>
+<li>AP的techniques：Trial &amp; error</li>
+<li>AP的决策变量：生产多少、库存多少，backlog多少，overtime多少，用多少工人等，目的是最小化total cost in period T</li>
+<li>Type of OS and control Strategy</li>
+<li><strong>Type of OS</strong>:<ul>
+<li>Make to Order（由外部已知的customer进行）</li>
+<li>Make to Stock（customer未知）</li>
+</ul>
+</li>
+<li><strong>Type of CS:</strong><ul>
+<li>Push: 由对需求的预测推动；</li>
+<li>Pull：由下游（downstream）的需求（内部信息）拉动</li>
+</ul>
+</li>
+<li>注意了，push和pull是针对control strategy提出来的，而不是OS，OS是M2O，M2S</li>
+<li><img alt="Screen Shot 2021-12-27 at 7.26.20 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%207.26.20%20PM.png" /></li>
+<li>Push Control Strategy：</li>
+<li>MRP（Material Requirement Planning)<ul>
+<li>Def: 将Master Production Schedule<strong>（主生产计划）</strong> for final products转化为上游流程中所需的最终的物料需求</li>
+<li>MRP的输入1：需要多少最终产品，需要哪种产品，什么时候需要？</li>
+<li>MPS必须与综合生产计划相一致，虽然它是根据每个特定的产品制作的。</li>
+<li>MRP的输入2: <strong>BOM</strong>（Bill of materials）产品物料清单，列明产品组成和各个组成的数量，利用一个<strong>产品结构树（product structure tree）</strong>【自行车拆解的图】</li>
+<li>MRP 的计算：</li>
+<li>Net requirements(净需求量) Actual amount needed in each time period</li>
+<li>Planned-order receipts(计划入库量) Quantity expected to received at the beginning of the period offset by lead time</li>
+<li>Planned-order releases(计划订货量) Planned amount to order in each time period</li>
+<li>Gross requirements(总需求量) Total expected demand</li>
+<li>Scheduled receipts(预计入库量)
+     Open orders scheduled to arrive</li>
+<li>Projected Available(预计可用量) Expected inventory on hand at the beginning of each time period</li>
+<li>在列表之前需要确定好LT， Lotsize的大小等数据；</li>
+<li><strong>本期的计划入库量就是下一期的计划入库量</strong></li>
+<li>净需求= 总需求-预计可用量</li>
+<li><strong>预计入库量就是按照lotsize取最小能够覆盖净需求的量；</strong></li>
+<li>本次的预计可用量 = 上一次的预计入库+上一次的预计可用-上一次的总需求</li>
+<li><img alt="Screen Shot 2021-12-28 at 9.31.55 AM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-28%20at%209.31.55%20AM.png" /></li>
+<li>MRP的首要报告（？）</li>
+<li>MRP的次要报告（？）secondary report</li>
+<li>MRP的具体实现：</li>
+<li>计划中心化（scheduled centralized）</li>
+<li>物料根据schedule分配</li>
+<li>每个中心处理所有available input然后输送给下一个阶段；</li>
+<li>实现了供给和需求之间有效的匹配（正确的数据、库存数据、需求数据、BOM数据、需求预测、可靠的过程）</li>
+<li>对MRP的批评：</li>
+<li>过于决定的模型</li>
+<li>push system</li>
+<li>需要大量数据</li>
+<li>self-fulfilling leadtime</li>
+<li>难度，安装费用很多，需要维护</li>
+</ul>
+</li>
+<li>MRP-II：manufacturing Resource Planning<ul>
+<li>特点：包含了capacity planning 的内容在里面，拓宽了物料的定义范围；</li>
+</ul>
+</li>
+<li>ERP：Enterprise Resoucre Planning System<ul>
+<li>Def. 一个计算机系统，将 会计、销售、制造和公司其他功能整合在一个程序中；具体通过一个数据库实现了各个功能之间的互通；</li>
+<li><img alt="Screen Shot 2021-12-27 at 8.21.26 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%208.21.26%20PM.png" /></li>
+</ul>
+</li>
+<li>Pull Strategy</li>
+<li>特征： <ul>
+<li>物料通过拉动的方式传递，与传统的推动的方式相反；</li>
+<li>迫使公司降低过高生产估计和过低生产估计</li>
+</ul>
+</li>
+<li>Kanban Production Control<ul>
+<li>​ <img alt="Screen Shot 2021-12-27 at 8.24.11 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%208.24.11%20PM.png" /></li>
+<li>物料流和kanban反馈流</li>
+<li>实现Low WIP levels</li>
+<li><strong>当且仅当一个产品作为产出被下游阶段所需要的时候，生产才会开始</strong>；也就是说，每个部分是通过下一个部分被拉动的，而不是像push一样被预测所推动；<strong>这是对当下的 顾客需求作出反应，而不是基于对未来顾客的需求的预测</strong>；去中心化的控制（pull） vs 中心化的控制；</li>
+<li><img alt="Screen Shot 2021-12-27 at 8.31.07 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%208.31.07%20PM.png" /></li>
+<li>看板的维护质量的作用；</li>
+<li>双箱系统，实现了full production完全生产，是production kanban拉动了生产开始，withdrawal kanban实现了货物的流动</li>
+</ul>
+</li>
+</ul>
+<h2 id="amss-12-operations-scheduling">AMSS 12. Operations Scheduling<a class="headerlink" href="#amss-12-operations-scheduling" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li><strong>Operation Scheduling是项目activities开始前的最后一个阶段，要解决资源分配等问题</strong></li>
+<li>Push 还是 pull 核心是看能否使得demand match supply</li>
+<li>MRP条件：估计预测误差很大；预测总是错的；leadtime/处理流程是否可靠</li>
+<li>本章内容：<strong>调度问题</strong>，属于一个更加小的范畴。</li>
+<li>短期调度安排的重要性：</li>
+<li>满足更多顾客的需求</li>
+<li>更快、更可靠的传递</li>
+<li>更好地使用资源和更低的成本</li>
+<li><strong>schedule的三个重要因素：</strong></li>
+<li><strong>resources资源</strong></li>
+<li><strong>tasks/jobs/customers：任务、工作、顾客</strong></li>
+<li><strong>目标objectives</strong><ul>
+<li>High customers : on-time delievry + less waiting time</li>
+<li>low Inventory Levels: WIP and FGI(finished goods Inventory)</li>
+<li>高利用率</li>
+</ul>
+</li>
+<li>Flow units resources  </li>
+<li>Flow shop: high volume system：<strong>产量大，种类少，需要稳定的需求供给，标准化的机械设备与activities，主要注意的：生产线平衡！！</strong><img alt="Screen Shot 2021-12-28 at 9.58.16 AM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-28%20at%209.58.16%20AM.png" /></li>
+<li>Intermediate-volume system：output介于两者之间</li>
+<li>Job shop: low volume system：产量低但是种类多，需求复杂</li>
+</ul>
+<p><img alt="Screen Shot 2021-12-27 at 9.00.39 PM" src="../picx/AMASS-pics/Screen%20Shot%202021-12-27%20at%209.00.39%20PM.png" /></p>
+<ul>
+<li>甘特图法：解决jobshop处理问题</li>
+<li>指派问题【匈牙利算法】</li>
+<li>排序问题</li>
+<li>决定任务在机器或者工作中心执行处理的顺序</li>
+<li>优先顺序规则：<ul>
+<li>FCFS</li>
+<li>SPT：最短处理时间法则</li>
+<li>EDD：最早结束日期</li>
+<li>CR：critical ratio：关键指标</li>
+<li>rush/emergency</li>
+<li>etc</li>
+</ul>
+</li>
+<li>如果是n个任务在1台机器上，<ul>
+<li>没有什么顺序是在所有标准下最优的No one sequencing rule excels on all criteria</li>
+<li>SPT does well on minimizing flow time and number of jobs in the system but SPT moves long jobs to the end which may result in dissatisfied customers</li>
+<li>FCFS does not do especially well (or poorly) on any criteria but is perceived as fair by customers FCFS会被顾客认为是公平的</li>
+<li>EDD能够减少lateness</li>
+</ul>
+</li>
+<li>
+<p>n个任务在2个机器上：Johnson's rule 约翰逊-贝尔曼法则</p>
+</li>
+<li>
+<p>三个要素：Inventory status、MPS、BOM</p>
+</li>
+<li>AM financial services</li>
+<li>initial review 的巨大作用</li>
+</ul>
+<p>Non-value-added:</p>
+<p>Activities:</p>
+<p>构成activities time的几块：（1）有可能返工次数比较多，不是一次作一次做到位，因此想要缩短返工；（2）如果做对了有没有可能进一步缩短？</p>
+<p>缩短waiting的时间：调整流程的结构，原来都是一步一步串联的方式，有没有可能去同时做？【称为：流程冲突】：</p>
+<ul>
+<li>
+<p>Q1:如何估计每一次的flow time？</p>
+</li>
+<li>
+<p>Q2:如何计算系统的capacity？（capacity和throughput、flowrate之间的关系、flow in rate和flow out rate之间的关系）增加throughput就是增加capacity，增加不了就去增加demand rate。（CRU rental的案例）</p>
+</li>
+<li>
+<p>Q3:什么是capacity？分为theoretical capacity、effective capacity、capacity分别是什么关系？</p>
+</li>
+</ul>
+<p>主要是强调schedule available、有些loss（一类：resource unavailable（设备维修、员工缺勤，另一类：changeover： 切换成本，从一个任务到另一个任务之间的切换时间要扣掉的）。去掉这些unavailable都不考虑，假设这些都是available 的话，得到的capacity就是effective <em>。如果因为计划的原因导致没有input（flow unit input），导致的starvation，和因为blockage（阻塞）的原因，把这些都考虑进去才是capacity？【capacity*</em><strong> </strong><em>*和*</em><strong> </strong><em>*effective ~*</em><strong><em>*</em>*之间*</strong><strong><em>**的差别*</em></strong>】</p>
+<p>Capacity取决于瓶颈，而瓶颈的capacity如何计算？</p>
+<p>要考虑resource pool（C表示）；要考虑load batch；要考虑t（单位资源的来做这件事情的要花的时间，单位时间可以处理多少？）。通过这三点找出瓶颈。</p>
+<ul>
+<li>Q4:Inventory：广义的狭义的：</li>
+</ul>
+<p>狭义的有哪些类型：按照价值和数量进行划分：ABC库存；按照库存处在不同阶段分为原材料和半成品库存成品库存；按照库存品作用分为理论的safety inventory、cycle inventory、季节库存、投机库存、解耦库存、</p>
+<p>EOQ模型和报童模型。【要回去仔细看，比如什么是安全库存？什么是cycle inventory？怎么在不影响顾客满意的情况下减少库存？】</p>
+<p>预测的三大原则？</p>
+<ol>
+<li>
+<p>预测都是错的</p>
+</li>
+<li>
+<p>长期预测没有短期预测准确</p>
+</li>
+<li>个体预测没有群体预测准确（risk pooling）</li>
+</ol>
+<p>整体的、个体的之间的分担：叫做risk pooling：风险分担、风险组合、风险对冲。把总体的pooling在一起。</p>
+<p>短期的长期的：在库存管理时，有哪些，举措，应用到了这一点？</p>
+<p>有哪些举措pooling在一起？【vitru】</p>
+<p>Postponement引用了什么原理？-》短期比长期的原理，差异化。【安全库存和西格玛有关，西格玛的那个公式？】</p>
+<p>计划对未来的安排：长期中期短期。</p>
+<p>MRP：MRP的三大XX，最后决定了XX order receipt、MPS、。。。</p>
+<p>Push pull？</p>
+<p>Schedule的一些问题：大概解决什么问题？</p>
+<p>Schedule三个很重要的要素：（1）资源（2）任务；（3）目标；</p>
+<p>分配资源做哪些任务？这么做的安排是那些？scheduling的时候，jobshop scheduling涉及的两大任务：分配：dispatch、assignment，loading把任务安排给谁；排序（一系列的排序规则：FIFO、SPT (最短时间优先)，sequence rule；priority rule优先级排序：先是谁后是谁？</p>
+<p>最后得出了什么结论？【看下ppt】</p>
+<p>比较的是影响flow rate，inventory</p>
+<p>四道大题：前面20判断题；稍微改一改就有错的：</p>
+<p>e.g什么是安全库存？Reorder point点？安全库存指在补货点的库存量。</p>
+<p>SPT在所有规则最好的-&gt;NO</p>
+<p>十道选择题单选。</p>
+<p>简答题：课上都讲过的概念。</p>
+<p>流程分析题：要计算flow time，capacity，inventory，</p>
+<p>注意要先画流程图。</p>
+<p>要花一点时间，不然可能有点绕，要回去看看案例CRU，cranberry等。</p>
+<p>有的内容就是书上的题目。</p>
+<p>判断题主要还是看意思。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 22, 2023 11:29:49</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 22, 2023 11:29:49</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+  
+  
+    <div class="md-source-date">
+      <small>
+          Authors: <span class='git-page-authors git-authors'><a href='mailto:593302270@qq.com'>xiaoxiao</a></span>
+      </small>
+    </div>
+    
+  
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2001 - 2023 xiaoxiaoWayne
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.zhihu.com/people/wang-zhi-xiao-49-5" target="_blank" rel="noopener" title="www.zhihu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M170.54 148.13v217.54l23.43.01 7.71 26.37 42.01-26.37h49.53V148.13H170.54zm97.75 193.93h-27.94l-27.9 17.51-5.08-17.47-11.9-.04V171.75h72.82v170.31zm-118.46-94.39H97.5c1.74-27.1 2.2-51.59 2.2-73.46h51.16s1.97-22.56-8.58-22.31h-88.5c3.49-13.12 7.87-26.66 13.12-40.67 0 0-24.07 0-32.27 21.57-3.39 8.9-13.21 43.14-30.7 78.12 5.89-.64 25.37-1.18 36.84-22.21 2.11-5.89 2.51-6.66 5.14-14.53h28.87c0 10.5-1.2 66.88-1.68 73.44H20.83c-11.74 0-15.56 23.62-15.56 23.62h65.58C66.45 321.1 42.83 363.12 0 396.34c20.49 5.85 40.91-.93 51-9.9 0 0 22.98-20.9 35.59-69.25l53.96 64.94s7.91-26.89-1.24-39.99c-7.58-8.92-28.06-33.06-36.79-41.81L87.9 311.95c4.36-13.98 6.99-27.55 7.87-40.67h61.65s-.09-23.62-7.59-23.62v.01zm412.02-1.6c20.83-25.64 44.98-58.57 44.98-58.57s-18.65-14.8-27.38-4.06c-6 8.15-36.83 48.2-36.83 48.2l19.23 14.43zm-150.09-59.09c-9.01-8.25-25.91 2.13-25.91 2.13s39.52 55.04 41.12 57.45l19.46-13.73s-25.67-37.61-34.66-45.86h-.01zM640 258.35c-19.78 0-130.91.93-131.06.93v-101c4.81 0 12.42-.4 22.85-1.2 40.88-2.41 70.13-4 87.77-4.81 0 0 12.22-27.19-.59-33.44-3.07-1.18-23.17 4.58-23.17 4.58s-165.22 16.49-232.36 18.05c1.6 8.82 7.62 17.08 15.78 19.55 13.31 3.48 22.69 1.7 49.15.89 24.83-1.6 43.68-2.43 56.51-2.43v99.81H351.41s2.82 22.31 25.51 22.85h107.94v70.92c0 13.97-11.19 21.99-24.48 21.12-14.08.11-26.08-1.15-41.69-1.81 1.99 3.97 6.33 14.39 19.31 21.84 9.88 4.81 16.17 6.57 26.02 6.57 29.56 0 45.67-17.28 44.89-45.31v-73.32h122.36c9.68 0 8.7-23.78 8.7-23.78l.03-.01z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/SmilingWayne" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://weibo.com/u/6025785811" target="_blank" rel="noopener" title="weibo.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.copy", "navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
