@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../Chapter2/">
+        <link rel="next" href="../Chapter1_plugin/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
@@ -5494,6 +5494,8 @@
         
           
         
+          
+        
       
       
         
@@ -5582,6 +5584,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter1_plugin/" class="md-nav__link">
+        灵敏度分析
+      </a>
     </li>
   
 
@@ -6922,7 +6938,7 @@
 <hr />
 <ul>
 <li>
-<p>单纯形法：</p>
+<p><strong>单纯形法</strong>：</p>
 <ul>
 <li>迭代原理：先找到基本可行解，判断是否为最优解，如果不是，就转换到相邻的基本可行解，并且使得目标函数值不断增大，直到找到最优解；</li>
 <li>基的转换是在相邻基之间进行的，两个基本可行解之间有且仅有一基变量发生了变化，</li>
@@ -6930,7 +6946,7 @@
 <li>检验数：<span class="arithmatex">\(\sigma_{j} = (c^{T}_N - c^{T}_B B^{-1}N)_j\)</span>，如果线性规划问题要求极小值，那么当所有检验数<span class="arithmatex">\(\sigma_{j} \geq 0\)</span> 时候达到最优解。反之亦然。</li>
 </ul>
 </li>
-<li>选中入基变量x_k和出基变量x_l，第k列和第l行的交叉点元素就是<strong>旋转主元</strong>，确保基矩阵始终是单位矩阵，对矩阵进行初等变换。</li>
+<li>选中入基变量<span class="arithmatex">\(x_k\)</span>和出基变量<span class="arithmatex">\(x_l\)</span>，第<span class="arithmatex">\(k\)</span>列和第<span class="arithmatex">\(l\)</span>行的交叉点元素就是<strong>旋转主元</strong>，确保基矩阵始终是单位矩阵，对矩阵进行初等变换。</li>
 </ul>
 </li>
 <li>
@@ -6938,8 +6954,8 @@
 <ul>
 <li>列出单纯形表，要求<span class="arithmatex">\((B^{-1}b)_{i} \geq 0\)</span></li>
 <li>进行最优性判断，如果所有的<span class="arithmatex">\(\sigma_{j} = (c^{T} - c^{T}_B B^{-1}A)_j \leq 0\)</span>，那么当前基本可行解就是最优解；否则进入下一步</li>
-<li>确定换入变量：如果存在<span class="arithmatex">\(\sigma_j &gt; 0\)</span>，那么计算：<span class="arithmatex">\(max \left\{ \sigma_j | \sigma_j &gt; 0 \right\} = \sigma_s\)</span>,将对应的列变量x_s当作换入变量</li>
-<li>确定换出变量：检查换入变量<span class="arithmatex">\(x_s\)</span>所在的第<span class="arithmatex">\(s\)</span>列，<font color = red>如果所有的<span class="arithmatex">\(a_{is} \leq 0\)</span>，那么线性规划问题有无界解</font>；如果存在<span class="arithmatex">\(a_{is} &gt; 0\)</span>，那么计算 <span class="arithmatex">\(\theta = min \left\{ \frac{b_i}{a_{is}} | a_{is} &gt; 0 \right\} = \frac{b_r}{a_{rs}}\)</span> 。把对应的行变量<span class="arithmatex">\(x_r\)</span>作为换出变量，<span class="arithmatex">\(a_{rs}\)</span> 作为旋转主元。</li>
+<li>确定换入变量：如果存在<span class="arithmatex">\(\sigma_j &gt; 0\)</span>，那么计算：<span class="arithmatex">\(\mathop{\max} \left\{ \sigma_j | \sigma_j &gt; 0 \right\} = \sigma_s\)</span>,将对应的列变量<span class="arithmatex">\(x_s\)</span>当作换入变量</li>
+<li>确定换出变量：检查换入变量<span class="arithmatex">\(x_s\)</span>所在的第<span class="arithmatex">\(s\)</span>列，<font color = red>如果所有的<span class="arithmatex">\(a_{is} \leq 0\)</span>，那么线性规划问题有无界解</font>；如果存在<span class="arithmatex">\(a_{is} &gt; 0\)</span>，那么计算 <span class="arithmatex">\(\theta = \mathop{ \min} \left\{ \dfrac{b_i}{a_{is}} | a_{is} &gt; 0 \right\} = \dfrac{b_r}{a_{rs}}\)</span> 。把对应的行变量<span class="arithmatex">\(x_r\)</span>作为换出变量，<span class="arithmatex">\(a_{rs}\)</span> 作为旋转主元。</li>
 <li>重复2-4步骤，直到计算结束；</li>
 </ul>
 </li>
@@ -6948,7 +6964,7 @@
 <ul>
 <li><strong>人工变量法</strong>：如果不能在系数矩阵中观察到单位矩阵，可以通过添加虚构的人工变量来构造单位矩阵。（人工变量的取值一定要是0，所以如果检验数<span class="arithmatex">\(\sigma_j \leq 0\)</span>，基变量中依然有人工变量并且不为0，那么原问题无可行解<ul>
 <li>大M法：在目标函数中的人工变量乘M（极大数）【不适用计算机运算】</li>
-<li>两阶段法：Step.1 目标函数为最小化“所有人工变量和”(<span class="arithmatex">\(min -x_6-x_7\)</span>)的线性规划问题，找到一个基本可行解（或者判断是否无可行解）；Step.2 去除人工变量，重新引入原问题的目标函数，利用第一阶段的解作为初始基本可行解</li>
+<li>两阶段法：Step.1 目标函数为最小化“所有人工变量和”(<span class="arithmatex">\(\mathop{\min} -x_6-x_7\)</span>)的线性规划问题，找到一个基本可行解（或者判断是否无可行解）；Step.2 去除人工变量，重新引入原问题的目标函数，利用第一阶段的解作为初始基本可行解</li>
 </ul>
 </li>
 <li><strong>无可行解</strong>：在最优解中，人工变量必须为0，<u>判断一个线性规划问题无可行解的准则：在得到“最优基本可行解”时（以求解极大值问题为例，就是非基变量检验数都 <span class="arithmatex">\(\sigma_j \leq 0\)</span>)，如果基变量中依然含有非0的人工变量（两阶段中第一阶段目标函数不是0）。</u></li>
@@ -6958,15 +6974,22 @@
 <li>Bland法则：若多个检验数大于0，就选择下标最小的变量进基；若<span class="arithmatex">\(\theta\)</span>出现两个或者两个以上的相同的最小比值，就选择下标最小的出基；</li>
 </ul>
 </li>
-<li><strong>修正单纯形法</strong>：<ul>
+<li>
+<p><strong>修正单纯形法</strong>：</p>
+<ul>
+<li><span class="arithmatex">\(Ax = b \to Bx_B = b \to x_B = B^{-1}b\)</span></li>
+<li>传统单纯形法针对换基后新的基变量<strong>对应的原始矩阵求逆</strong>，用逆矩阵左乘系数矩阵从而实现目的；</li>
 <li>当前表的基的逆以及初始表，就可以计算出<strong>下一张表</strong>；</li>
-<li>修正单纯形法的复杂程度主要取决于B^{-1}的大小；</li>
-<li>修正单纯形算法的基本思想就是在给定一个初始可行基矩阵 𝑩 的逆矩阵以及初始基本可行解之后，通过不断地修正旧的可行基矩阵的逆矩阵 𝑩−1，获得新的可行基矩阵的逆矩阵 𝑩̂−1，进行操作得出 y_q = B^{-1}\alpha_q进而完成单纯形算法所需要的其他运算。在迭代过程中，修正单纯形算法只保留一些重要的核心信息，其他的信息可以根据需求适时地生成出来，因而可以节省内存空间。</li>
-<li>锁定主元，将其除以本身，系数列向量更新为<span class="arithmatex">\((0,0,...1,0,0..0)^{T}\)</span></li>
-<li>把这种转化展开到整个方程中，对迭代前后在基里的，系数列向量没有改变，出基变量改变影响不大。 </li>
+<li>修正单纯形法的复杂程度主要取决于<span class="arithmatex">\(B^{-1}\)</span>的大小；</li>
+<li>修正单纯形算法的基本思想就是在给定一个初始可行基矩阵<span class="arithmatex">\(B\)</span> 的逆矩阵以及初始基本可行解之后，通过不断地修正旧的可行基矩阵的逆矩阵 <span class="arithmatex">\(B^{-1}\)</span>，获得新的可行基矩阵的逆矩阵 <span class="arithmatex">\(B^{−1}\)</span>，进行操作得出 <span class="arithmatex">\(y_q = B^{-1}\alpha_q\)</span>进而完成单纯形算法所需要的其他运算。在迭代过程中，修正单纯形算法只保留一些重要的核心信息，其他的信息可以根据需求适时地生成出来;</li>
+<li>锁定主元，除以本身，系数列向量完成更新，对于非主元的其他元素，用同样的转化即可，对于原本仍然在基里的变量，没有任何变化（因为只0和1）</li>
+<li><img alt="" src="../../picx/OR1/OR-1-1.png" /></li>
+<li>目的就是直接把<span class="arithmatex">\(x_2\)</span>转化成<span class="arithmatex">\(x_5\)</span>的形式，只需要对整个矩阵（包括b）做初等行变换即可；</li>
 </ul>
 </li>
-<li><strong>列生成算法</strong> Column Generation:在非基变量很多的情况下，传统单纯形法需要对比所有的非基变量，但是这种情况下并不需要这样做。对于基变量，可以只涉及很少的一两个非基变量，就实现出入基操作，而不需要遍历reduced cost。</li>
+<li>
+<p><strong>列生成算法</strong> Column Generation:在非基变量很多的情况下，传统单纯形法需要对比所有的非基变量，但是这种情况下并不需要这样做。对于基变量，可以只涉及很少的一两个非基变量，就实现出入基操作，而不需要遍历reduced cost。</p>
+</li>
 </ul>
 </li>
 <li>
@@ -6997,7 +7020,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 28, 2023 20:17:22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 1, 2023 18:22:26</span>
       
         <br>
         Created:

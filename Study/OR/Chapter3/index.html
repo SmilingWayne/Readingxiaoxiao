@@ -5494,6 +5494,8 @@
         
           
         
+          
+        
       
       
         
@@ -5524,6 +5526,20 @@
     <li class="md-nav__item">
       <a href="../Chapter1/" class="md-nav__link">
         线性规划、单纯形法（群魔乱舞版）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter1_plugin/" class="md-nav__link">
+        灵敏度分析
       </a>
     </li>
   
@@ -7148,25 +7164,77 @@
 <h2 id="32">3.2 目标规划<a class="headerlink" href="#32" title="Permanent link">⚓︎</a></h2>
 <h3 id="321">3.2.1 多目标规划模型<a class="headerlink" href="#321" title="Permanent link">⚓︎</a></h3>
 <ul>
+<li>问题提出：如果只考虑一个主要目标，那么线性规划问题是处理单目标规划的有效方法，但是现实中一个决策优劣往往需要考虑多个目标，这些目标有时是相互矛盾的，这就是多目标决策的问题，它的特点是对各个目标分级加权和逐级优化，符合人们对一般复杂问题的认识：轻重缓急。</li>
 <li>
-<p>问题提出：如果只考虑一个主要目标，那么线性规划问题是处理单目标规划的有效方法，但是现实中一个决策优劣往往需要考虑多个目标，这些目标有时是相互矛盾的，这就是多目标决策的问题，它的特点是对各个目标分级加权和逐级优化，符合人们对一般复杂问题的认识：轻重缓急。</p>
+<p>有一些线性规划的局限性：<strong>固定目标</strong>（产品生产出来就一定能销售出去等...）目标规划可以刚柔并济地解决问题；</p>
 </li>
 <li>
 <p>概念：</p>
 <ol>
-<li>正、负偏差变量<span class="arithmatex">\(d^{+}, d^{-}\)</span>.</li>
-<li>绝对约束和目标约束，绝对约束是必须严格满足的等式约束和不等式约束，而目标约束是指目标规划特有的，可以把约束右端看作要努力追求的目标值，但允许正负偏差。</li>
-<li>优先因子和权系数：对于<span class="arithmatex">\(L\)</span>个目标函数<span class="arithmatex">\(f_1, f_2,...,f_L\)</span>有主次之分，为此引入优先因子<span class="arithmatex">\(P_i（i= 1,2,...,L)\)</span></li>
-<li>目标规划的目标函数（达成函数）</li>
+<li><strong>正、负偏差变量</strong>为<span class="arithmatex">\(d^{+}, d^{-}\)</span>，这两个至少有一个是0；</li>
+<li><strong>绝对约束</strong>和<strong>目标约束</strong>，绝对约束是必须严格满足的等式约束和不等式约束，而目标约束是指目标规划特有的，可以把约束右端看作要努力追求的目标值，但允许正负偏差。</li>
+<li>
+<p><strong>优先因子</strong>和<strong>权系数</strong>：</p>
+<ol>
+<li>对于<span class="arithmatex">\(L\)</span>个目标函数<span class="arithmatex">\(f_1, f_2,...,f_L\)</span>有主次之分，为此引入优先因子<span class="arithmatex">\(P_i（i= 1,2,...,L)\)</span>，主次轻重就用优先因子来表示；差别是绝对的；</li>
+<li>另一种是目标函数之间的差别是<b>相对的</b>，这些目标优先因子相同，他们的重要程度可以通过不同的权系数来表示；</li>
 </ol>
 </li>
-<li>目标规划的一般形式：
-【补充一个式子】</li>
-<li>目标规划的单纯形法：</li>
+<li>
+<p>目标规划的<strong>目标函数</strong>（达成函数）：</p>
+<ul>
+<li>由各目标约束的偏差变量和相应的优先因子和权系数组成。目标规划追求的是使多目标尽可能都得到满足，偏差尽可能地笑，所以<strong>目标函数是极小化的</strong>；</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>一般建模过程：</p>
+<ol>
+<li>列出绝对约束的约束方程， <span class="arithmatex">\(\sum \limits^{n}_{j = 1} a_{ij} x_j \leq (=,\geq) b_i\)</span>，其中 i 代表第i个绝对约束；</li>
+<li>列出目标约束的约束方程， <span class="arithmatex">\(\sum \limits^{n}_{j = 1} c_{kj} x_j + d^{-}_k - d^{+}_k = g_k\)</span> ，k代表第k个目标约束，目标偏差量、预期期望值等如所示；</li>
+<li>为各个目标约束确定优先级（优先因子和权系数），给出目标函数的表达式 <span class="arithmatex">\(\mathop{\min} { P_l \sum \limits^{K}_{k = 1} (W^{-}_{lk}d^{-}_k + W^{+}_{lk}d^{+}_k),  l = 1,2,...,L}\)</span><blockquote>
+<p>其中 <span class="arithmatex">\(W^{-}_{lk}\)</span> 和 <span class="arithmatex">\(W^{+}_{lk}\)</span> 是<span class="arithmatex">\(P_l\)</span> 优先因子对应的个目标的权系数， 对于每种目标取其偏差变量的加权之和、按照优先因子的主次之分逐一对满足对应偏差变量的加权之和最小化目标；
+先从 P_1， 开始，然后再从 P_2 开始...按照最重要的，依次进行；</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p>目标规划的一般形式：</p>
+</li>
+<li>
+<p>目标规划的解法：</p>
+<ul>
+<li>图解法：<ul>
+<li>图解法求解目标规划？类似于一个增加约束条件的操作～，优先加入优先因子更高的约束，在此之前需要先把绝对约束的可行域处理得到；</li>
+<li>如果遇到某个优先因子<span class="arithmatex">\(P_{j + 1}\)</span>，它的对应解空间为空，此时就只能用上一个优先级的解空间作为最终解空间；</li>
+<li>如果只有前 <span class="arithmatex">\(j\)</span> 个目标约束满足，此时只需要对各个顶点进行比较即可；</li>
+</ul>
+</li>
+<li>
+<p>单纯形法的求解：</p>
+<ul>
+<li>列初始表时候需要把<span class="arithmatex">\(d^{\pm}\)</span> 都列进去，注意检验数的不同，检验数要根据<span class="arithmatex">\(P\)</span>（也就是优先因子的情况罗列），然后按照优先因子的大到小比较；</li>
+<li>
+<p>用单纯形法迭代，直到检验数都大于0
+<img alt="" src="../../picx/OR3/OR-3-1.png" /></p>
+</li>
+<li>
+<p>某非基变量的检验数都是0，说明有无穷多组最优解；可以对d^{+}_1 和  d^{+}_3 作为入基变量，继续迭代； 
+<img alt="" src="../../picx/OR3/OR-3-2.png" /> </p>
+</li>
+<li>在某些问题下，各个检验数字为0但是优先因子对应的系数不全为正数，此时为负数的优先因子的系数表明要求没有全部实现；</li>
+<li>也可以对优先因子给定权重进行计算（直接转化成一个线性规划问题）</li>
+<li>优先级分层优化：先对第一级优先因子建模计算 <span class="arithmatex">\(\mathop{\min} d^{?}_1\)</span>，单纯形法求解看看最优解是否为0，如果是，代表第一层级可以满足，就往第二层级，依次检查；如果有一个层级最优解不是零，说明无法满足这个层级的需求～</li>
 </ul>
 <h2 id="33-dea">3.3 数据包络分析 (DEA)<a class="headerlink" href="#33-dea" title="Permanent link">⚓︎</a></h2>
-<ul>
-<li>在经济管理实践中面临着对同类型的众多组织进行相对效率评价的问题，待评价的组织有多项投入和多项产出，而且这些投入和产出不具有同一个量纲，这里即可用DEA，一种基于线性规划模型的评价方法。</li>
+</li>
+</ul>
+</li>
+<li>
+<p>在经济管理实践中面临着对同类型的众多组织进行相对效率评价的问题，待评价的组织有多项投入和多项产出，而且这些投入和产出不具有同一个量纲，这里即可用DEA，一种基于线性规划模型的评价方法。</p>
+</li>
 <li>DEA以相对效率为基础，以线性规划为工具，通过保持相同类型决策单元(DMU)的输入和输出不变，确定有效的生产前沿面，将各个DMU投影到DEA的生产前沿面上，比较DMU偏离前沿面的程度来评价相对有效性。【非参数模型】</li>
 <li>
 <p>优点：</p>
@@ -7195,7 +7263,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 28, 2023 20:17:22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 1, 2023 18:22:26</span>
       
         <br>
         Created:
